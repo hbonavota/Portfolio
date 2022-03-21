@@ -6,6 +6,7 @@ import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './Techn
 const Technologies = () => (
   < Section id="tech">
     <SectionDivider />
+    <br/>
     <SectionTitle> Technologies </SectionTitle>
     <SectionText>
       I have knowledge in Frontend as in Back-end.
@@ -17,7 +18,7 @@ const Technologies = () => (
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
             Experience with <br />
-            React.js, Components and Hooks, Redux 
+            React.js, Components and Hooks, Redux, HTML, CSS, JavaScript
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -28,7 +29,7 @@ const Technologies = () => (
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
             Experience with <br />
-            Node.js, Express.js DataBase
+            Node.js, Express.js, MongodB, DataBase
           </ListParagraph>
         </ListContainer>
       </ListItem>
