@@ -18,29 +18,29 @@ export const projects = [
     id: 1,
   },
   {
-    title: 'Movie search engine',
-    description: "Movie search engine was the individual project that I had assigned, which consisted of building an App, programming in Javascript and using React, Redux technologies. For styles use pure CSS, since that was the requirement.",
-      image: '/images/2.png',
-      tags: ['javascript', 'React','Redux',],
-    source: 'https://github.com/hbonavota/Movie-search-engine',
-    visit: 'https://movie-search-lake.vercel.app/',
-    id: 2,
-  },
-  {
     title: 'Videogames',
     description: "Videogames was an individual project. I used Javascript React, pure CSS, Redux, Sequelize, Sqlite, postgresql and Express.js. Among other functionalities, you can search for video games (making the request to the api to the more than 500 thousand games) Filter / Sort them and Add new video games to the database.",
     image: '/images/3.png',
     tags: ['Javascript','React','Redux','Sequelize','Sqlite','postgresql', 'Express.js'],
     source: 'https://github.com/hbonavota/-PI-Videogame-FT15a',
     visit: 'https://github.com/hbonavota/-PI-Videogame-FT15a',
+    id: 2,
+  },
+  {
+    title: 'Movie search engine',
+    description: "Movie search engine was the individual project that I had assigned, which consisted of building an App, programming in Javascript and using React, Redux technologies. For styles use pure CSS, since that was the requirement.",
+      image: '/images/2.png',
+      tags: ['javascript', 'React','Redux',],
+    source: 'https://github.com/hbonavota/Movie-search-engine',
+    visit: 'https://movie-search-lake.vercel.app/',
     id: 3,
   },
 ];
 
 export const TimeLineData = [
-  { year: 2017, text: 'Started my journey 💪', },
-  { year: 2018, text: 'Worked as a freelance developer', },
-  { year: 2019, text: 'Founded JavaScript Mastery', },
-  { year: 2020, text: 'Shared my projects with the world', },
-  { year: 2021, text: 'Started my own platform', },
+  { year: 2017, text: 'Started my journey studying programming fundamentals 💪', },
+  { year: 2018, text: 'Continue studying on my own, while doing some work in Wordpress as a freelancer', },
+  { year: 2019, text: 'I entered the IT industry as a Technical Support while I was still studying programming', },
+  { year: 2021, text: '¡Start a bootcamp with more than 800 hours of practice in real software development projects!', },
+  { year: 2022, text: 'I started working as a full MERN stack developer 😀', },
 ];
