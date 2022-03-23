@@ -44,6 +44,8 @@ const Timeline = () => {
 
   return (
     <Section id="about">
+      <SectionDivider />
+      <br/>
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
         My greatest virtue is my constant passion for learning, being positive and the motivation to work as a team.

@@ -7,11 +7,17 @@ import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTi
 const Footer = () => {
   return (
     <FooterWrapper>
-      <linkList>
+      <LinkList>
+        <LinkColumn>
+          <LinkTitle>Situated in</LinkTitle>
+          <LinkItem href="tel:+34 685 972 970" >
+            Balearic islands - Majorca
+          </LinkItem>
+        </LinkColumn>
         <LinkColumn>
           <LinkTitle>Call</LinkTitle>
           <LinkItem href="tel:+34 685 972 970" >
-            +34 685 972 970
+            Tel: +34 685 972 970
           </LinkItem>
         </LinkColumn>
         <LinkColumn>
@@ -20,11 +26,11 @@ const Footer = () => {
             hbonavota@gmail.com
           </LinkItem>
         </LinkColumn>
-      </linkList>
+      </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
           <Slogan>
-            Innovating one Project at a time
+            Made with ❤️ using React and Next.js
           </Slogan>
         </CompanyContainer>
         <SocialContainer>
