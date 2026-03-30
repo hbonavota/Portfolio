@@ -37,16 +37,16 @@ export function HomePage({ locale }: HomePageProps) {
               {content.hero.description}
             </p>
           </div>
-          <div className="flex flex-wrap gap-3.5 pt-2 lg:gap-4">
+          <div className="flex flex-wrap gap-3 pt-1.5 lg:gap-4 lg:pt-2">
             <Link
               href={content.hero.primaryCta.href}
-              className="rounded-full border border-cyan-300/24 bg-cyan-300/10 px-6 py-3.5 text-sm font-semibold text-cyan-100 transition hover:border-cyan-200/40 hover:bg-cyan-300/16"
+              className="rounded-full border border-cyan-300/24 bg-cyan-300/10 px-5.5 py-3 text-sm font-semibold text-cyan-100 transition hover:border-cyan-200/40 hover:bg-cyan-300/16 sm:px-6 sm:py-3.5"
             >
               {content.hero.primaryCta.label}
             </Link>
             <Link
               href={content.hero.secondaryCta.href}
-              className="rounded-full border border-white/10 px-6 py-3.5 text-sm font-semibold text-white/84 transition hover:border-white/22 hover:text-white"
+              className="rounded-full border border-white/10 px-5.5 py-3 text-sm font-semibold text-white/84 transition hover:border-white/22 hover:text-white sm:px-6 sm:py-3.5"
             >
               {content.hero.secondaryCta.label}
             </Link>
@@ -60,8 +60,8 @@ export function HomePage({ locale }: HomePageProps) {
             <h2 className="mt-5 text-[1.9rem] font-semibold text-white">Hernán Bonavota</h2>
             <p className="mt-4 text-[0.96rem] leading-7 text-white/62">
               {locale === "en"
-                ? "Main professional identity, editorial hub and public point of contact."
-                : "Identidad profesional principal, hub editorial y punto público de contacto."}
+                ? "Main professional identity and primary point of contact."
+                : "Identidad profesional principal y punto principal de contacto."}
             </p>
           </div>
           <div className="surface-panel rounded-[2.2rem] p-7 md:p-8">
@@ -71,8 +71,8 @@ export function HomePage({ locale }: HomePageProps) {
             </h2>
             <p className="mt-4 text-[0.96rem] leading-7 text-white/62">
               {locale === "en"
-                ? "The umbrella layer that connects products, experiments and public-facing technical work."
-                : "La capa paraguas que conecta productos, experimentos y trabajo técnico presentado en público."}
+                ? "The structure that connects products, experiments and related initiatives."
+                : "La estructura que organiza productos, experimentos e iniciativas técnicas."}
             </p>
           </div>
           <div className="surface-accent rounded-[2.2rem] p-7 md:p-8 sm:col-span-2">
@@ -82,8 +82,8 @@ export function HomePage({ locale }: HomePageProps) {
             </h2>
             <p className="mt-4 max-w-2xl text-[0.98rem] leading-8 text-white/70">
               {locale === "en"
-                ? "The strongest public product in the ecosystem, positioned as a serious case of product thinking, structure and operational clarity."
-                : "El producto público más sólido del ecosistema, presentado como un caso serio de pensamiento de producto, estructura y claridad operativa."}
+                ? "The clearest public product in the ecosystem, built around trust, validation and operational clarity."
+                : "El producto más sólido dentro de esta estructura, construido en torno a confianza, validación y claridad operativa."}
             </p>
           </div>
         </div>
@@ -110,7 +110,7 @@ export function HomePage({ locale }: HomePageProps) {
       >
         <div className="grid gap-5 lg:grid-cols-2">
           {capabilities[locale].map((item) => (
-            <div key={item.title} className="surface-panel rounded-[2.1rem] p-7 md:p-8">
+            <div key={item.title} className="surface-panel rounded-[2.1rem] p-[1.625rem] md:p-8">
               <h3 className="text-[1.45rem] font-semibold text-white">{item.title}</h3>
               <p className="mt-4 text-[0.98rem] leading-8 text-white/64">{item.text}</p>
             </div>
@@ -160,28 +160,28 @@ export function HomePage({ locale }: HomePageProps) {
               title: "Hernán Bonavota",
               text:
                 locale === "en"
-                  ? "Main professional identity, portfolio and editorial hub."
-                  : "Identidad profesional principal, portfolio y hub editorial.",
+                  ? "Main professional identity and primary point of contact."
+                  : "Identidad profesional principal y punto principal de contacto.",
               href: siteConfig.portfolioDomains[0]
             },
             {
               title: "Orbytia",
               text:
                 locale === "en"
-                  ? "Technical umbrella connecting products and initiatives."
-                  : "Capa técnica que conecta productos e iniciativas.",
+                  ? "Structure connecting products and related initiatives."
+                  : "Estructura que conecta productos e iniciativas relacionadas.",
               href: siteConfig.approvedLinks.orbytia
             },
             {
               title: "Verifiko",
               text:
                 locale === "en"
-                  ? "Featured public product developed under Orbytia."
-                  : "Producto público destacado desarrollado bajo Orbytia.",
+                  ? "Most visible product built under Orbytia."
+                  : "Producto más visible desarrollado bajo Orbytia.",
               href: siteConfig.approvedLinks.verifiko
             }
           ].map((item) => (
-            <div key={item.title} className="surface-panel rounded-[2.1rem] p-7 md:p-8">
+            <div key={item.title} className="surface-panel rounded-[2.1rem] p-[1.625rem] md:p-8">
               <h3 className="text-[1.45rem] font-semibold text-white">{item.title}</h3>
               <p className="mt-4 text-[0.98rem] leading-8 text-white/64">{item.text}</p>
               <Link
@@ -205,8 +205,8 @@ export function HomePage({ locale }: HomePageProps) {
         <div className="max-w-4xl space-y-7 text-[1.02rem] leading-8 text-white/68">
           <p>
             {locale === "en"
-              ? "My work sits between software delivery and product thinking. I build interfaces, integrations and operational systems that need to hold up in real business contexts, not just in polished demos."
-              : "Mi trabajo se mueve entre delivery de software y pensamiento de producto. Construyo interfaces, integraciones y sistemas operativos que deben sostenerse en contextos reales de negocio, no solo en demos pulidas."}
+              ? "My work sits between implementation and product judgement. I build interfaces, integrations and internal systems that need to hold up in real business contexts, not just in polished demos."
+              : "Mi trabajo se mueve entre la implementación y el criterio de producto. Construyo interfaces, integraciones y sistemas internos que tienen que responder bien en contextos reales de negocio, no solo en demos pulidas."}
           </p>
           <p>
             {locale === "en"
@@ -231,7 +231,7 @@ export function HomePage({ locale }: HomePageProps) {
             <Link
               key={item.label}
               href={item.href}
-              className="surface-panel flex min-h-[8.5rem] items-end rounded-[2rem] p-7 text-lg font-semibold text-white transition hover:border-cyan-200/30 hover:text-cyan-100 md:p-8"
+              className="surface-panel flex min-h-[8rem] items-end rounded-[2rem] p-[1.625rem] text-lg font-semibold text-white transition hover:border-cyan-200/30 hover:text-cyan-100 md:min-h-[8.5rem] md:p-8"
             >
               {item.label}
             </Link>

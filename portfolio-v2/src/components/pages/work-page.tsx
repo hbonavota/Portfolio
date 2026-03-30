@@ -12,24 +12,24 @@ export function WorkPage({ locale }: WorkPageProps) {
   const title =
     locale === "en"
       ? "Selected case studies across products, client work and experimental initiatives."
-      : "Casos seleccionados entre productos, trabajo para clientes e iniciativas experimentales.";
+      : "Casos seleccionados entre productos, proyectos para clientes e iniciativas experimentales.";
   const description =
     locale === "en"
       ? "Every public case is framed with explicit scope, professional language and a clear distinction between authorship, ownership and experimentation."
       : "Cada caso público se presenta con alcance explícito, lenguaje profesional y una distinción clara entre autoría, propiedad y experimentación.";
 
-    return (
+  return (
     <SiteFrame locale={locale}>
       <Section
         eyebrow={locale === "en" ? "Work" : "Trabajo"}
         title={title}
         description={description}
       >
-        <div className="flex flex-wrap gap-3">
+        <div className="flex flex-wrap gap-2.5 sm:gap-3">
           {Object.entries(categoryLabels).map(([key, label]) => (
             <span
               key={key}
-              className="rounded-full border border-white/10 bg-white/[0.04] px-4 py-2.5 text-[0.72rem] font-semibold uppercase tracking-[0.24em] text-white/56"
+              className="rounded-full border border-white/10 bg-white/[0.03] px-3.5 py-1.5 text-[0.66rem] font-semibold uppercase tracking-[0.22em] text-white/52 sm:px-4 sm:py-2 sm:text-[0.68rem]"
             >
               {label[locale]}
             </span>

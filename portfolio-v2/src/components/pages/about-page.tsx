@@ -16,8 +16,8 @@ export function AboutPage({ locale }: AboutPageProps) {
         eyebrow={locale === "en" ? "About" : "Sobre mí"}
         title={
           locale === "en"
-            ? "A full-stack product engineer focused on execution, structure and real environments."
-            : "Un product engineer full-stack centrado en ejecución, estructura y contextos reales."
+            ? "Building reliable software for integrations, production platforms and real operational environments."
+            : "Construyendo software confiable para integraciones, plataformas en producción y entornos operativos reales."
         }
         description={content.intro}
       >

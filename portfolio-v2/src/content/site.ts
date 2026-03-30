@@ -47,7 +47,7 @@ export const siteConfig = {
 
 export const categoryLabels: Record<Category, LocalizedText> = {
   product: { en: "Product", es: "Producto" },
-  "client-work": { en: "Client Work", es: "Trabajo para clientes" },
+  "client-work": { en: "Client Work", es: "Proyectos para clientes" },
   lab: { en: "Lab", es: "Lab" },
   ecosystem: { en: "Ecosystem", es: "Ecosistema" }
 };
@@ -71,93 +71,93 @@ export const homeContent = {
   en: {
     hero: {
       eyebrow: "Hernán Bonavota",
-      title: "Reliable software for transactional platforms, integrations and business-critical web systems.",
+      title: "Reliable software for integrations, transactional platforms and business-critical systems.",
       description:
-        "I design, build and maintain production systems where operational reliability matters. My work spans APIs, ticketing and payment integrations, user validation flows, advanced WordPress delivery, and frontend + backend implementation for real business platforms.",
+        "I build and maintain systems where reliability is part of the job. That includes APIs, ticketing and payment integrations, user validation flows, advanced WordPress implementation, and full-stack work for business platforms already in production.",
       primaryCta: { label: "View work", href: "/work" },
       secondaryCta: { label: "Get in touch", href: "/contact" }
     },
     selectedWork: {
       eyebrow: "Selected Work",
-      title: "Products, client work and technical initiatives with clear scope and real authorship.",
+      title: "Products, client projects and technical work with clear scope and real authorship.",
       description:
-        "This portfolio stays deliberately selective. Each case is framed around actual responsibility, public visibility and the right editorial category: product, client work, ecosystem or lab."
+        "Each case is framed around actual responsibility, public visibility and the right category: product, client projects, ecosystem or lab."
     },
     capabilities: {
       eyebrow: "What I Build",
-      title: "Software shaped around integrations, operations and dependable delivery.",
+      title: "Software built around integrations, operations and reliable execution.",
       description:
-        "The focus is not a stack list. It is the ability to translate business requirements into software that behaves well under real operational conditions."
+        "Not a stack list, but a way of turning business requirements into software that holds up under real use."
     },
     experience: {
       eyebrow: "Professional Experience",
-      title: "Production work in high-stakes, real-world environments.",
+      title: "Production work in demanding, high-traffic environments.",
       description:
-        "Alongside my own public products, I work in production environments where data consistency, validation flows, transactional reliability and integration quality are part of the job."
+        "Alongside my own products, I work on systems where data consistency, validation flows, transactional reliability and integration quality are part of the job."
     },
     ecosystem: {
       eyebrow: "Brand Ecosystem",
-      title: "One personal brand, one technical umbrella and one flagship public product.",
+      title: "A personal brand, a technical ecosystem and a flagship product.",
       description:
-        "Hernán Bonavota is the main professional identity. Orbytia provides the ecosystem layer. Verifiko is the most visible product developed within that structure."
+        "Hernán Bonavota is the main identity. Orbytia gives structure to the work around it. Verifiko is the most visible product within that system."
     },
     about: {
       eyebrow: "About",
-      title: "A software profile shaped by product thinking, business context and execution.",
+      title: "A technical profile shaped by product, business context and execution.",
       description:
-        "My background across software, business, finance and communication helps me connect technical implementation with real operational needs instead of treating code as an isolated exercise."
+        "My background across software, business, finance and communication helps me connect implementation with real operating needs instead of treating code in isolation."
     },
     contact: {
       eyebrow: "Contact",
-      title: "Open to serious product, platform and integration conversations.",
+      title: "Open to serious conversations about products, platforms and integrations.",
       description:
-        "If the work involves production systems, business-oriented platforms or integration-heavy software, the public channels below are the right place to start."
+        "If the work involves production systems, business platforms or integration-heavy software, the public channels below are the right place to start."
     }
   },
   es: {
     hero: {
       eyebrow: "Hernán Bonavota",
-      title: "Software fiable para plataformas transaccionales, integraciones y sistemas web críticos para negocio.",
+      title: "Software fiable para integraciones, plataformas transaccionales y sistemas críticos de negocio.",
       description:
-        "Diseño, desarrollo y mantengo sistemas en producción donde la fiabilidad operativa importa. Mi trabajo combina APIs, integraciones de ticketing y pagos, flujos de validación de usuarios, WordPress avanzado y delivery frontend + backend para plataformas reales de negocio.",
+        "Construyo y mantengo sistemas donde la fiabilidad forma parte del trabajo. Eso incluye APIs, ticketing y pagos, flujos de validación de usuario, WordPress avanzado e implementación full-stack para plataformas de negocio en producción.",
       primaryCta: { label: "Ver trabajo", href: "/es/trabajo" },
       secondaryCta: { label: "Contactar", href: "/es/contacto" }
     },
     selectedWork: {
       eyebrow: "Trabajo destacado",
-      title: "Productos, trabajo para clientes e iniciativas técnicas con alcance claro y autoría real.",
+      title: "Productos, proyectos para clientes y trabajo técnico con alcance claro y autoría real.",
       description:
-        "Este portfolio se mantiene deliberadamente selectivo. Cada caso se presenta con responsabilidad real, visibilidad pública y una categoría editorial coherente: producto, client work, ecosistema o lab."
+        "Cada caso se presenta con responsabilidad real, visibilidad pública y la categoría adecuada: producto, proyectos para clientes, ecosistema o lab."
     },
     capabilities: {
       eyebrow: "Qué construyo",
-      title: "Software orientado a integraciones, operaciones y delivery fiable.",
+      title: "Software orientado a integraciones, operaciones y ejecución técnica fiable.",
       description:
-        "El foco no está en enumerar tecnologías, sino en convertir requisitos de negocio en software que responda bien bajo condiciones reales."
+        "No se trata de enumerar tecnologías, sino de convertir requisitos de negocio en software que responda bien cuando se usa de verdad."
     },
     experience: {
       eyebrow: "Experiencia profesional",
-      title: "Trabajo en producción dentro de contextos reales y exigentes.",
+      title: "Trabajo en producción en entornos exigentes y de alto tráfico.",
       description:
-        "Además de mis propios productos públicos, trabajo en entornos donde la consistencia de datos, los flujos de validación, la fiabilidad transaccional y la calidad de integración forman parte del trabajo diario."
+        "Además de mis propios productos, trabajo sobre sistemas donde la consistencia de datos, los flujos de validación, la fiabilidad transaccional y la calidad de integración forman parte del trabajo diario."
     },
     ecosystem: {
       eyebrow: "Ecosistema de marca",
-      title: "Una marca personal, una capa técnica y un producto público principal.",
+      title: "Una marca personal, un ecosistema técnico y un producto principal.",
       description:
-        "Hernán Bonavota es la identidad profesional principal. Orbytia aporta la capa de ecosistema. Verifiko es el producto más visible desarrollado dentro de esa estructura."
+        "Hernán Bonavota es la identidad principal. Orbytia da estructura al conjunto. Verifiko es el producto más visible dentro de ese sistema."
     },
     about: {
       eyebrow: "Sobre mí",
-      title: "Un perfil de software marcado por producto, negocio y capacidad de ejecución.",
+      title: "Un perfil técnico definido por producto, negocio y capacidad de ejecución.",
       description:
-        "Mi recorrido entre software, negocio, finanzas y comunicación me ayuda a conectar la implementación técnica con necesidades operativas reales, en lugar de tratar el código como algo aislado."
+        "Mi recorrido entre software, negocio, finanzas y comunicación me ayuda a conectar la implementación con necesidades reales, en lugar de tratar el código como algo aislado."
     },
     contact: {
       eyebrow: "Contacto",
-      title: "Disponible para conversaciones serias sobre producto, plataformas e integraciones.",
+      title: "Disponible para conversaciones serias sobre productos, plataformas e integraciones.",
       description:
-        "Si el trabajo implica sistemas en producción, plataformas orientadas a negocio o software con muchas integraciones, los canales públicos de abajo son la vía adecuada para iniciar conversación."
+        "Si el trabajo implica sistemas en producción, plataformas de negocio o software con muchas integraciones, los canales públicos de abajo son la vía adecuada para iniciar conversación."
     }
   }
 } as const;
@@ -177,25 +177,25 @@ export const capabilities = {
       text: "Structured CMS work, custom implementation, editorial architecture and business-oriented publishing systems that need to be maintainable."
     },
     {
-      title: "Business-driven delivery",
+      title: "Business-oriented execution",
       text: "A practical way of building software that connects business requirements, product decisions and technical execution."
     }
   ],
   es: [
     {
-      title: "Sistemas con muchas integraciones",
+      title: "Sistemas intensivos en integraciones",
       text: "Software que conecta servicios, APIs y flujos operativos donde la fiabilidad importa más que la novedad."
     },
     {
       title: "Plataformas transaccionales",
-      text: "Delivery frontend y backend para plataformas que dependen de validaciones, lógica de pagos, consistencia de datos y recorridos de usuario fiables."
+      text: "Implementación frontend y backend para plataformas que dependen de validaciones, lógica de pagos, consistencia de datos y recorridos de usuario fiables."
     },
     {
       title: "WordPress avanzado",
       text: "Trabajo CMS estructurado, implementación personalizada, arquitectura editorial y sistemas orientados a negocio que deben mantenerse bien en el tiempo."
     },
     {
-      title: "Delivery orientado a negocio",
+      title: "Ejecución orientada a negocio",
       text: "Una forma práctica de construir software conectando requisitos de negocio, decisiones de producto y ejecución técnica."
     }
   ]
@@ -483,7 +483,7 @@ export const caseStudies: CaseStudy[] = [
         "This case is presented as client work with real scope. It is useful because it shows execution, structure and practical delivery without blurring the line between technical authorship and client ownership."
       ],
       es: [
-        "Este caso se presenta como trabajo para cliente con alcance real. Es valioso porque muestra ejecución, estructura y delivery práctico sin difuminar la línea entre autoría técnica y propiedad del cliente."
+        "Este caso se presenta como un proyecto para cliente con alcance real. Es valioso porque muestra ejecución, estructura y delivery práctico sin difuminar la línea entre autoría técnica y propiedad del cliente."
       ]
     },
     challenge: {
@@ -511,7 +511,7 @@ export const caseStudies: CaseStudy[] = [
       es: [
         "Delivery profesional.",
         "Estructura UX orientada a negocio.",
-        "Tratamiento respetuoso del trabajo para cliente."
+        "Tratamiento respetuoso de proyectos para clientes."
       ]
     },
     outcome: {
@@ -532,7 +532,7 @@ export const caseStudies: CaseStudy[] = [
     title: { en: "Tu Próximo Seguro", es: "Tu Próximo Seguro" },
     strapline: {
       en: "Client work focused on trust, clarity and business-oriented web delivery.",
-      es: "Trabajo para cliente con foco en confianza, claridad y delivery web orientado a negocio."
+      es: "Proyecto para cliente con foco en confianza, claridad y delivery web orientado a negocio."
     },
     summary: {
       en: "A client-facing case centered on information structure, trust-oriented UX and practical implementation for a public business website.",

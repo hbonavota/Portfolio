@@ -10,7 +10,7 @@ type CaseCardProps = {
 
 export function CaseCard({ locale, study }: CaseCardProps) {
   return (
-    <article className="surface-panel group flex h-full flex-col justify-between rounded-[2.25rem] p-7 transition duration-300 hover:-translate-y-1 hover:border-cyan-200/30 md:p-8">
+    <article className="surface-panel group flex h-full flex-col justify-between rounded-[2.25rem] p-[1.625rem] transition duration-300 hover:-translate-y-1 hover:border-cyan-200/30 md:p-8">
       <div className="space-y-7">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
           <span className="w-fit rounded-full border border-white/10 bg-white/5 px-3.5 py-1.5 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-white/64">
@@ -30,7 +30,7 @@ export function CaseCard({ locale, study }: CaseCardProps) {
           <p className="max-w-[36rem] text-[1rem] leading-8 text-white/67">{study.summary[locale]}</p>
         </div>
       </div>
-      <div className="mt-11 flex items-center justify-between border-t border-white/8 pt-5">
+      <div className="mt-10 flex items-center justify-between border-t border-white/8 pt-5 md:mt-11">
         <Link
           href={getLocalizedPath(locale, "work", study.slug)}
           className="inline-flex items-center gap-2 text-sm font-semibold text-white transition hover:text-cyan-200"

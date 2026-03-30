@@ -30,14 +30,16 @@ export function ContactPage({ locale }: ContactPageProps) {
             <Link
               key={item.href}
               href={item.href}
-              className="surface-panel flex h-full min-h-[13rem] flex-col justify-between p-7 transition hover:border-cyan-200/28 hover:bg-white/[0.06] md:p-8"
+              className="surface-panel flex h-full min-h-[12.75rem] flex-col justify-between p-[1.625rem] transition hover:border-cyan-200/28 hover:bg-white/[0.06] md:min-h-[13.5rem] md:p-8"
             >
-              <p className="text-[0.7rem] uppercase tracking-[0.28em] text-white/44">
+              <p className="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-white/42">
                 {locale === "en" ? "Public link" : "Enlace público"}
               </p>
               <div className="mt-8 flex items-end justify-between gap-4">
-                <h2 className="text-[1.55rem] font-semibold tracking-[-0.04em] text-white">{item.label}</h2>
-                <span className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-sm text-white/62">
+                <h2 className="text-[1.5rem] font-semibold tracking-[-0.04em] text-white md:text-[1.6rem]">
+                  {item.label}
+                </h2>
+                <span className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-sm text-white/56">
                   →
                 </span>
               </div>
