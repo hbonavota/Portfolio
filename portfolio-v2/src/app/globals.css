@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-ink: #ebf2ff;
+  --color-base: #07111f;
+  --color-panel: rgba(255, 255, 255, 0.04);
+  --color-line: rgba(255, 255, 255, 0.1);
+}
+
+:root {
+  color-scheme: dark;
+  --surface-strong: linear-gradient(180deg, rgba(18, 28, 47, 0.92) 0%, rgba(9, 15, 29, 0.92) 100%);
+  --surface-soft: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.03) 100%);
+  --surface-highlight: linear-gradient(135deg, rgba(34, 211, 238, 0.16), rgba(255, 255, 255, 0.03));
+  --surface-deep: linear-gradient(180deg, rgba(9, 16, 30, 0.96) 0%, rgba(6, 10, 21, 0.98) 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(34, 211, 238, 0.08), transparent 26%),
+    radial-gradient(circle at 80% 12%, rgba(148, 163, 184, 0.07), transparent 28%),
+    radial-gradient(circle at 50% 100%, rgba(34, 211, 238, 0.04), transparent 34%),
+    linear-gradient(180deg, #07111f 0%, #050b16 100%);
+  color: var(--color-ink);
+  font-family:
+    "Inter",
+    "Segoe UI",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: -0.03em;
+}
+
+::selection {
+  background: rgba(34, 211, 238, 0.24);
+  color: white;
+}
+
+main {
+  position: relative;
+}
+
+:focus-visible {
+  outline: 2px solid rgba(125, 211, 252, 0.7);
+  outline-offset: 3px;
+}
+
+.surface-panel {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--surface-soft);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.04),
+    0 24px 60px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(18px);
+}
+
+.surface-panel-strong {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: var(--surface-deep);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.04),
+    0 28px 64px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(24px);
+}
+
+.surface-accent {
+  border: 1px solid rgba(103, 232, 249, 0.18);
+  background:
+    linear-gradient(180deg, rgba(34, 211, 238, 0.12) 0%, rgba(255, 255, 255, 0.04) 100%),
+    var(--surface-deep);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.05),
+    0 28px 64px rgba(0, 0, 0, 0.3);
+}
+
+.hairline {
+  position: relative;
+}
+
+.hairline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1.5rem;
+  width: 4.5rem;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(103, 232, 249, 0.55), rgba(255, 255, 255, 0));
+}
