@@ -6,7 +6,7 @@ export const metadata = buildMetadata({
   locale: "es",
   pathname: "/es/sobre-mi",
   title: "Sobre mí",
-  description: "Desarrollador freelance centrado en integraciones, sistemas en producción y software mantenible."
+  description: "Desarrollador de software que traduce necesidades de negocio en trabajo técnico claro."
 });
 
 export default function Page() {

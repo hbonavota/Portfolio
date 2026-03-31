@@ -16,8 +16,8 @@ export function AboutPage({ locale }: AboutPageProps) {
         eyebrow={locale === "en" ? "About" : "Sobre mí"}
         title={
           locale === "en"
-            ? "Freelance software engineer."
-            : "Desarrollador freelance."
+            ? "Technical work with business sense."
+            : "Trabajo técnico con sentido de negocio."
         }
         description={content.intro}
       >

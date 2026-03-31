@@ -55,35 +55,35 @@ export function HomePage({ locale }: HomePageProps) {
         <div className="grid gap-4 sm:grid-cols-2">
           <div className="surface-panel-strong rounded-[2.2rem] p-7 md:p-8">
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-white/48">
-              {locale === "en" ? "Freelance developer" : "Desarrollador freelance"}
+              {locale === "en" ? "Client work" : "Trabajo para clientes"}
             </p>
             <h2 className="mt-5 text-[1.9rem] font-semibold text-white">Hernán Bonavota</h2>
             <p className="mt-4 text-[0.96rem] leading-7 text-white/62">
               {locale === "en"
-                ? "Client work in platforms, integrations and backend."
-                : "Trabajo para clientes en plataformas, integraciones y backend."}
+                ? "Platforms, integrations and backend for real operations."
+                : "Plataformas, integraciones y backend para operaciones reales."}
             </p>
           </div>
           <div className="surface-panel rounded-[2.2rem] p-7 md:p-8">
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-white/48">Orbytia</p>
             <h2 className="mt-5 text-[1.9rem] font-semibold text-white">
-              {locale === "en" ? "Own products" : "Productos propios"}
+              {locale === "en" ? "Consulting line" : "Línea de consultoría"}
             </h2>
             <p className="mt-4 text-[0.96rem] leading-7 text-white/62">
               {locale === "en"
-                ? "Only for my own products."
-                : "Solo para mis productos propios."}
+                ? "Software, automation and applied AI."
+                : "Software, automatización e IA aplicada."}
             </p>
           </div>
           <div className="surface-accent rounded-[2.2rem] p-7 md:p-8 sm:col-span-2">
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-cyan-100/72">Verifiko</p>
             <h2 className="mt-5 text-[2.15rem] font-semibold text-white">
-              {locale === "en" ? "Visible product" : "Producto visible"}
+              {locale === "en" ? "Product example" : "Ejemplo de producto"}
             </h2>
             <p className="mt-4 max-w-2xl text-[0.98rem] leading-8 text-white/70">
               {locale === "en"
-                ? "Verification product built under Orbytia."
-                : "Producto de verificación construido dentro de Orbytia."}
+                ? "A product inside Orbytia, not the main offer."
+                : "Un producto dentro de Orbytia, no la oferta principal."}
             </p>
           </div>
         </div>
@@ -160,24 +160,24 @@ export function HomePage({ locale }: HomePageProps) {
               title: "Hernán Bonavota",
               text:
                 locale === "en"
-                  ? "Client work in platforms, integrations and backend."
-                  : "Trabajo para clientes en plataformas, integraciones y backend.",
+                  ? "Platforms, integrations and backend for real operations."
+                  : "Plataformas, integraciones y backend para operaciones reales.",
               href: siteConfig.portfolioDomains[0]
             },
             {
               title: "Orbytia",
               text:
                 locale === "en"
-                  ? "Only for my own products."
-                  : "Solo para mis productos propios.",
+                  ? "Software, automation and applied AI."
+                  : "Software, automatización e IA aplicada.",
               href: siteConfig.approvedLinks.orbytia
             },
             {
               title: "Verifiko",
               text:
                 locale === "en"
-                  ? "Verification product built under Orbytia."
-                  : "Producto de verificación dentro de Orbytia.",
+                  ? "One product inside Orbytia."
+                  : "Un producto dentro de Orbytia.",
               href: siteConfig.approvedLinks.verifiko
             }
           ].map((item) => (
@@ -205,13 +205,13 @@ export function HomePage({ locale }: HomePageProps) {
         <div className="max-w-4xl space-y-7 text-[1.02rem] leading-8 text-white/68">
           <p>
             {locale === "en"
-              ? "I build interfaces, APIs, integrations and internal tools for real operations."
-              : "Construyo interfaces, APIs, integraciones y herramientas internas para operaciones reales."}
+              ? "Clients usually bring me projects when the need is clear but the path is not."
+              : "Muchas veces me llegan proyectos donde la necesidad está clara, pero el camino no."}
           </p>
           <p>
             {locale === "en"
-              ? "I turn vague requirements into clear technical work."
-              : "Convierto requisitos difusos en trabajo técnico claro."}
+              ? "I help turn that into concrete technical work and keep communication simple."
+              : "Ayudo a convertir eso en trabajo técnico concreto y mantengo la comunicación simple."}
           </p>
         </div>
       </Section>
@@ -225,8 +225,8 @@ export function HomePage({ locale }: HomePageProps) {
         <div className="grid gap-4 md:grid-cols-3">
           {[
             { label: "LinkedIn", href: siteConfig.approvedLinks.linkedin },
-            { label: "GitHub", href: siteConfig.approvedLinks.github },
-            { label: "Orbytia", href: siteConfig.approvedLinks.orbytia }
+            { label: "Orbytia", href: siteConfig.approvedLinks.orbytia },
+            { label: locale === "en" ? "Let's talk" : "Hablemos", href: getLocalizedPath(locale, "contact") }
           ].map((item) => (
             <Link
               key={item.label}

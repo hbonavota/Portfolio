@@ -11,8 +11,8 @@ export function Footer({ locale }: FooterProps) {
   const externalLabel = locale === "en" ? "External" : "Externo";
   const bottomLine =
     locale === "en"
-      ? "Backend, frontend, WordPress, payments and APIs."
-      : "Backend, frontend, WordPress, pagos y APIs.";
+      ? "Platforms, integrations, backend, product work and automations."
+      : "Plataformas, integraciones, backend, producto y automatizaciones.";
 
   return (
     <footer className="border-t border-white/8 bg-slate-950/92">
@@ -23,13 +23,13 @@ export function Footer({ locale }: FooterProps) {
           </p>
           <h2 className="max-w-lg text-[1.72rem] font-semibold leading-[1.08] tracking-[-0.04em] text-white sm:text-[1.86rem]">
             {locale === "en"
-              ? "Freelance software engineer."
-              : "Desarrollador freelance."}
+              ? "Software engineer for real products and systems."
+              : "Desarrollador de software para productos y sistemas reales."}
           </h2>
           <p className="max-w-lg text-[0.95rem] leading-8 text-white/58">
             {locale === "en"
-              ? "Client work and a few own products."
-              : "Trabajo para clientes y algunos productos propios."}
+              ? "Open to project work and long-term roles."
+              : "Disponible para proyectos y también para roles estables."}
           </p>
         </div>
         <div className="space-y-5 lg:pl-2">
@@ -55,18 +55,13 @@ export function Footer({ locale }: FooterProps) {
               </Link>
             </li>
             <li>
-              <Link href={siteConfig.approvedLinks.github} className="inline-flex transition hover:text-white">
-                GitHub
-              </Link>
-            </li>
-            <li>
-              <Link href={siteConfig.approvedLinks.verifiko} className="inline-flex transition hover:text-white">
-                Verifiko
-              </Link>
-            </li>
-            <li>
               <Link href={siteConfig.approvedLinks.orbytia} className="inline-flex transition hover:text-white">
                 Orbytia
+              </Link>
+            </li>
+            <li>
+              <Link href={siteConfig.approvedLinks.github} className="inline-flex transition hover:text-white">
+                GitHub
               </Link>
             </li>
           </ul>
