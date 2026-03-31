@@ -6,7 +6,7 @@ export const metadata = buildMetadata({
   locale: "es",
   pathname: "/es",
   title: "Hernán Bonavota",
-  description: "Desarrollador de software para plataformas, integraciones, backend y trabajo de producto."
+  description: "Ingeniero de software enfocado en plataformas, integraciones, sistemas backend y desarrollo de producto."
 });
 
 export default function Page() {

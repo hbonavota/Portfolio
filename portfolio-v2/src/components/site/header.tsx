@@ -19,7 +19,7 @@ export function Header({ locale }: HeaderProps) {
       <div className="mx-auto flex max-w-[88rem] items-center justify-between gap-4 px-5 py-3.5 sm:gap-6 sm:px-8 lg:px-10 lg:py-4">
         <Link href={homeHref} className="group flex flex-col leading-none text-white">
           <span className="text-[0.58rem] font-medium uppercase tracking-[0.28em] text-cyan-200/42 transition group-hover:text-cyan-200/58 sm:text-[0.62rem]">
-            {locale === "en" ? "Software Engineer" : "Desarrollador de software"}
+            {locale === "en" ? "Software Engineer" : "Ingeniero de software"}
           </span>
           <span className="mt-1.5 text-[0.96rem] font-semibold tracking-[-0.03em] text-white sm:mt-2 sm:text-[1.02rem]">
             Hernán Bonavota
@@ -45,7 +45,7 @@ export function Header({ locale }: HeaderProps) {
             href={ctaHref}
             className="rounded-full border border-cyan-300/18 bg-cyan-300/[0.08] px-4.5 py-2.5 text-sm font-semibold text-cyan-100 transition hover:border-cyan-200/34 hover:bg-cyan-300/14"
           >
-            {locale === "en" ? "Let's talk" : "Hablemos"}
+            {locale === "en" ? "Contact" : "Contacto"}
           </Link>
         </div>
         <div className="flex items-center gap-2 lg:hidden">
