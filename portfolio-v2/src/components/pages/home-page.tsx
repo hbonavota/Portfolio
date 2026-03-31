@@ -180,8 +180,8 @@ export function HomePage({ locale }: HomePageProps) {
               title: "Verifiko",
               text:
                 locale === "en"
-                  ? "Cybersecurity product and product-work example."
-                  : "Producto de ciberseguridad y ejemplo de trabajo de producto.",
+                  ? "Cybersecurity product and clear product example."
+                  : "Producto de ciberseguridad y ejemplo claro de trabajo de producto.",
               href: siteConfig.approvedLinks.verifiko
             }
           ].map((item) => (
