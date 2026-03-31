@@ -24,12 +24,12 @@ export function Footer({ locale }: FooterProps) {
           <h2 className="max-w-lg text-[1.72rem] font-semibold leading-[1.08] tracking-[-0.04em] text-white sm:text-[1.86rem]">
             {locale === "en"
               ? "Software engineer for real products and systems."
-              : "Desarrollador de software para productos y sistemas reales."}
+              : "Desarrollador de software."}
           </h2>
           <p className="max-w-lg text-[0.95rem] leading-8 text-white/58">
             {locale === "en"
               ? "Open to project work and long-term roles."
-              : "Disponible para proyectos y también para roles estables."}
+              : "Contáctame y te responderé a la mayor brevedad posible."}
           </p>
         </div>
         <div className="space-y-5 lg:pl-2">

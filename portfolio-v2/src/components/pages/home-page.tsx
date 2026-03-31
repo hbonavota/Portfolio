@@ -55,7 +55,7 @@ export function HomePage({ locale }: HomePageProps) {
         <div className="grid gap-4 sm:grid-cols-2">
           <div className="surface-panel-strong rounded-[2.2rem] p-7 md:p-8">
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-white/48">
-              {locale === "en" ? "Client work" : "Trabajo para clientes"}
+              {locale === "en" ? "Client work" : "Si buscas un desarrollador de Software"}
             </p>
             <h2 className="mt-5 text-[1.9rem] font-semibold text-white">Hernán Bonavota</h2>
             <p className="mt-4 text-[0.96rem] leading-7 text-white/62">
@@ -65,25 +65,25 @@ export function HomePage({ locale }: HomePageProps) {
             </p>
           </div>
           <div className="surface-panel rounded-[2.2rem] p-7 md:p-8">
-            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-white/48">Orbytia</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-white/48">Si tienes un proyecto en mente</p>
             <h2 className="mt-5 text-[1.9rem] font-semibold text-white">
-              {locale === "en" ? "Consulting line" : "Línea de consultoría"}
+              {locale === "en" ? "Consulting line" : "OrbytIA"}
             </h2>
             <p className="mt-4 text-[0.96rem] leading-7 text-white/62">
               {locale === "en"
                 ? "Software, automation and applied AI."
-                : "Software, automatización e IA aplicada."}
+                : " Te ayudamos creando Software, automatizaciones e IA aplicada."}
             </p>
           </div>
           <div className="surface-accent rounded-[2.2rem] p-7 md:p-8 sm:col-span-2">
-            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-cyan-100/72">Verifiko</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-cyan-100/72">Ciberseguridad</p>
             <h2 className="mt-5 text-[2.15rem] font-semibold text-white">
-              {locale === "en" ? "Product example" : "Ejemplo de producto"}
+              {locale === "en" ? "Product example" : "Verifiko"}
             </h2>
             <p className="mt-4 max-w-2xl text-[0.98rem] leading-8 text-white/70">
               {locale === "en"
                 ? "A product inside Orbytia, not the main offer."
-                : "Un producto dentro de Orbytia, no la oferta principal."}
+                : "Proyecto desarrollado por orbytIA, si tienes una URL que parece peligrosa, analizala con Verifiko"}
             </p>
           </div>
         </div>

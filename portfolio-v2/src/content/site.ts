@@ -117,9 +117,9 @@ export const homeContent = {
   es: {
     hero: {
       eyebrow: "Hernán Bonavota",
-      title: "Desarrollador de software para plataformas, integraciones y sistemas backend.",
+      title: "Desarrollador de software, con experiencia en productos.",
       description:
-        "Ayudo a equipos a construir y mejorar software que tiene que funcionar en operaciones reales.",
+        "Ayudo a equipos a construir y mejorar software que impactan en operaciones reales.",
       primaryCta: { label: "Ver trabajo", href: "/es/trabajo" },
       secondaryCta: { label: "Hablemos", href: "/es/contacto" }
     },
@@ -322,7 +322,7 @@ export const contactPage = {
   es: {
     title: "Hablemos de tu proyecto.",
     description:
-      "LinkedIn funciona bien para un primer contacto. Orbytia es el mejor punto de entrada para servicios, automatización e IA aplicada."
+      "Para propuestas laborales, puedes contactarme directamente por LinkedIn. Si quieres que evaluemos tu proyecto envia la información a través de OrbytIA"
   }
 } as const;
 
@@ -462,11 +462,11 @@ export const caseStudies: CaseStudy[] = [
     title: { en: "Proyectar SL", es: "Proyectar SL" },
     strapline: {
       en: "Client platform.",
-      es: "Plataforma para cliente."
+      es: "Web de empresa que se dedica a construcción y reformas."
     },
     summary: {
       en: "Website with an online quoting system for renovation work.",
-      es: "Web con sistema de presupuesto online para obras de reforma."
+      es: "Desarrollo completo de portal de empresa con sistema personalizado para la realización de presupuestos online."
     },
     role: {
       en: "Full-stack Developer / Web Platform Engineer",
@@ -528,7 +528,7 @@ export const caseStudies: CaseStudy[] = [
     },
     summary: {
       en: "Lead generation website for an insurance advisor.",
-      es: "Web para captación de leads de una asesora de seguros."
+      es: "Web para cliente personal asesora de seguros que funciona para prospección de Leads ."
     },
     role: {
       en: "Web / Product Engineer",
@@ -592,7 +592,7 @@ export const caseStudies: CaseStudy[] = [
     },
     summary: {
       en: "Early product exploration kept clearly as lab work.",
-      es: "Exploración de producto en fase temprana, presentada claramente como lab."
+      es: "Exploración de producto en fase temprana."
     },
     role: {
       en: "Concept / Experimental Builder",
