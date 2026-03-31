@@ -35,7 +35,7 @@ export function CaseCard({ locale, study }: CaseCardProps) {
           href={getLocalizedPath(locale, "work", study.slug)}
           className="inline-flex items-center gap-2 text-sm font-semibold text-white transition hover:text-cyan-200"
         >
-          {locale === "en" ? "Read case study" : "Ver caso"}
+          {locale === "en" ? "View details" : "Ver caso"}
           <span
             aria-hidden="true"
             className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/[0.04]"

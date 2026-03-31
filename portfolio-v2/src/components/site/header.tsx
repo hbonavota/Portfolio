@@ -45,7 +45,7 @@ export function Header({ locale }: HeaderProps) {
             href={ctaHref}
             className="rounded-full border border-cyan-300/18 bg-cyan-300/[0.08] px-4.5 py-2.5 text-sm font-semibold text-cyan-100 transition hover:border-cyan-200/34 hover:bg-cyan-300/14"
           >
-            {locale === "en" ? "Get in touch" : "Contactar"}
+            {locale === "en" ? "Contact me" : "Contactar"}
           </Link>
         </div>
         <div className="flex items-center gap-2 lg:hidden">

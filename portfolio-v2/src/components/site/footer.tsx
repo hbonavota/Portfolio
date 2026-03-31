@@ -11,7 +11,7 @@ export function Footer({ locale }: FooterProps) {
   const externalLabel = locale === "en" ? "External" : "Externo";
   const bottomLine =
     locale === "en"
-      ? "A selective body of work shaped by production systems, integrations and clear technical authorship."
+      ? "Selected work in integrations, platforms and production software."
       : "Una selección de trabajo construida desde sistemas en producción, integraciones y autoría técnica clara.";
 
   return (
@@ -23,12 +23,12 @@ export function Footer({ locale }: FooterProps) {
           </p>
           <h2 className="max-w-lg text-[1.72rem] font-semibold leading-[1.08] tracking-[-0.04em] text-white sm:text-[1.86rem]">
             {locale === "en"
-              ? "Software, integrations and product work with clear scope and real authorship."
+              ? "Freelance software work for platforms, integrations and production products."
               : "Software, integraciones y trabajo de producto presentados con alcance claro y autoría real."}
           </h2>
           <p className="max-w-lg text-[0.95rem] leading-8 text-white/58">
             {locale === "en"
-              ? "The portfolio stays intentionally selective: a small number of public cases, approved links and a clear distinction between products, client work and lab initiatives."
+              ? "A focused set of public cases showing the kind of platform, product and technical work I take on."
               : "El portfolio se mantiene intencionadamente selectivo: pocos casos públicos, enlaces aprobados y una distinción clara entre producto, proyectos para clientes e iniciativas de laboratorio."}
           </p>
         </div>
