@@ -18,8 +18,8 @@ export function OrbytiaPage({ locale }: OrbytiaPageProps) {
         eyebrow="Orbytia"
         title={
           locale === "en"
-            ? "Own products."
-            : "Productos propios."
+            ? "Services, automation and applied AI."
+            : "Servicios, automatización e IA aplicada."
         }
         description={content.intro}
       >

@@ -6,7 +6,7 @@ export const metadata = buildMetadata({
   locale: "en",
   pathname: "/orbytia",
   title: "Orbytia",
-  description: "Structure for my own products and experiments, separate from client work."
+  description: "Software consulting, automation, applied AI and digital solutions."
 });
 
 export default function Page() {

@@ -11,12 +11,12 @@ type WorkPageProps = {
 export function WorkPage({ locale }: WorkPageProps) {
   const title =
     locale === "en"
-      ? "Client work, own products and experiments."
-      : "Proyectos para clientes, productos propios y experimentos.";
+      ? "What each project is."
+      : "Qué es cada proyecto.";
   const description =
     locale === "en"
-      ? "A quick view of the work I usually take on."
-      : "Una vista rápida del trabajo que suelo hacer.";
+      ? "Client delivery, product work and selected exploration."
+      : "Trabajo para clientes, producto y exploración seleccionada.";
 
   return (
     <SiteFrame locale={locale}>
