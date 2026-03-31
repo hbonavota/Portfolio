@@ -322,7 +322,7 @@ export const contactPage = {
   es: {
     title: "Abierto a oportunidades, colaboraciones y conversaciones técnicas.",
     description:
-      "Para oportunidades, colaboraciones o conversaciones técnicas, LinkedIn es el mejor primer contacto. Orbytia queda solo para consultas de servicios."
+      "Para oportunidades, colaboraciones o conversaciones técnicas, puedes contactarme por LinkedIn como mejor contacto. Si quieres que anilicemos tu proyecto ingresa en Orbytia."
   }
 } as const;
 
