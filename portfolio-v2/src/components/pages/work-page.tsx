@@ -11,11 +11,11 @@ type WorkPageProps = {
 export function WorkPage({ locale }: WorkPageProps) {
   const title =
     locale === "en"
-      ? "Selected case studies across products, client work and experimental initiatives."
+      ? "Client work, products and experiments from real projects."
       : "Casos seleccionados entre productos, proyectos para clientes e iniciativas experimentales.";
   const description =
     locale === "en"
-      ? "Every public case is framed with explicit scope, professional language and a clear distinction between authorship, ownership and experimentation."
+      ? "Each case makes clear what I built, what kind of work it is and the context it was built for."
       : "Cada caso público se presenta con alcance explícito, lenguaje profesional y una distinción clara entre autoría, propiedad y experimentación.";
 
   return (

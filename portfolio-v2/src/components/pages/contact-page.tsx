@@ -33,7 +33,7 @@ export function ContactPage({ locale }: ContactPageProps) {
               className="surface-panel flex h-full min-h-[12.75rem] flex-col justify-between p-[1.625rem] transition hover:border-cyan-200/28 hover:bg-white/[0.06] md:min-h-[13.5rem] md:p-8"
             >
               <p className="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-white/42">
-                {locale === "en" ? "Public link" : "Enlace público"}
+                {locale === "en" ? "Public profile" : "Enlace público"}
               </p>
               <div className="mt-8 flex items-end justify-between gap-4">
                 <h2 className="text-[1.5rem] font-semibold tracking-[-0.04em] text-white md:text-[1.6rem]">
