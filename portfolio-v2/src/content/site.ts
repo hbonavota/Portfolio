@@ -91,7 +91,7 @@ export const homeContent = {
     },
     experience: {
       eyebrow: "Current Work",
-      title: "Current work in production.",
+      title: "Current production work.",
       description:
         "Today I work on ticketing, payments, validation and backend flows."
     },
@@ -125,7 +125,7 @@ export const homeContent = {
     },
     selectedWork: {
       eyebrow: "Trabajo destacado",
-      title: "Trabajo con base en operaciones reales.",
+      title: "Trabajo ligado a operaciones reales.",
       description:
         "Casos breves centrados en el proyecto, la necesidad y mi papel."
     },
@@ -276,7 +276,7 @@ export const orbytiaPage = {
       {
         title: "What it is",
         body:
-          "A separate service line, not the main focus of this portfolio."
+          "A separate consulting line, not the main focus of this portfolio."
       },
       {
         title: "How it fits",
@@ -297,7 +297,7 @@ export const orbytiaPage = {
       {
         title: "Qué es",
         body:
-          "Una línea de servicios separada, no el foco principal de este portfolio."
+          "Una línea de consultoría separada, no el foco principal de este portfolio."
       },
       {
         title: "Cómo encaja",
