@@ -55,35 +55,35 @@ export function HomePage({ locale }: HomePageProps) {
         <div className="grid gap-4 sm:grid-cols-2">
           <div className="surface-panel-strong rounded-[2.2rem] p-7 md:p-8">
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-white/48">
-              {locale === "en" ? "Freelance developer" : "Marca principal"}
+              {locale === "en" ? "Freelance developer" : "Desarrollador freelance"}
             </p>
             <h2 className="mt-5 text-[1.9rem] font-semibold text-white">Hernán Bonavota</h2>
             <p className="mt-4 text-[0.96rem] leading-7 text-white/62">
               {locale === "en"
-                ? "I work directly with clients on platforms, integrations and product delivery."
-                : "Identidad profesional principal y punto principal de contacto."}
+                ? "Client work in platforms, integrations and backend."
+                : "Trabajo para clientes en plataformas, integraciones y backend."}
             </p>
           </div>
           <div className="surface-panel rounded-[2.2rem] p-7 md:p-8">
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-white/48">Orbytia</p>
             <h2 className="mt-5 text-[1.9rem] font-semibold text-white">
-              {locale === "en" ? "Own products" : "Ecosistema técnico"}
+              {locale === "en" ? "Own products" : "Productos propios"}
             </h2>
             <p className="mt-4 text-[0.96rem] leading-7 text-white/62">
               {locale === "en"
-                ? "Used only for my own products, separate from client projects."
-                : "La estructura que organiza productos, experimentos e iniciativas técnicas."}
+                ? "Only for my own products."
+                : "Solo para mis productos propios."}
             </p>
           </div>
           <div className="surface-accent rounded-[2.2rem] p-7 md:p-8 sm:col-span-2">
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-cyan-100/72">Verifiko</p>
             <h2 className="mt-5 text-[2.15rem] font-semibold text-white">
-              {locale === "en" ? "Verification platform" : "Producto público destacado"}
+              {locale === "en" ? "Visible product" : "Producto visible"}
             </h2>
             <p className="mt-4 max-w-2xl text-[0.98rem] leading-8 text-white/70">
               {locale === "en"
-                ? "A live platform with backend workflows, API checks and scoring logic."
-                : "El producto más sólido dentro de esta estructura, construido en torno a confianza, validación y claridad operativa."}
+                ? "Verification product built under Orbytia."
+                : "Producto de verificación construido dentro de Orbytia."}
             </p>
           </div>
         </div>
@@ -160,24 +160,24 @@ export function HomePage({ locale }: HomePageProps) {
               title: "Hernán Bonavota",
               text:
                 locale === "en"
-                  ? "I work directly with clients on platforms, integrations and product delivery."
-                  : "Identidad profesional principal y punto principal de contacto.",
+                  ? "Client work in platforms, integrations and backend."
+                  : "Trabajo para clientes en plataformas, integraciones y backend.",
               href: siteConfig.portfolioDomains[0]
             },
             {
               title: "Orbytia",
               text:
                 locale === "en"
-                  ? "Used only for my own products, separate from client projects."
-                  : "Estructura que conecta productos e iniciativas relacionadas.",
+                  ? "Only for my own products."
+                  : "Solo para mis productos propios.",
               href: siteConfig.approvedLinks.orbytia
             },
             {
               title: "Verifiko",
               text:
                 locale === "en"
-                  ? "A live platform with backend workflows, API checks and scoring logic."
-                  : "Producto más visible desarrollado bajo Orbytia.",
+                  ? "Verification product built under Orbytia."
+                  : "Producto de verificación dentro de Orbytia.",
               href: siteConfig.approvedLinks.verifiko
             }
           ].map((item) => (
@@ -205,13 +205,13 @@ export function HomePage({ locale }: HomePageProps) {
         <div className="max-w-4xl space-y-7 text-[1.02rem] leading-8 text-white/68">
           <p>
             {locale === "en"
-              ? "I work across interfaces, APIs, integrations and internal tools used in daily operations."
-              : "Mi trabajo se mueve entre la implementación y el criterio de producto. Construyo interfaces, integraciones y sistemas internos que tienen que responder bien en contextos reales de negocio, no solo en demos pulidas."}
+              ? "I build interfaces, APIs, integrations and internal tools for real operations."
+              : "Construyo interfaces, APIs, integraciones y herramientas internas para operaciones reales."}
           </p>
           <p>
             {locale === "en"
-              ? "Because I understand the business side too, I usually turn vague requirements into clear technical work."
-              : "Esa perspectiva no viene solo del trabajo de ingeniería, sino también de un recorrido previo en negocio, finanzas y comunicación, que me ayuda a traducir requisitos en software realmente útil."}
+              ? "I turn vague requirements into clear technical work."
+              : "Convierto requisitos difusos en trabajo técnico claro."}
           </p>
         </div>
       </Section>

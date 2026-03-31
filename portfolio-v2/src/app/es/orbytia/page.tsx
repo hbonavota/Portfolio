@@ -6,7 +6,7 @@ export const metadata = buildMetadata({
   locale: "es",
   pathname: "/es/orbytia",
   title: "Orbytia",
-  description: "La capa de ecosistema que conecta productos públicos, experimentos y dirección técnica."
+  description: "Estructura para mis productos y experimentos, separada del trabajo para clientes."
 });
 
 export default function Page() {
