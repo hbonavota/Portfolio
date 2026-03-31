@@ -42,13 +42,13 @@ export function CaseStudyPage({ locale, slug }: CaseStudyPageProps) {
           </div>
           <div className="surface-panel rounded-[1.9rem] p-6 md:p-7">
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-white/48">
-              {locale === "en" ? "Type" : "Categoría editorial"}
+              {locale === "en" ? "Type" : "Tipo"}
             </p>
             <p className="mt-4 text-base font-medium leading-7 text-white">{categoryLabels[study.category][locale]}</p>
           </div>
           <div className="surface-panel rounded-[1.9rem] p-6 md:p-7 sm:col-span-2">
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-white/48">
-              {locale === "en" ? "Public links" : "Enlaces públicos"}
+              {locale === "en" ? "Links" : "Enlaces"}
             </p>
             <div className="mt-4 flex flex-wrap gap-3">
               {study.publicLinks.map((item) => (
@@ -66,8 +66,8 @@ export function CaseStudyPage({ locale, slug }: CaseStudyPageProps) {
       </section>
 
       <Section
-        eyebrow={locale === "en" ? "Context" : "Overview"}
-        title={locale === "en" ? "What this project does" : "Contexto y enfoque"}
+        eyebrow={locale === "en" ? "Context" : "Contexto"}
+        title={locale === "en" ? "Project" : "Proyecto"}
       >
         <div className="max-w-4xl space-y-6 text-[1.02rem] leading-8 text-white/68">
           {study.overview[locale].map((paragraph) => (
@@ -77,8 +77,8 @@ export function CaseStudyPage({ locale, slug }: CaseStudyPageProps) {
       </Section>
 
       <Section
-        eyebrow={locale === "en" ? "Problem" : "Reto"}
-        title={locale === "en" ? "What needed to be solved" : "Qué debe demostrar este caso"}
+        eyebrow={locale === "en" ? "Need" : "Necesidad"}
+        title={locale === "en" ? "What had to work" : "Qué hacía falta"}
       >
         <div className="max-w-4xl space-y-6 text-[1.02rem] leading-8 text-white/68">
           {study.challenge[locale].map((paragraph) => (
@@ -88,8 +88,8 @@ export function CaseStudyPage({ locale, slug }: CaseStudyPageProps) {
       </Section>
 
       <Section
-        eyebrow={locale === "en" ? "Solution" : "Enfoque"}
-        title={locale === "en" ? "How I handled it" : "Cómo debe contarse el caso"}
+        eyebrow={locale === "en" ? "Work" : "Trabajo"}
+        title={locale === "en" ? "What I did" : "Qué hice"}
       >
         <div className="max-w-4xl space-y-6 text-[1.02rem] leading-8 text-white/68">
           {study.approach[locale].map((paragraph) => (
@@ -99,8 +99,8 @@ export function CaseStudyPage({ locale, slug }: CaseStudyPageProps) {
       </Section>
 
       <Section
-        eyebrow={locale === "en" ? "Key Points" : "Puntos clave"}
-        title={locale === "en" ? "What matters most" : "Anclajes editoriales"}
+        eyebrow={locale === "en" ? "Focus" : "Claves"}
+        title={locale === "en" ? "Key points" : "Puntos clave"}
       >
         <div className="grid gap-4 md:grid-cols-3">
           {study.highlights[locale].map((item) => (
@@ -113,7 +113,7 @@ export function CaseStudyPage({ locale, slug }: CaseStudyPageProps) {
 
       <Section
         eyebrow={locale === "en" ? "Result" : "Resultado"}
-        title={locale === "en" ? "What this case shows" : "Qué debe dejar la página"}
+        title={locale === "en" ? "What it shows" : "Qué muestra"}
       >
         <div className="max-w-4xl space-y-6 text-[1.02rem] leading-8 text-white/68">
           {study.outcome[locale].map((paragraph) => (

@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: PageProps) {
     locale: "es",
     pathname: `/es/trabajo/${slug}`,
     title: study ? study.title.es : "Caso",
-    description: study ? study.summary.es : "Caso público seleccionado."
+    description: study ? study.summary.es : "Caso seleccionado."
   });
 }
 

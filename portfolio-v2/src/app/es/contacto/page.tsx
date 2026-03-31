@@ -6,7 +6,7 @@ export const metadata = buildMetadata({
   locale: "es",
   pathname: "/es/contacto",
   title: "Contacto",
-  description: "Canales públicos para conversaciones serias sobre producto, integraciones y sistemas en producción."
+  description: "Contacto para plataformas, integraciones, backend y proyectos de WordPress avanzado."
 });
 
 export default function Page() {

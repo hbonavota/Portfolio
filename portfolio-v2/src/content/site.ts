@@ -29,8 +29,8 @@ export type CaseStudy = {
 export const siteConfig = {
   name: "Hernán Bonavota",
   description: {
-    en: "Software engineer and product engineer building reliable web platforms, integrations and production systems.",
-    es: "Software engineer y product engineer centrado en plataformas web fiables, integraciones y sistemas en producción."
+    en: "Freelance software engineer for web platforms, integrations and production systems.",
+    es: "Desarrollador freelance para plataformas web, integraciones y sistemas en producción."
   },
   domain: "https://hbonavota.com",
   portfolioDomains: ["https://hbonavota.com/", "https://hbonavota.es/"],
@@ -46,10 +46,10 @@ export const siteConfig = {
 } as const;
 
 export const categoryLabels: Record<Category, LocalizedText> = {
-  product: { en: "Product", es: "Producto" },
+  product: { en: "Own Product", es: "Producto propio" },
   "client-work": { en: "Client Work", es: "Proyectos para clientes" },
   lab: { en: "Lab", es: "Lab" },
-  ecosystem: { en: "Public Setup", es: "Ecosistema" }
+  ecosystem: { en: "Own Setup", es: "Estructura propia" }
 };
 
 export const navigation = {
@@ -71,93 +71,93 @@ export const homeContent = {
   en: {
     hero: {
       eyebrow: "Hernán Bonavota",
-      title: "I build and maintain platforms, integrations and backends for real operations.",
+      title: "Freelance software engineer for platforms, integrations and backend.",
       description:
-        "APIs, payments, user validation, WordPress and full-stack delivery for products already live in production.",
+        "APIs, payments, validation, WordPress and software in production.",
       primaryCta: { label: "See work", href: "/work" },
       secondaryCta: { label: "Contact me", href: "/contact" }
     },
     selectedWork: {
       eyebrow: "Selected Work",
-      title: "Real client work and production products.",
+      title: "Work built for real operations.",
       description:
-        "Each case shows the project context, the kind of platform involved and the part of the work I handled."
+        "Client projects, own products and production software."
     },
     capabilities: {
       eyebrow: "What I Build",
-      title: "Platforms, integrations and backend work built for reliability.",
+      title: "What I build.",
       description:
-        "I build systems that connect services, support operations and stay maintainable in production."
+        "Integrations, backend, frontend and WordPress."
     },
     experience: {
-      eyebrow: "Professional Experience",
-      title: "Production systems in high-traffic environments.",
+      eyebrow: "Current Work",
+      title: "Current work.",
       description:
-        "I currently work on systems where payments, ticketing, user validation and data consistency cannot fail."
+        "Ticketing, payments, validation and backend flows."
     },
     ecosystem: {
-      eyebrow: "Public Products",
-      title: "Product work alongside client projects.",
+      eyebrow: "Own Products",
+      title: "Own products, separate from client work.",
       description:
-        "I work under my own name. Orbytia is the label for my public product work. Verifiko is the live system in that group."
+        "Client work goes under my name. Orbytia is only for my own products."
     },
     about: {
       eyebrow: "About",
-      title: "I build software that has to work in production.",
+      title: "How I work.",
       description:
-        "I combine engineering with business context, so requirements turn into clear, buildable systems."
+        "Clear execution for software used in real operations."
     },
     contact: {
       eyebrow: "Contact",
-      title: "Need help with a platform, integration or backend project?",
+      title: "Need a developer for a real platform?",
       description:
-        "Use the links below if you need delivery, maintenance or product engineering for software already in use."
+        "Backend, integrations, WordPress or full-stack delivery."
     }
   },
   es: {
     hero: {
       eyebrow: "Hernán Bonavota",
-      title: "Software fiable para integraciones, plataformas transaccionales y sistemas críticos de negocio.",
+      title: "Desarrollador freelance para plataformas, integraciones y backend.",
       description:
-        "Construyo y mantengo sistemas donde la fiabilidad forma parte del trabajo. Eso incluye APIs, ticketing y pagos, flujos de validación de usuario, WordPress avanzado e implementación full-stack para plataformas de negocio en producción.",
+        "APIs, pagos, validación, WordPress y software en producción.",
       primaryCta: { label: "Ver trabajo", href: "/es/trabajo" },
       secondaryCta: { label: "Contactar", href: "/es/contacto" }
     },
     selectedWork: {
       eyebrow: "Trabajo destacado",
-      title: "Productos, proyectos para clientes y trabajo técnico con alcance claro y autoría real.",
+      title: "Trabajo para operaciones reales.",
       description:
-        "Cada caso se presenta con responsabilidad real, visibilidad pública y la categoría adecuada: producto, proyectos para clientes, ecosistema o lab."
+        "Proyectos para clientes, productos propios y software en producción."
     },
     capabilities: {
       eyebrow: "Qué construyo",
-      title: "Software orientado a integraciones, operaciones y ejecución técnica fiable.",
+      title: "Lo que construyo.",
       description:
-        "No se trata de enumerar tecnologías, sino de convertir requisitos de negocio en software que responda bien cuando se usa de verdad."
+        "Integraciones, backend, frontend y WordPress."
     },
     experience: {
-      eyebrow: "Experiencia profesional",
-      title: "Trabajo en producción en entornos exigentes y de alto tráfico.",
+      eyebrow: "Trabajo actual",
+      title: "Trabajo actual.",
       description:
-        "Además de mis propios productos, trabajo sobre sistemas donde la consistencia de datos, los flujos de validación, la fiabilidad transaccional y la calidad de integración forman parte del trabajo diario."
+        "Ticketing, pagos, validación y flujos backend."
     },
     ecosystem: {
-      eyebrow: "Ecosistema de marca",
-      title: "Una marca personal, un ecosistema técnico y un producto principal.",
+      eyebrow: "Productos propios",
+      title: "Productos propios, separados del trabajo para clientes.",
       description:
-        "Hernán Bonavota es la identidad principal. Orbytia da estructura al conjunto. Verifiko es el producto más visible dentro de ese sistema."
+        "El trabajo para clientes va bajo mi nombre. Orbytia queda solo para mis productos."
     },
     about: {
       eyebrow: "Sobre mí",
-      title: "Un perfil técnico definido por producto, negocio y capacidad de ejecución.",
+      title: "Cómo trabajo.",
       description:
-        "Mi recorrido entre software, negocio, finanzas y comunicación me ayuda a conectar la implementación con necesidades reales, en lugar de tratar el código como algo aislado."
+        "Ejecución clara para software que se usa en operaciones reales."
     },
     contact: {
       eyebrow: "Contacto",
-      title: "Disponible para conversaciones serias sobre productos, plataformas e integraciones.",
+      title: "¿Necesitas un desarrollador para una plataforma real?",
       description:
-        "Si el trabajo implica sistemas en producción, plataformas de negocio o software con muchas integraciones, los canales públicos de abajo son la vía adecuada para iniciar conversación."
+        "Backend, integraciones, WordPress o delivery full-stack."
     }
   }
 } as const;
@@ -165,38 +165,38 @@ export const homeContent = {
 export const capabilities = {
   en: [
     {
-      title: "API and integration work",
-      text: "Third-party integrations, internal tools and business workflows built to stay maintainable."
+      title: "Integrations and APIs",
+      text: "Services, internal tools and backend flows."
     },
     {
       title: "Transactional platforms",
-      text: "Payments, validation, user access and data flows that need to work under load."
+      text: "Payments, validation and user flows."
     },
     {
-      title: "Advanced WordPress builds",
-      text: "Custom WordPress builds for content-heavy businesses that need control and maintenance."
+      title: "Advanced WordPress",
+      text: "Custom builds that stay easy to manage."
     },
     {
-      title: "Full-stack delivery",
-      text: "Frontend, backend and workflow logic for platforms used by real teams."
+      title: "Backend and full-stack delivery",
+      text: "Frontend and backend for real operations."
     }
   ],
   es: [
     {
-      title: "Sistemas intensivos en integraciones",
-      text: "Software que conecta servicios, APIs y flujos operativos donde la fiabilidad importa más que la novedad."
+      title: "Integraciones y APIs",
+      text: "Servicios, herramientas internas y flujos backend."
     },
     {
       title: "Plataformas transaccionales",
-      text: "Implementación frontend y backend para plataformas que dependen de validaciones, lógica de pagos, consistencia de datos y recorridos de usuario fiables."
+      text: "Pagos, validaciones y recorridos de usuario."
     },
     {
       title: "WordPress avanzado",
-      text: "Trabajo CMS estructurado, implementación personalizada, arquitectura editorial y sistemas orientados a negocio que deben mantenerse bien en el tiempo."
+      text: "Desarrollos a medida fáciles de mantener."
     },
     {
-      title: "Ejecución orientada a negocio",
-      text: "Una forma práctica de construir software conectando requisitos de negocio, decisiones de producto y ejecución técnica."
+      title: "Backend y full-stack",
+      text: "Frontend y backend para operaciones reales."
     }
   ]
 } as const;
@@ -208,19 +208,17 @@ export const professionalExperience = {
     es: "Software Engineer / Product Engineer"
   },
   summary: {
-    en: "At Rezolve, I work on production platforms used by professional football clubs in LALIGA. The work includes ticketing, payments, user validation and API-driven backend flows.",
-    es: "En Rezolve trabajo sobre sistemas en producción utilizados por clubes de fútbol profesional dentro de contextos conectados al ecosistema LALIGA. El trabajo incluye plataformas de ticketing, integraciones de pago, flujos de validación de usuario, consistencia de datos y sistemas de negocio conectados por APIs."
+    en: "At Rezolve I work on ticketing, payments, validation and backend flows for high-traffic production systems.",
+    es: "En Rezolve trabajo con ticketing, pagos, validación y backend sobre sistemas en producción de alto tráfico."
   },
   notes: {
     en: [
-      "High-traffic systems with live transactional flows.",
-      "Work tied to club operations, ticket sales and API-connected platforms.",
-      "Engineering decisions shaped by real business and operational needs."
+      "High-traffic transactional systems.",
+      "Work tied to day-to-day operations."
     ],
     es: [
-      "Contextos transaccionales de alto tráfico donde la fiabilidad operativa importa.",
-      "Trabajo vinculado a entornos deportivos profesionales, operaciones de clubes y lógica de plataforma conectada por APIs.",
-      "Un perfil técnico reforzado por experiencia previa en negocio, finanzas y comunicación."
+      "Sistemas transaccionales de alto tráfico.",
+      "Trabajo ligado a operaciones reales."
     ]
   }
 } as const;
@@ -228,43 +226,43 @@ export const professionalExperience = {
 export const aboutPage = {
   en: {
     intro:
-      "I help companies build and maintain software that supports daily operations, not just demos.",
+      "I build software for companies that need execution, not just ideas.",
     sections: [
       {
         title: "How I work",
         body:
-          "I start with the business problem, reduce ambiguity early and build for maintainability, reliability and real usage."
+          "I reduce ambiguity early and focus on what needs to ship."
       },
       {
         title: "What I build",
         body:
-          "Most of my work sits around integrations, APIs, transactional flows, advanced WordPress and full-stack platform delivery."
+          "Integrations, backends, WordPress, internal tools and business platforms."
       },
       {
         title: "Why clients hire me",
         body:
-          "I can move between product needs, technical decisions and operational constraints without losing sight of what has to ship."
+          "I turn messy requirements into working software."
       }
     ]
   },
   es: {
     intro:
-      "Trabajo como software engineer y product engineer centrado en software fiable para plataformas orientadas a negocio, integraciones y sistemas en producción.",
+      "Construyo software para empresas que necesitan ejecución, no solo ideas.",
     sections: [
       {
-        title: "Cómo entiendo el software",
+        title: "Cómo trabajo",
         body:
-          "Me importan la estructura, la claridad operativa y la fiabilidad a largo plazo. Eso suele implicar entender primero la necesidad de negocio, reducir ambigüedad desde el principio y construir software que pueda mantenerse bajo uso real."
+          "Reduzco ambigüedad pronto y me centro en lo que hay que entregar."
       },
       {
-        title: "En qué trabajo",
+        title: "Qué construyo",
         body:
-          "Mi trabajo diario se mueve entre integraciones, APIs, flujos transaccionales, WordPress avanzado y delivery frontend + backend. El mejor encaje suele estar en plataformas que necesitan ejecución fiable, no un prototipo llamativo."
+          "Integraciones, backend, WordPress, herramientas internas y plataformas de negocio."
       },
       {
-        title: "Qué aporto además de código",
+        title: "Por qué me contratan",
         body:
-          "Mi recorrido previo por negocio, finanzas y comunicación me ayuda a conectar requisitos, decisiones técnicas y lo que una plataforma realmente necesita sostener en la práctica."
+          "Convierto requisitos desordenados en software que funciona."
       }
     ]
   }
@@ -273,43 +271,43 @@ export const aboutPage = {
 export const orbytiaPage = {
   en: {
     intro:
-      "Orbytia is the name I use to group public products and experiments that sit next to my client work.",
+      "Orbytia is the label for my own products.",
     sections: [
       {
         title: "What it is",
         body:
-          "It is not an agency or a vague studio label. It is a simple way to organize public work so products do not look like unrelated portfolio items."
+          "Own products and experiments."
       },
       {
-        title: "How it fits my work",
+        title: "How it fits",
         body:
-          "I still work under my own name. Orbytia only groups the public products and experiments that need their own context."
+          "Client work stays under my name."
       },
       {
-        title: "Why it helps",
+        title: "Why it matters",
         body:
-          "It makes products like Verifiko easier to understand because visitors can see where they belong and what kind of work they represent."
+          "It keeps product work separate from freelance work."
       }
     ]
   },
   es: {
     intro:
-      "Orbytia es la capa que utilizo para conectar productos, experimentos e iniciativas técnicas con una estructura más clara de la que permite un portfolio personal genérico.",
+      "Orbytia es la etiqueta para mis productos propios.",
     sections: [
       {
-        title: "Por qué existe",
+        title: "Qué es",
         body:
-          "Su objetivo es dar coherencia a trabajo público que, de otro modo, aparecería como una colección de proyectos desconectados. Crea espacio para productos, experimentos y dirección técnica bajo una misma capa."
+          "Productos propios y experimentos."
       },
       {
-        title: "Cómo se relaciona con mi marca personal",
+        title: "Cómo encaja",
         body:
-          "Hernán Bonavota sigue siendo la identidad profesional principal. Orbytia no la sustituye. La complementa al ordenar lo que construyo en público, especialmente cuando los productos necesitan una relación de ecosistema más clara."
+          "El trabajo para clientes sigue bajo mi nombre."
       },
       {
         title: "Por qué importa",
         body:
-          "Permite presentar Verifiko y futuras iniciativas con mejor contexto, sin forzar que cada producto aparezca como un elemento aislado dentro de una cuadrícula típica de portfolio."
+          "Separa el trabajo de producto del trabajo freelance."
       }
     ]
   }
@@ -317,14 +315,14 @@ export const orbytiaPage = {
 
 export const contactPage = {
   en: {
-    title: "Public links for project enquiries and technical conversations.",
+    title: "Project contact.",
     description:
-      "If you need help with a product, platform or integration, start with one of the public channels below."
+      "If you need help with software, integrations or backend work, write me here."
   },
   es: {
-    title: "Canales públicos para conversaciones serias sobre producto y software.",
+    title: "Contacto para proyectos.",
     description:
-      "Esta página se mantiene deliberadamente simple. Apunta solo a los canales públicos que tienen sentido para contacto profesional, conversaciones de producto y colaboración técnica."
+      "Si necesitas ayuda con software, integraciones o backend, puedes escribirme por aquí."
   }
 } as const;
 
@@ -336,12 +334,12 @@ export const caseStudies: CaseStudy[] = [
     pageRequired: true,
     title: { en: "Verifiko", es: "Verifiko" },
     strapline: {
-      en: "Document verification product for workflows where trust matters.",
-      es: "Un producto orientado a verificación desarrollado bajo el paraguas de Orbytia."
+      en: "Own product.",
+      es: "Producto propio."
     },
     summary: {
-      en: "A product built to make verification steps clearer, faster and easier to trust in real workflows.",
-      es: "Un caso de producto público centrado en confianza, validación y claridad operativa, presentado como trabajo de producto y no como una demo técnica."
+      en: "Verification flows, backend checks and product thinking.",
+      es: "Flujos de verificación, lógica backend y trabajo de producto."
     },
     role: {
       en: "Founder / Product Engineer",
@@ -349,46 +347,44 @@ export const caseStudies: CaseStudy[] = [
     },
     overview: {
       en: [
-        "Verifiko shows the kind of work I want to do more of: software that supports verification, reduces manual friction and gives users a clear process."
+        "Own product focused on trust and validation."
       ],
       es: [
-        "Verifiko es el producto público más claro del portfolio. Representa el tipo de trabajo con el que quiero estar asociado: pensamiento de producto, enfoque operativo claro y software construido alrededor de flujos reales."
+        "Producto propio centrado en confianza y validación."
       ]
     },
     challenge: {
       en: [
-        "The product has to make a sensitive step feel simple and trustworthy. If the flow is unclear, users hesitate and operations slow down."
+        "The flow had to feel clear from the first step."
       ],
       es: [
-        "El reto es comunicar un contexto de producto de forma convincente: no solo cómo se ve la interfaz, sino por qué la verificación, la estructura y la confianza deben tratarse como parte del propio producto."
+        "El flujo tenía que entenderse desde el primer paso."
       ]
     },
     approach: {
       en: [
-        "I focused on clear steps, product decisions that build trust and implementation that supports reliable day-to-day use, not just a polished interface."
+        "I simplified the path and supported it with backend logic."
       ],
       es: [
-        "El caso se plantea desde la intención de producto, el rol, la estructura del flujo y las decisiones técnicas que sostienen la fiabilidad. La tecnología importa, pero la página se mantiene anclada al razonamiento de producto."
+        "Simplifiqué el recorrido y lo apoyé con lógica backend."
       ]
     },
     highlights: {
       en: [
-        "Clear verification flow.",
-        "Trust-focused product decisions.",
-        "Built as a real public product."
+        "Verification flow.",
+        "Backend logic."
       ],
       es: [
-        "Narrativa de producto antes que narrativa de stack.",
-        "Lógica operativa y claridad de flujo.",
-        "Relación visible con Orbytia."
+        "Flujo de verificación.",
+        "Lógica backend."
       ]
     },
     outcome: {
       en: [
-        "The result is a public product case that shows how I approach software tied to trust, validation and real operations."
+        "Shows how I build product around trust and real use."
       ],
       es: [
-        "Verifiko debe leerse como un producto público creíble, con una lógica operativa coherente, no como un concepto sobredimensionado o relleno de portfolio."
+        "Muestra cómo construyo producto alrededor de confianza y uso real."
       ]
     },
     publicLinks: [
@@ -403,12 +399,12 @@ export const caseStudies: CaseStudy[] = [
     pageRequired: true,
     title: { en: "Orbytia", es: "Orbytia" },
     strapline: {
-      en: "Public brand structure for products and experiments.",
-      es: "La capa de ecosistema que conecta productos públicos, experimentos y dirección técnica."
+      en: "Own setup.",
+      es: "Estructura propia."
     },
     summary: {
-      en: "A simple page that shows how products and experiments connect, so the portfolio does not feel like a list of unrelated links.",
-      es: "Una capa técnica y editorial que da estructura al trabajo público sin aparentar ser algo más grande de lo que realmente es."
+      en: "Structure for my own products, separate from client work.",
+      es: "Estructura para mis productos, separada del trabajo para clientes."
     },
     role: {
       en: "Founder / Builder",
@@ -416,46 +412,44 @@ export const caseStudies: CaseStudy[] = [
     },
     overview: {
       en: [
-        "Orbytia helps explain how my public products relate to each other. It gives context to the work without pretending to be a large company."
+        "It explains where products like Verifiko fit."
       ],
       es: [
-        "Orbytia no se presenta como branding decorativo. Su función es crear coherencia entre productos públicos, experimentos y el portfolio personal."
+        "Explica dónde encajan productos como Verifiko."
       ]
     },
     challenge: {
       en: [
-        "Without a clear structure, products like Verifiko look isolated and harder to understand."
+        "Without it, product work and client work compete."
       ],
       es: [
-        "El principal reto es describir Orbytia con honestidad: útil como estructura, real como capa pública, pero sin inflar su escala ni convertirla en lenguaje vago de estudio."
+        "Sin ella, producto propio y trabajo para clientes se mezclan."
       ]
     },
     approach: {
       en: [
-        "I kept the language direct: Orbytia exists to group public work, show relationships between products and make the portfolio easier to navigate."
+        "My name is for client work. Orbytia is for own products."
       ],
       es: [
-        "La página se centra en propósito, relación entre piezas y alcance actual. Explica por qué existe Orbytia, qué sostiene hoy y por qué ese marco ayuda a que productos como Verifiko tengan más sentido."
+        "Trabajo con clientes bajo mi nombre. Orbytia queda para producto propio."
       ]
     },
     highlights: {
       en: [
-        "Clear purpose.",
-        "Direct link to my personal brand.",
-        "Useful context for public products."
+        "Own products.",
+        "Separate from client work."
       ],
       es: [
-        "Jerarquía de marca clara.",
-        "Vínculo directo con la marca personal.",
-        "Conexión explícita con Verifiko."
+        "Productos propios.",
+        "Separado del trabajo para clientes."
       ]
     },
     outcome: {
       en: [
-        "The page makes the public work easier to understand and keeps the portfolio cleaner for potential clients."
+        "It keeps the site easier to read."
       ],
       es: [
-        "Orbytia debe sentirse creíble, útil y apoyada en trabajo real, no en teatralidad de marca."
+        "Hace la web más fácil de entender."
       ]
     },
     publicLinks: [{ label: "Orbytia", href: siteConfig.approvedLinks.orbytia }]
@@ -467,12 +461,12 @@ export const caseStudies: CaseStudy[] = [
     pageRequired: true,
     title: { en: "Proyectar SL", es: "Proyectar SL" },
     strapline: {
-      en: "Client platform work for daily business operations.",
-      es: "Trabajo de plataforma para cliente presentado con claridad, contención y respeto por el alcance real."
+      en: "Client platform.",
+      es: "Plataforma para cliente."
     },
     summary: {
-      en: "A client platform built to support day-to-day work with pages and flows that are easy to use and maintain.",
-      es: "Un caso de plataforma orientada a negocio centrado en delivery práctico, estructura mantenible y un tipo de implementación que acompaña la operación del día a día."
+      en: "Business platform for day-to-day operations.",
+      es: "Plataforma de negocio para la operativa diaria."
     },
     role: {
       en: "Full-stack Developer / Web Platform Engineer",
@@ -480,46 +474,44 @@ export const caseStudies: CaseStudy[] = [
     },
     overview: {
       en: [
-        "This case shows client work in a real business context, where the platform needs to support operations instead of just looking good."
+        "Client work for a platform used day to day."
       ],
       es: [
-        "Este caso se presenta como un proyecto para cliente con alcance real. Es valioso porque muestra ejecución, estructura y delivery práctico sin difuminar la línea entre autoría técnica y propiedad del cliente."
+        "Trabajo para cliente sobre una plataforma de uso diario."
       ]
     },
     challenge: {
       en: [
-        "The platform had to be clear for users, practical for the business and maintainable over time."
+        "It had to be clear and easy to maintain."
       ],
       es: [
-        "El reto es explicar trabajo de ingeniería y plataforma con sentido manteniendo precisión sobre qué me corresponde como implementación y qué pertenece al cliente como negocio y propiedad del producto."
+        "Tenía que ser clara y fácil de mantener."
       ]
     },
     approach: {
       en: [
-        "I focused on platform structure, content organization, frontend and backend delivery, and decisions that made the system easier to run."
+        "I worked on structure, frontend and backend delivery."
       ],
       es: [
-        "La narrativa se centra en la estructura de la plataforma, la arquitectura de información, el delivery frontend y backend, y cualquier decisión de CMS o integración que mejorara la mantenibilidad."
+        "Trabajé la estructura y el delivery frontend y backend."
       ]
     },
     highlights: {
       en: [
-        "Built for daily use.",
-        "Clear information structure.",
+        "Business platform.",
         "Maintainable delivery."
       ],
       es: [
-        "Delivery profesional.",
-        "Estructura UX orientada a negocio.",
-        "Tratamiento respetuoso de proyectos para clientes."
+        "Plataforma de negocio.",
+        "Delivery mantenible."
       ]
     },
     outcome: {
       en: [
-        "The result is a client case that shows dependable delivery for a business platform in real use."
+        "Shows reliable execution for client work."
       ],
       es: [
-        "El caso debe leerse como trabajo creíble de delivery de plataforma: útil, concreto y profesionalmente presentado."
+        "Muestra ejecución fiable en trabajo para clientes."
       ]
     },
     publicLinks: [{ label: "Proyectar SL", href: siteConfig.approvedLinks.proyectar }]
@@ -531,12 +523,12 @@ export const caseStudies: CaseStudy[] = [
     pageRequired: true,
     title: { en: "Tu Próximo Seguro", es: "Tu Próximo Seguro" },
     strapline: {
-      en: "Client website built to improve trust and clarity.",
-      es: "Proyecto para cliente con foco en confianza, claridad y delivery web orientado a negocio."
+      en: "Client website.",
+      es: "Web para cliente."
     },
     summary: {
-      en: "A public business website designed to explain the offer quickly and reduce hesitation before contact.",
-      es: "Un caso orientado a cliente centrado en estructura de información, UX orientada a confianza e implementación práctica para una web pública de negocio."
+      en: "Business website built for trust and conversion.",
+      es: "Web de negocio centrada en confianza y conversión."
     },
     role: {
       en: "Web / Product Engineer",
@@ -544,46 +536,44 @@ export const caseStudies: CaseStudy[] = [
     },
     overview: {
       en: [
-        "This case shows how clear pages and trust-focused UX help a public website convert better in a business context."
+        "A public site where clarity directly affects contact."
       ],
       es: [
-        "Este caso es valioso porque muestra cómo la estructura, la claridad y la confianza afectan a una plataforma pública donde el usuario necesita entender una propuesta con rapidez y seguridad."
+        "Una web pública donde la claridad afecta al contacto."
       ]
     },
     challenge: {
       en: [
-        "Users needed to understand the offer fast and feel confident enough to take the next step."
+        "Users had to understand the offer fast."
       ],
       es: [
-        "El reto editorial es mostrar una implementación cuidada y decisiones con criterio sin exagerar un impacto de negocio que pertenece al cliente ni apropiarse de sus resultados."
+        "El usuario tenía que entender la propuesta rápido."
       ]
     },
     approach: {
       en: [
-        "I worked on content layout, interface decisions and frontend delivery that made the site easier to understand and more credible."
+        "I focused on structure, trust signals and frontend delivery."
       ],
       es: [
-        "El caso se centra en una UX orientada a confianza, estructura de contenido, decisiones frontend prácticas y un tipo de delivery web que apoya la comunicación de negocio, no solo el acabado visual."
+        "Lo enfoqué en estructura, señales de confianza y delivery frontend."
       ]
     },
     highlights: {
       en: [
-        "Clear offer presentation.",
-        "Trust-focused UX.",
-        "Built for real business communication."
+        "Clear offer.",
+        "Trust-focused UX."
       ],
       es: [
-        "Arquitectura de información.",
-        "Decisiones de interfaz orientadas a confianza.",
-        "Contexto práctico de conversión."
+        "Oferta clara.",
+        "UX orientada a confianza."
       ]
     },
     outcome: {
       en: [
-        "The finished case shows practical web delivery where clarity directly supports conversion."
+        "Shows web delivery where clarity helps conversion."
       ],
       es: [
-        "La página final debe sentirse aterrizada, fiable y profesionalmente contenida."
+        "Muestra delivery web donde la claridad ayuda a convertir."
       ]
     },
     publicLinks: [
@@ -597,12 +587,12 @@ export const caseStudies: CaseStudy[] = [
     pageRequired: true,
     title: { en: "Lunetia", es: "Lunetia" },
     strapline: {
-      en: "Early-stage product exploration presented honestly.",
-      es: "Una iniciativa experimental presentada con honestidad y disciplina editorial."
+      en: "Experimental work.",
+      es: "Trabajo experimental."
     },
     summary: {
-      en: "An experimental project used to test ideas, interface directions and early product concepts without presenting it as a finished business.",
-      es: "Una iniciativa de laboratorio utilizada para probar ideas, direcciones de interfaz y enfoque de producto sin fingir ser un producto comercial plenamente consolidado."
+      en: "Early product exploration kept in the lab category.",
+      es: "Exploración de producto en fase temprana dentro del lab."
     },
     role: {
       en: "Concept / Experimental Builder",
@@ -610,46 +600,44 @@ export const caseStudies: CaseStudy[] = [
     },
     overview: {
       en: [
-        "Lunetia stays in the portfolio as lab work. Its value is in how ideas are explored and shaped at an early stage."
+        "Early exploration, not a finished product."
       ],
       es: [
-        "Lunetia debe presentarse con claridad como trabajo experimental. Su valor viene de la exploración, del enfoque y del aprendizaje, no de aparentar más madurez de la que hoy tiene."
+        "Exploración temprana, no un producto terminado."
       ]
     },
     challenge: {
       en: [
-        "The challenge was to make the experiment useful to a client or recruiter without overselling its maturity."
+        "It needed to stay honest about its stage."
       ],
       es: [
-        "El reto es mantener una narrativa honesta y, al mismo tiempo, hacer que el caso sea útil dentro del portfolio como evidencia de curiosidad, criterio y pensamiento de producto en fase temprana."
+        "Tenía que ser honesto con su etapa."
       ]
     },
     approach: {
       en: [
-        "I kept the scope simple: early exploration, interface direction and room to test ideas before committing to a full product."
+        "I kept the scope small and exploratory."
       ],
       es: [
-        "La página debe enfatizar exploración, criterio de interfaz y capacidad para dar forma a ideas en fase temprana sin venderlas de más."
+        "Mantuve un alcance pequeño y exploratorio."
       ]
     },
     highlights: {
       en: [
-        "Early-stage exploration.",
-        "Interface direction.",
+        "Early exploration.",
         "Honest scope."
       ],
       es: [
-        "Honestidad editorial.",
-        "Enfoque conceptual.",
-        "Espacio para crecer."
+        "Exploración temprana.",
+        "Alcance honesto."
       ]
     },
     outcome: {
       en: [
-        "It shows how I explore and shape early ideas without pretending they are more mature than they are."
+        "Shows how I shape ideas at an early stage."
       ],
       es: [
-        "Lunetia debe reforzar el portfolio como caso de laboratorio con criterio, no debilitarlo sonando como un negocio ya terminado."
+        "Muestra cómo doy forma a ideas en fase temprana."
       ]
     },
     publicLinks: [{ label: "Lunetia", href: siteConfig.approvedLinks.lunetia }]

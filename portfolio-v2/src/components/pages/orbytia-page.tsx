@@ -18,8 +18,8 @@ export function OrbytiaPage({ locale }: OrbytiaPageProps) {
         eyebrow="Orbytia"
         title={
           locale === "en"
-            ? "How my public products are organized."
-            : "La capa de ecosistema detrás de productos, iniciativas y dirección técnica."
+            ? "Own products."
+            : "Productos propios."
         }
         description={content.intro}
       >
@@ -36,8 +36,8 @@ export function OrbytiaPage({ locale }: OrbytiaPageProps) {
         <div className="surface-accent rounded-[2rem] p-7 md:p-8">
           <p className="max-w-[42rem] text-[0.98rem] leading-7 text-white/74">
             {locale === "en"
-              ? "These are the only public links I use for this part of the work."
-              : "Los enlaces públicos asociados al ecosistema se mantienen intencionadamente limitados y aprobados."}
+              ? "Relevant links."
+              : "Enlaces relevantes."}
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
