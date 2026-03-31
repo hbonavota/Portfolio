@@ -18,8 +18,8 @@ export function OrbytiaPage({ locale }: OrbytiaPageProps) {
         eyebrow="Orbytia"
         title={
           locale === "en"
-            ? "Services, automation and applied AI."
-            : "Servicios, automatización e IA aplicada."
+            ? "Separate line for consulting, software, automation and applied AI."
+            : "Línea separada para consultoría, software, automatización e IA aplicada."
         }
         description={content.intro}
       >
@@ -36,8 +36,8 @@ export function OrbytiaPage({ locale }: OrbytiaPageProps) {
         <div className="surface-accent rounded-[2rem] p-7 md:p-8">
           <p className="max-w-[42rem] text-[0.98rem] leading-7 text-white/74">
             {locale === "en"
-              ? "Relevant links."
-              : "Enlaces relevantes."}
+              ? "Relevant links for context."
+              : "Enlaces de contexto."}
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
