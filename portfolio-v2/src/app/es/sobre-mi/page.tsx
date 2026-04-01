@@ -6,7 +6,7 @@ export const metadata = buildMetadata({
   locale: "es",
   pathname: "/es/sobre-mi",
   title: "Sobre mí",
-  description: "Ingeniero de software que convierte necesidades ambiguas en ejecución técnica clara."
+  description: "Ingeniero de software que trabaja entre requisitos de cliente, decisiones técnicas y entrega de punta a punta."
 });
 
 export default function Page() {

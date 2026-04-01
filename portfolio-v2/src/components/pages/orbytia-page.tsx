@@ -18,8 +18,8 @@ export function OrbytiaPage({ locale }: OrbytiaPageProps) {
         eyebrow="Orbytia"
         title={
           locale === "en"
-            ? "Separate line for consulting, software, automation and applied AI."
-            : "Línea separada para consultoría, software, automatización e IA aplicada."
+            ? "Secondary consulting context for selected client work."
+            : "Contexto secundario de consultoría para parte del trabajo con clientes."
         }
         description={content.intro}
       >
@@ -36,8 +36,8 @@ export function OrbytiaPage({ locale }: OrbytiaPageProps) {
         <div className="surface-accent rounded-[2rem] p-7 md:p-8">
           <p className="max-w-[42rem] text-[0.98rem] leading-7 text-white/74">
             {locale === "en"
-              ? "Relevant links for context."
-              : "Enlaces de contexto."}
+              ? "Relevant links if you are looking for service context rather than the main portfolio."
+              : "Enlaces relevantes si buscas contexto de servicios y no el portfolio principal."}
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link

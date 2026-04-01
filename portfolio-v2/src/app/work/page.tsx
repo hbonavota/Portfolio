@@ -6,7 +6,7 @@ export const metadata = buildMetadata({
   locale: "en",
   pathname: "/work",
   title: "Work",
-  description: "Selected case studies across client projects, product work and exploratory projects."
+  description: "Case studies on ticketing, member validation, concurrency control and product work."
 });
 
 export default function Page() {
