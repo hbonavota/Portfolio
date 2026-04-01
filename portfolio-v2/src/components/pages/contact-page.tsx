@@ -20,7 +20,7 @@ export function ContactPage({ locale }: ContactPageProps) {
     {
       label: "Orbytia",
       href: siteConfig.approvedLinks.orbytia,
-      kicker: locale === "en" ? "Service enquiries" : "Consultas de servicios"
+      kicker: locale === "en" ? "Services only" : "Solo servicios"
     }
   ];
 

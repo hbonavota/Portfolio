@@ -11,8 +11,8 @@ export function Footer({ locale }: FooterProps) {
   const externalLabel = locale === "en" ? "External" : "Externo";
   const bottomLine =
     locale === "en"
-      ? "Platforms, integrations, backend systems and product development."
-      : "Plataformas, integraciones, sistemas backend y desarrollo de producto.";
+      ? "Ticketing portals, integrations, backend systems and operational product work."
+      : "Portales de ticketing, integraciones, sistemas backend y trabajo de producto orientado a operación.";
 
   return (
     <footer className="border-t border-white/8 bg-slate-950/92">
@@ -23,13 +23,13 @@ export function Footer({ locale }: FooterProps) {
           </p>
           <h2 className="max-w-lg text-[1.72rem] font-semibold leading-[1.08] tracking-[-0.04em] text-white sm:text-[1.86rem]">
             {locale === "en"
-              ? "Software engineer for platforms, integrations and backend systems."
-              : "Ingeniero de software para plataformas, integraciones y sistemas backend."}
+              ? "Software engineer for ticketing portals, integrations and backend systems."
+              : "Ingeniero de software para portales de ticketing, integraciones y sistemas backend."}
           </h2>
           <p className="max-w-lg text-[0.95rem] leading-8 text-white/58">
             {locale === "en"
-              ? "Open to roles, collaborations and technical conversations."
-              : "Abierto a oportunidades, colaboraciones y conversaciones técnicas."}
+              ? "Open to engineering roles and technical conversations."
+              : "Abierto a roles de ingeniería y conversaciones técnicas."}
           </p>
         </div>
         <div className="space-y-5 lg:pl-2">

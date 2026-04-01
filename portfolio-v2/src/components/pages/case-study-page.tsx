@@ -46,28 +46,30 @@ export function CaseStudyPage({ locale, slug }: CaseStudyPageProps) {
             </p>
             <p className="mt-4 text-base font-medium leading-7 text-white">{categoryLabels[study.category][locale]}</p>
           </div>
-          <div className="surface-panel rounded-[1.9rem] p-6 md:p-7 sm:col-span-2">
-            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-white/48">
-              {locale === "en" ? "Links" : "Enlaces"}
-            </p>
-            <div className="mt-4 flex flex-wrap gap-3">
-              {study.publicLinks.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="rounded-full border border-cyan-300/24 bg-cyan-300/10 px-4 py-2 text-sm font-semibold text-cyan-100 transition hover:border-cyan-200/40 hover:bg-cyan-300/16"
-                >
-                  {item.label}
-                </Link>
-              ))}
+          {study.publicLinks.length > 0 ? (
+            <div className="surface-panel rounded-[1.9rem] p-6 md:p-7 sm:col-span-2">
+              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-white/48">
+                {locale === "en" ? "Links" : "Enlaces"}
+              </p>
+              <div className="mt-4 flex flex-wrap gap-3">
+                {study.publicLinks.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="rounded-full border border-cyan-300/24 bg-cyan-300/10 px-4 py-2 text-sm font-semibold text-cyan-100 transition hover:border-cyan-200/40 hover:bg-cyan-300/16"
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
             </div>
-          </div>
+          ) : null}
         </div>
       </section>
 
       <Section
         eyebrow={locale === "en" ? "Context" : "Contexto"}
-        title={locale === "en" ? "Project" : "Proyecto"}
+        title={locale === "en" ? "Context" : "Contexto"}
       >
         <div className="max-w-4xl space-y-6 text-[1.02rem] leading-8 text-white/68">
           {study.overview[locale].map((paragraph) => (
@@ -77,8 +79,8 @@ export function CaseStudyPage({ locale, slug }: CaseStudyPageProps) {
       </Section>
 
       <Section
-        eyebrow={locale === "en" ? "Need" : "Necesidad"}
-        title={locale === "en" ? "What had to work" : "Qué hacía falta"}
+        eyebrow={locale === "en" ? "Problem" : "Problema"}
+        title={locale === "en" ? "Problem and constraints" : "Problema y restricciones"}
       >
         <div className="max-w-4xl space-y-6 text-[1.02rem] leading-8 text-white/68">
           {study.challenge[locale].map((paragraph) => (
@@ -88,8 +90,8 @@ export function CaseStudyPage({ locale, slug }: CaseStudyPageProps) {
       </Section>
 
       <Section
-        eyebrow={locale === "en" ? "Work" : "Trabajo"}
-        title={locale === "en" ? "What I did" : "Qué hice"}
+        eyebrow={locale === "en" ? "Approach" : "Enfoque"}
+        title={locale === "en" ? "Approach and technical decisions" : "Enfoque y decisiones técnicas"}
       >
         <div className="max-w-4xl space-y-6 text-[1.02rem] leading-8 text-white/68">
           {study.approach[locale].map((paragraph) => (
@@ -99,8 +101,8 @@ export function CaseStudyPage({ locale, slug }: CaseStudyPageProps) {
       </Section>
 
       <Section
-        eyebrow={locale === "en" ? "Focus" : "Claves"}
-        title={locale === "en" ? "Key points" : "Puntos clave"}
+        eyebrow={locale === "en" ? "Challenges" : "Retos"}
+        title={locale === "en" ? "Challenges" : "Retos"}
       >
         <div className="grid gap-4 md:grid-cols-3">
           {study.highlights[locale].map((item) => (
@@ -112,8 +114,8 @@ export function CaseStudyPage({ locale, slug }: CaseStudyPageProps) {
       </Section>
 
       <Section
-        eyebrow={locale === "en" ? "Result" : "Resultado"}
-        title={locale === "en" ? "What it shows" : "Qué muestra"}
+        eyebrow={locale === "en" ? "Outcome" : "Resultado"}
+        title={locale === "en" ? "Outcome" : "Resultado"}
       >
         <div className="max-w-4xl space-y-6 text-[1.02rem] leading-8 text-white/68">
           {study.outcome[locale].map((paragraph) => (

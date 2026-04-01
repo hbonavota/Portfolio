@@ -16,8 +16,8 @@ export function AboutPage({ locale }: AboutPageProps) {
         eyebrow={locale === "en" ? "About" : "Sobre mí"}
         title={
           locale === "en"
-            ? "How I work with teams and ambiguity."
-            : "Cómo trabajo con equipos y contextos ambiguos."
+            ? "How I work across client needs, technical decisions and delivery."
+            : "Cómo trabajo entre necesidades de cliente, decisiones técnicas y entrega."
         }
         description={content.intro}
       >

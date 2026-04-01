@@ -29,8 +29,8 @@ export type CaseStudy = {
 export const siteConfig = {
   name: "Hernán Bonavota",
   description: {
-    en: "Software engineer focused on platforms, integrations, backend systems and product development.",
-    es: "Ingeniero de software enfocado en plataformas, integraciones, sistemas backend y desarrollo de producto."
+    en: "Software engineer focused on ticketing portals, integrations, backend systems and operational product work.",
+    es: "Ingeniero de software enfocado en portales de ticketing, integraciones, sistemas backend y trabajo de producto orientado a operación."
   },
   domain: "https://hbonavota.com",
   portfolioDomains: ["https://hbonavota.com/", "https://hbonavota.es/"],
@@ -49,7 +49,7 @@ export const categoryLabels: Record<Category, LocalizedText> = {
   product: { en: "Product", es: "Producto" },
   "client-work": { en: "Client Project", es: "Trabajo para clientes" },
   lab: { en: "Lab", es: "Lab" },
-  ecosystem: { en: "Consulting Line", es: "Línea de consultoría" }
+  ecosystem: { en: "Secondary Context", es: "Contexto secundario" }
 };
 
 export const navigation = {
@@ -71,93 +71,93 @@ export const homeContent = {
   en: {
     hero: {
       eyebrow: "Hernán Bonavota",
-      title: "Software engineer for platforms, integrations and backend systems.",
+      title: "Software engineer for ticketing portals, integrations and backend systems.",
       description:
-        "I build and improve software that has to hold up in real operations.",
+        "I work across ticketing, member validation, data flows and infrastructure where failures have direct operational cost.",
       primaryCta: { label: "See work", href: "/work" },
       secondaryCta: { label: "Contact", href: "/contact" }
     },
     selectedWork: {
       eyebrow: "Selected Work",
-      title: "Work grounded in real operations.",
+      title: "Case studies from production work.",
       description:
-        "Short case studies focused on the project, the need and my role."
+        "Ticketing, member validation, concurrency control and product work, with concrete scope and decisions."
     },
     capabilities: {
-      eyebrow: "What I Build",
-      title: "What I build most often.",
+      eyebrow: "What I Cover",
+      title: "What I usually cover.",
       description:
-        "Platforms, integrations, operational tools and websites that have to work."
+        "Ticketing portals, integrations, data validation, WordPress, AWS and end-to-end implementation."
     },
     experience: {
       eyebrow: "Current Work",
-      title: "Current production work.",
+      title: "Current production scope.",
       description:
-        "Today I work on ticketing, payments, validation and backend flows."
+        "Today I work on ticketing, member validation, queueing, forms and infrastructure."
     },
     ecosystem: {
       eyebrow: "Professional Context",
-      title: "Where Orbytia fits.",
+      title: "Where Orbytia sits.",
       description:
-        "This portfolio is my main professional profile. Orbytia appears here only as the separate line for consulting, automation, applied AI and related work."
+        "Hernán Bonavota is the main professional profile. Orbytia stays as secondary consulting context, not the main hiring path."
     },
     about: {
       eyebrow: "About",
-      title: "How I work.",
+      title: "How I operate.",
       description:
-        "Technical work with business sense and clear communication."
+        "End-to-end delivery, technical judgment and direct work with clients and teams."
     },
     contact: {
       eyebrow: "Contact",
-      title: "Open to roles, collaborations and technical conversations.",
+      title: "Open to engineering roles and technical conversations.",
       description:
-        "Best for recruiters, hiring managers or teams evaluating fit. Orbytia stays as the separate route for service enquiries."
+        "LinkedIn is the best first contact for recruiters and hiring managers. Orbytia stays only as the separate route for service enquiries."
     }
   },
   es: {
     hero: {
       eyebrow: "Hernán Bonavota",
-      title: "Ingeniero de software para plataformas, integraciones y sistemas backend.",
+      title: "Ingeniero de software para portales de ticketing, integraciones y sistemas backend.",
       description:
-        "Construyo y mejoro software que tiene que responder bien en operaciones reales.",
+        "Trabajo sobre ticketing, validación de socios, flujos de datos e infraestructura donde un fallo tiene coste operativo directo.",
       primaryCta: { label: "Ver trabajo", href: "/es/trabajo" },
       secondaryCta: { label: "Contacto", href: "/es/contacto" }
     },
     selectedWork: {
       eyebrow: "Trabajo destacado",
-      title: "Trabajo ligado a operaciones reales.",
+      title: "Casos de trabajo en producción.",
       description:
-        "Casos breves centrados en el proyecto, la necesidad y mi papel."
+        "Ticketing, validación de socios, control de concurrencia y producto, con alcance y decisiones concretas."
     },
     capabilities: {
-      eyebrow: "Qué construyo",
-      title: "Lo que construyo con más frecuencia.",
+      eyebrow: "Qué cubro",
+      title: "Lo que suelo cubrir.",
       description:
-        "Plataformas, integraciones, herramientas operativas y webs que tienen que funcionar."
+        "Portales de ticketing, integraciones, validación de datos, WordPress, AWS e implementación de punta a punta."
     },
     experience: {
       eyebrow: "Trabajo actual",
-      title: "Trabajo actual en producción.",
+      title: "Alcance actual en producción.",
       description:
-        "Hoy trabajo con ticketing, pagos, validación y flujos backend."
+        "Hoy trabajo con ticketing, validación de socios, colas, formularios e infraestructura."
     },
     ecosystem: {
       eyebrow: "Contexto profesional",
-      title: "Dónde encaja Orbytia.",
+      title: "Dónde queda Orbytia.",
       description:
-        "Este portfolio es mi perfil profesional principal. Orbytia aparece aquí solo como línea separada para consultoría, automatización, IA aplicada y trabajo relacionado."
+        "Hernán Bonavota es el perfil profesional principal. Orbytia queda como contexto de consultoría secundario, no como la vía principal de contratación."
     },
     about: {
       eyebrow: "Sobre mí",
-      title: "Cómo trabajo.",
+      title: "Cómo opero.",
       description:
-        "Trabajo técnico con sentido de negocio y comunicación clara."
+        "Entrega de punta a punta, criterio técnico y trabajo directo con clientes y equipos."
     },
     contact: {
       eyebrow: "Contacto",
-      title: "Abierto a oportunidades, colaboraciones y conversaciones técnicas.",
+      title: "Abierto a roles de ingeniería y conversaciones técnicas.",
       description:
-        "Es la mejor vía para recruiters, hiring managers o equipos que quieran valorar encaje. Orbytia queda como canal separado para consultas de servicios."
+        "LinkedIn es la mejor vía de primer contacto para recruiters y hiring managers. Orbytia queda solo como canal separado para consultas de servicios."
     }
   }
 } as const;
@@ -165,38 +165,38 @@ export const homeContent = {
 export const capabilities = {
   en: [
     {
-      title: "Integrations and APIs",
-      text: "APIs, third-party services and internal flows."
+      title: "Ticketing and member portals",
+      text: "Sales, validation, access and account flows tied to club operations."
     },
     {
-      title: "Transactional platforms",
-      text: "Payments, validation and user access."
+      title: "Integrations and data validation",
+      text: "LALIGA APIs, legacy normalization and mandatory data update flows."
     },
     {
-      title: "Advanced WordPress",
-      text: "Custom WordPress for teams that need control."
+      title: "WordPress under operational load",
+      text: "Custom plugins and frontend integrations where business teams need direct control."
     },
     {
-      title: "Backend and full-stack development",
-      text: "Frontend and backend connected to real operations."
+      title: "AWS and end-to-end delivery",
+      text: "Frontend, backend, infrastructure and release work without waiting on internal handoffs."
     }
   ],
   es: [
     {
-      title: "Integraciones y APIs",
-      text: "APIs, servicios externos y flujos internos."
+      title: "Portales de ticketing y socios",
+      text: "Venta, validación, acceso y flujos de cuenta ligados a la operativa del club."
     },
     {
-      title: "Plataformas transaccionales",
-      text: "Pagos, validaciones y acceso de usuarios."
+      title: "Integraciones y validación de datos",
+      text: "APIs de LALIGA, normalización de legacy y flujos obligatorios de actualización de datos."
     },
     {
-      title: "WordPress avanzado",
-      text: "WordPress a medida para equipos que necesitan control."
+      title: "WordPress bajo carga operativa",
+      text: "Plugins a medida e integraciones frontend donde el equipo de negocio necesita control directo."
     },
     {
-      title: "Backend y full-stack",
-      text: "Frontend y backend conectados a operaciones reales."
+      title: "AWS y entrega de punta a punta",
+      text: "Frontend, backend, infraestructura y puesta en producción sin depender de terceros internos."
     }
   ]
 } as const;
@@ -208,17 +208,19 @@ export const professionalExperience = {
     es: "Software Engineer / Product Engineer"
   },
   summary: {
-    en: "At Rezolve I work on ticketing, payments, validation and backend flows in high-traffic production systems tied to day-to-day club operations.",
-    es: "En Rezolve trabajo con ticketing, pagos, validación y flujos backend sobre sistemas en producción de alto tráfico ligados a la operativa diaria del club."
+    en: "At Rezolve I work on ticketing portals, member validation, queueing, data update flows and AWS-backed operations for clubs in professional football.",
+    es: "En Rezolve trabajo sobre portales de ticketing, validación de socios, colas, flujos de actualización de datos y operación sobre AWS para clubes de fútbol profesional."
   },
   notes: {
     en: [
-      "High-traffic transactional systems.",
-      "Work tied to day-to-day club operations."
+      "Client-facing work from discovery and solution definition to estimation, demo and production rollout.",
+      "LALIGA integrations for validation and ticketing operations.",
+      "AWS, Nginx, SSL and production operations without relying on internal platform teams."
     ],
     es: [
-      "Sistemas transaccionales de alto tráfico.",
-      "Trabajo ligado a la operativa diaria de un club."
+      "Trabajo directo con cliente desde relevamiento y definición de solución hasta estimación, demo y salida a producción.",
+      "Integraciones con LALIGA para validación y operación de ticketing.",
+      "AWS, Nginx, SSL y operación en producción sin depender de equipos internos de plataforma."
     ]
   }
 } as const;
@@ -226,43 +228,43 @@ export const professionalExperience = {
 export const aboutPage = {
   en: {
     intro:
-      "I usually add the most value when a team needs someone who can understand the problem, bring structure to it and move execution forward.",
+      "I tend to add the most value when a project needs one person to move between client requirements, technical decisions and implementation without losing the thread.",
     sections: [
       {
-        title: "How I work",
+        title: "End-to-end ownership",
         body:
-          "I listen first, ask the right questions and turn vague needs into concrete steps."
+          "I work directly with clients to gather use cases, define scope, estimate the work, implement it, demo it and close delivery."
       },
       {
-        title: "What teams value",
+        title: "Technical range",
         body:
-          "Technical judgment, product sense and communication that works with non-technical people too."
+          "Frontend is where I move fastest, but I regularly cover backend, integrations, WordPress, AWS and production debugging when the project needs it."
       },
       {
-        title: "What that produces",
+        title: "Operating style",
         body:
-          "That usually leads to clearer scope, better decisions and software that is easier to ship and maintain."
+          "I prefer concrete constraints, explicit trade-offs and solutions that a team can maintain after launch."
       }
     ]
   },
   es: {
     intro:
-      "Suelo aportar más valor cuando un equipo necesita a alguien que entienda el problema, le dé estructura y ayude a empujar la ejecución.",
+      "Suelo aportar más valor cuando un proyecto necesita a una persona capaz de moverse entre requisitos de cliente, decisiones técnicas e implementación sin perder el hilo.",
     sections: [
       {
-        title: "Cómo trabajo",
+        title: "Responsabilidad de punta a punta",
         body:
-          "Primero escucho, hago las preguntas correctas y convierto necesidades difusas en pasos concretos."
+          "Trabajo directamente con clientes para relevar casos de uso, definir alcance, estimar, implementar, hacer la demo y cerrar la entrega."
       },
       {
-        title: "Qué valoran los equipos",
+        title: "Rango técnico",
         body:
-          "Criterio técnico, visión de producto y una comunicación que también funciona con perfiles no técnicos."
+          "El frontend es donde me muevo con más soltura, pero cubro backend, integraciones, WordPress, AWS y debugging en producción cuando el proyecto lo exige."
       },
       {
-        title: "Lo que eso produce",
+        title: "Forma de trabajo",
         body:
-          "Eso suele traducirse en mejor enfoque, mejores decisiones y software más fácil de lanzar y mantener."
+          "Prefiero restricciones concretas, trade-offs explícitos y soluciones que un equipo pueda mantener después del lanzamiento."
       }
     ]
   }
@@ -271,43 +273,43 @@ export const aboutPage = {
 export const orbytiaPage = {
   en: {
     intro:
-      "Orbytia is the separate line for consulting, software, automation and applied AI for clients.",
+      "Orbytia is the separate consulting context around part of my work. It is not the main track of this portfolio, which stays centered on my engineering profile.",
     sections: [
       {
-        title: "What it is",
+        title: "What it covers",
         body:
-          "A separate consulting line, not the main focus of this portfolio."
+          "Selected consulting work in custom software, automation and applied AI."
       },
       {
-        title: "How it fits",
+        title: "How it relates",
         body:
-          "My main professional identity here is still Hernán Bonavota."
+          "It explains part of the client work around my profile without replacing it."
       },
       {
-        title: "Why it appears here",
+        title: "When it matters",
         body:
-          "It helps explain the consulting context around part of my work and the initiatives that sit next to my personal profile."
+          "It matters for service enquiries. Recruiting conversations should stay on the main portfolio and LinkedIn."
       }
     ]
   },
   es: {
     intro:
-      "Orbytia es la línea separada para consultoría, software, automatización e IA aplicada para clientes.",
+      "Orbytia es el contexto de consultoría separado alrededor de parte de mi trabajo. No es la vía principal de este portfolio, que sigue centrado en mi perfil de ingeniería.",
     sections: [
       {
-        title: "Qué es",
+        title: "Qué cubre",
         body:
-          "Una línea de consultoría separada, no el foco principal de este portfolio."
+          "Trabajo puntual de consultoría en software a medida, automatización e IA aplicada."
       },
       {
-        title: "Cómo encaja",
+        title: "Cómo se relaciona",
         body:
-          "Mi identidad profesional principal aquí sigue siendo Hernán Bonavota."
+          "Aporta contexto sobre parte del trabajo con clientes, pero no sustituye al perfil principal."
       },
       {
-        title: "Por qué aparece aquí",
+        title: "Cuándo importa",
         body:
-          "Ayuda a explicar el contexto de consultoría alrededor de parte de mi trabajo y las iniciativas que conviven con mi perfil personal."
+          "Importa para consultas de servicios. Las conversaciones de recruiting deberían quedarse en el portfolio principal y LinkedIn."
       }
     ]
   }
@@ -315,14 +317,14 @@ export const orbytiaPage = {
 
 export const contactPage = {
   en: {
-    title: "Open to roles, collaborations and technical conversations.",
+    title: "Open to engineering roles and technical conversations.",
     description:
-      "For roles, collaborations or technical conversations, LinkedIn is the best first contact. Orbytia is only for service enquiries."
+      "For roles and technical conversations, LinkedIn is the best first contact. Orbytia is only for service enquiries."
   },
   es: {
-    title: "Abierto a oportunidades, colaboraciones y conversaciones técnicas.",
+    title: "Abierto a roles de ingeniería y conversaciones técnicas.",
     description:
-      "Para oportunidades, colaboraciones o conversaciones técnicas, LinkedIn es el mejor primer contacto. Orbytia queda solo para consultas de servicios."
+      "Para roles y conversaciones técnicas, LinkedIn es el mejor primer contacto. Orbytia queda solo para consultas de servicios."
   }
 } as const;
 
@@ -338,8 +340,8 @@ export const caseStudies: CaseStudy[] = [
       es: "Producto de ciberseguridad."
     },
     summary: {
-      en: "Cybersecurity product for analyzing suspicious URLs and surfacing risk signals.",
-      es: "Producto de ciberseguridad para analizar URLs sospechosas y mostrar señales de riesgo."
+      en: "Own product for inspecting suspicious URLs and exposing technical risk signals in a form that can be reviewed quickly.",
+      es: "Producto propio para inspeccionar URLs sospechosas y exponer señales técnicas de riesgo en un formato que pueda revisarse rápido."
     },
     role: {
       en: "Founder / Product Engineer",
@@ -347,64 +349,290 @@ export const caseStudies: CaseStudy[] = [
     },
     overview: {
       en: [
-        "A product built to help users review suspicious URLs faster and with more clarity."
+        "Verifiko is a product initiative built outside client work. It sits in the portfolio as a product example rather than as the main source of operational experience."
       ],
       es: [
-        "Un producto pensado para revisar URLs sospechosas con más rapidez y más claridad."
+        "Verifiko es una iniciativa de producto construida fuera del trabajo con clientes. Está en el portfolio como ejemplo de producto, no como la principal fuente de experiencia operativa."
       ]
     },
     challenge: {
       en: [
-        "The product had to make technical checks easier to understand."
+        "The problem was turning technical URL checks into output that could be reviewed quickly without hiding the underlying signals."
       ],
       es: [
-        "El producto tenía que hacer comprensibles unas comprobaciones técnicas."
+        "El problema era convertir comprobaciones técnicas sobre URLs en un resultado revisable con rapidez sin ocultar las señales subyacentes."
       ]
     },
     approach: {
       en: [
-        "I focused on clarity, analysis signals and backend logic."
+        "I structured the product around analysis steps, backend logic and a result model that shows why a URL looks suspicious instead of collapsing everything into a single label."
       ],
       es: [
-        "Lo enfoqué en claridad, señales de análisis y lógica backend."
+        "Lo estructuré alrededor de pasos de análisis, lógica backend y un modelo de resultado que muestra por qué una URL parece sospechosa en lugar de reducirlo todo a una sola etiqueta."
       ]
     },
     highlights: {
       en: [
-        "URL analysis.",
-        "Risk signals."
+        "Balancing technical depth with readable output.",
+        "Separating signal collection from final risk presentation.",
+        "Keeping the scope product-sized and operationally realistic."
       ],
       es: [
-        "Análisis de URLs.",
-        "Señales de riesgo."
+        "Equilibrar profundidad técnica con lectura rápida del resultado.",
+        "Separar la recogida de señales de la presentación final del riesgo.",
+        "Mantener un alcance de producto acotado y operable."
       ]
     },
     outcome: {
       en: [
-        "Shows product work around cybersecurity, backend logic and clarity."
+        "The result is a concrete product example: backend logic, security-focused analysis and decisions around how technical output is exposed to users."
       ],
       es: [
-        "Muestra trabajo de producto en ciberseguridad, lógica backend y claridad."
+        "El resultado es un ejemplo concreto de trabajo de producto: lógica backend, análisis orientado a seguridad y decisiones sobre cómo exponer salida técnica a usuarios."
       ]
     },
     publicLinks: [
-      { label: "Verifiko", href: siteConfig.approvedLinks.verifiko },
-      { label: "Orbytia", href: siteConfig.approvedLinks.orbytia }
+      { label: "Verifiko", href: siteConfig.approvedLinks.verifiko }
     ]
+  },
+  {
+    slug: "ticketing-queue-control",
+    category: "client-work",
+    featured: true,
+    pageRequired: true,
+    title: {
+      en: "Ticketing Queue Control",
+      es: "Control de colas para ticketing"
+    },
+    strapline: {
+      en: "Concurrency control for high-demand sales windows.",
+      es: "Control de concurrencia para ventanas de venta de alta demanda."
+    },
+    summary: {
+      en: "Queue-Fair integration for ticketing launches that were collapsing under roughly 10,000 concurrent users.",
+      es: "Integración de Queue-Fair para salidas de ticketing que colapsaban con unos 10.000 usuarios concurrentes."
+    },
+    role: {
+      en: "Software Engineer / Technical Owner",
+      es: "Software Engineer / Responsable técnico"
+    },
+    overview: {
+      en: [
+        "This work sat inside ticketing portals for professional football clubs running high-demand sales windows. Before the change there was no queue system, so users entered the sale flow at the same time and the portal broke under load."
+      ],
+      es: [
+        "Este trabajo se hacía sobre portales de ticketing de clubes de fútbol profesional con ventanas de venta de alta demanda. Antes del cambio no existía un sistema de colas, así que los usuarios entraban todos a la vez y la venta se rompía bajo carga."
+      ]
+    },
+    challenge: {
+      en: [
+        "The immediate problem was uncontrolled concurrency: timeouts, failed purchases and lost revenue once traffic reached roughly 10,000 concurrent users.",
+        "A key constraint was the external AVET system from LALIGA. It was a hard dependency in the flow and it did not scale under peak traffic, so the practical solution had to regulate access before users reached that point.",
+        "The issue was already affecting the business side. One account had been lost after the platform failed during this kind of launch."
+      ],
+      es: [
+        "El problema inmediato era la concurrencia descontrolada: timeouts, compras fallidas y pérdida de ingresos cuando el tráfico rondaba los 10.000 usuarios concurrentes.",
+        "La restricción clave era el sistema externo AVET de LALIGA. Era una dependencia dura dentro del flujo y no escalaba bajo picos, así que la solución viable tenía que regular el acceso antes de llegar ahí.",
+        "El problema ya estaba afectando al negocio. Se había perdido una cuenta después de un fallo de este tipo durante una salida de venta."
+      ]
+    },
+    approach: {
+      en: [
+        "I evaluated queue providers and selected Queue-Fair based on cost, fairness in the waiting room and evidence of use at higher scale.",
+        "I handled the vendor conversation and agreement directly in English, then implemented Queue-Fair through a frontend script on WordPress because it gave faster rollout, simpler maintenance and direct operational control.",
+        "The implementation combined that script integration with a decoupled match landing page, so access control could be activated and adjusted from WordPress without backend changes."
+      ],
+      es: [
+        "Evalué proveedores de cola y elegí Queue-Fair por coste, equidad dentro de la espera y referencias probadas a mayor escala.",
+        "Llevé directamente la conversación y el acuerdo con el proveedor en inglés, y luego integré Queue-Fair mediante script en frontend sobre WordPress porque daba despliegue más rápido, mantenimiento más simple y control operativo directo.",
+        "La implementación combinó esa integración por script con el desacople de la landing del partido, de forma que el control de acceso pudiera activarse y ajustarse desde WordPress sin cambios de backend."
+      ]
+    },
+    highlights: {
+      en: [
+        "The queue had to protect a non-scalable external dependency without blocking sales entirely.",
+        "The choice of a script integration was operational, not cosmetic: WordPress teams could switch and manage it without backend deployments.",
+        "The landing and sales portal were separated to reduce pressure on the main application at peak moments."
+      ],
+      es: [
+        "La cola tenía que proteger una dependencia externa no escalable sin bloquear por completo la venta.",
+        "La elección de una integración por script fue operativa, no cosmética: el equipo sobre WordPress podía activarla y gestionarla sin despliegues de backend.",
+        "La landing y el portal de venta se separaron para reducir presión sobre la aplicación principal en los momentos pico."
+      ]
+    },
+    outcome: {
+      en: [
+        "The sale flow stopped collapsing at around 10,000 concurrent users and moved to an ordered waiting room of roughly 60,000 users.",
+        "That gave the ticketing operation a controlled entry point and supported larger commercial accounts afterwards."
+      ],
+      es: [
+        "La venta dejó de colapsar alrededor de los 10.000 usuarios concurrentes y pasó a una cola ordenada de unos 60.000 usuarios.",
+        "Eso dio a la operativa de ticketing un punto de entrada controlado y ayudó a sostener cuentas comerciales de mayor exigencia después."
+      ]
+    },
+    publicLinks: []
+  },
+  {
+    slug: "member-validation-data-update",
+    category: "client-work",
+    featured: true,
+    pageRequired: true,
+    title: {
+      en: "Member Validation and Data Update",
+      es: "Validación de socios y actualización de datos"
+    },
+    strapline: {
+      en: "Portal flows tied to validation and downstream data quality.",
+      es: "Flujos de portal ligados a validación y calidad del dato aguas abajo."
+    },
+    summary: {
+      en: "Member portal work combining LALIGA validation, forced data updates and normalization of inconsistent legacy records before they reached the DataLake.",
+      es: "Trabajo sobre portales de socios combinando validación con LALIGA, actualización obligatoria de datos y normalización de registros legacy inconsistentes antes de llegar al DataLake."
+    },
+    role: {
+      en: "Full-stack Engineer / Integration Owner",
+      es: "Ingeniero full-stack / Responsable de integraciones"
+    },
+    overview: {
+      en: [
+        "This work sat in member portals where users had to validate themselves with idPersona and PIN, then update profile data before accessing services or purchase flows."
+      ],
+      es: [
+        "Este trabajo se hacía sobre portales de socios donde los usuarios tenían que validarse con idPersona y PIN, y después actualizar datos de perfil antes de acceder a servicios o flujos de compra."
+      ]
+    },
+    challenge: {
+      en: [
+        "The data coming from legacy sources was inconsistent: postal codes and municipalities did not match, countries appeared in multiple formats and form fields contained years of unnormalized values.",
+        "Users were also getting blocked at login and update points because identity fields and profile data were often wrong at source, so the portal had to distinguish between invalid credentials, malformed input and recoverable data issues.",
+        "The flow had to validate against LALIGA APIs and push corrected data downstream to the DataLake, so bad input could not simply be accepted and cleaned later."
+      ],
+      es: [
+        "Los datos que llegaban desde sistemas legacy eran inconsistentes: códigos postales y municipios no coincidían, los países aparecían en formatos distintos y los formularios acumulaban años de valores sin normalizar.",
+        "Además, los usuarios se bloqueaban en login y actualización porque los campos de identidad y perfil muchas veces estaban mal desde origen, así que el portal tenía que distinguir entre credenciales inválidas, input mal formado y problemas de datos recuperables.",
+        "El flujo tenía que validar contra APIs de LALIGA y empujar los datos corregidos hacia el DataLake, así que no se podía aceptar entrada defectuosa para limpiarla después."
+      ]
+    },
+    approach: {
+      en: [
+        "I designed login, registration and mandatory profile update flows with validation on both frontend and backend, including idPersona and PIN checks before the user could move deeper into the portal.",
+        "For normalization, I used explicit rules plus JSON mappings to verify postal code and municipality pairs, and added server-side validation, duplicate controls, indexes and database restrictions before persisting and forwarding data."
+      ],
+      es: [
+        "Diseñé flujos de login, registro y actualización obligatoria de perfil con validación tanto en frontend como en backend, incluyendo comprobaciones de idPersona y PIN antes de dejar avanzar al usuario dentro del portal.",
+        "Para la normalización usé reglas explícitas y mapeos en JSON para comprobar pares de código postal y municipio, y añadí validación server-side, control de duplicados, índices y restricciones en base de datos antes de guardar y enviar la información aguas abajo."
+      ]
+    },
+    highlights: {
+      en: [
+        "Supporting multiple broken legacy formats without turning the login and update flow into a dead end.",
+        "Making data correction mandatory at the portal entry point while keeping the user path recoverable.",
+        "Aligning validation rules, DB constraints and downstream DataLake requirements in the same flow."
+      ],
+      es: [
+        "Soportar varios formatos legacy rotos sin convertir el login y la actualización en un callejón sin salida.",
+        "Hacer obligatoria la corrección de datos en la entrada del portal sin volver inutilizable el camino del usuario.",
+        "Alinear reglas de validación, restricciones de BBDD y requisitos aguas abajo del DataLake en un mismo flujo."
+      ]
+    },
+    outcome: {
+      en: [
+        "The portals stopped accepting inconsistent profile data as-is and started enforcing normalized updates before users continued.",
+        "That reduced blocked users caused by malformed identity and profile input, and lowered the amount of mismatched records reaching the DataLake and downstream operational flows."
+      ],
+      es: [
+        "Los portales dejaron de aceptar datos de perfil inconsistentes tal cual y pasaron a exigir actualizaciones normalizadas antes de continuar.",
+        "Eso redujo usuarios bloqueados por input mal formado en identidad y perfil, y bajó la cantidad de registros desajustados que llegaban al DataLake y a flujos operativos aguas abajo."
+      ]
+    },
+    publicLinks: []
+  },
+  {
+    slug: "high-concurrency-draw-flows",
+    category: "client-work",
+    featured: true,
+    pageRequired: true,
+    title: {
+      en: "High-Concurrency Draw Flows",
+      es: "Flujos de sorteos con alta concurrencia"
+    },
+    strapline: {
+      en: "Registration control under traffic spikes and duplicate risk.",
+      es: "Control de registros bajo picos de tráfico y riesgo de duplicados."
+    },
+    summary: {
+      en: "Draw and registration flows built to withstand concurrency spikes, duplicate attempts and inconsistent records in WordPress-backed portals.",
+      es: "Flujos de sorteos y registro preparados para soportar picos de concurrencia, intentos duplicados y registros inconsistentes en portales soportados por WordPress."
+    },
+    role: {
+      en: "Full-stack Engineer / Implementation Owner",
+      es: "Ingeniero full-stack / Responsable de implementación"
+    },
+    overview: {
+      en: [
+        "These flows ran on portals where users registered for draws under time pressure. The same release had to hold under bursts of traffic while preventing duplicate or inconsistent entries."
+      ],
+      es: [
+        "Estos flujos corrían sobre portales donde los usuarios se registraban a sorteos bajo presión de tiempo. La misma entrega tenía que aguantar ráfagas de tráfico mientras evitaba entradas duplicadas o inconsistentes."
+      ]
+    },
+    challenge: {
+      en: [
+        "The risk was not only load. The system also had to stop duplicate registrations, repeated submissions, invalid data combinations and edge cases created by concurrent requests.",
+        "Because the stack included WordPress and existing databases, the safeguards had to work across frontend, backend and storage rather than in one layer only."
+      ],
+      es: [
+        "El riesgo no era solo la carga. El sistema también tenía que frenar registros duplicados, envíos repetidos, combinaciones de datos inválidas y casos límite creados por peticiones concurrentes.",
+        "Como el stack incluía WordPress y bases de datos existentes, las defensas tenían que funcionar en frontend, backend y persistencia, no en una sola capa."
+      ]
+    },
+    approach: {
+      en: [
+        "I implemented validation on both sides of the request, added database restrictions and indexes, and instrumented the flow to make duplicate attempts and inconsistent writes visible.",
+        "The objective was to reject bad registrations early, keep persistence rules strict and leave enough observability to debug incidents in production."
+      ],
+      es: [
+        "Implementé validación a ambos lados de la petición, añadí restricciones e índices en base de datos, y metí observabilidad para hacer visibles los intentos duplicados y las escrituras inconsistentes.",
+        "El objetivo era rechazar registros malos cuanto antes, mantener estrictas las reglas de persistencia y dejar suficiente observabilidad para depurar incidentes en producción."
+      ]
+    },
+    highlights: {
+      en: [
+        "Synchronizing frontend checks with backend validation so the same record could not pass in one layer and fail in another.",
+        "Designing DB constraints and indexes around duplicate prevention without breaking the existing portal.",
+        "Handling traffic spikes without opening the door to repeated entries, fraud patterns or partial writes."
+      ],
+      es: [
+        "Sincronizar comprobaciones en frontend con validación en backend para que un mismo registro no pasara en una capa y fallara en otra.",
+        "Diseñar restricciones e índices de BBDD alrededor de la prevención de duplicados sin romper el portal existente.",
+        "Soportar picos de concurrencia sin abrir la puerta a entradas repetidas, patrones de fraude o escrituras parciales."
+      ]
+    },
+    outcome: {
+      en: [
+        "The draw flows moved from ad-hoc validation to controlled registration paths with duplicate prevention and clearer operational signals.",
+        "That reduced inconsistent records, repeated entries and manual cleanup during high-demand windows."
+      ],
+      es: [
+        "Los flujos de sorteos pasaron de validación ad hoc a caminos de registro controlados con prevención de duplicados y señales operativas más claras.",
+        "Eso redujo registros inconsistentes, entradas repetidas y limpieza manual durante ventanas de alta demanda."
+      ]
+    },
+    publicLinks: []
   },
   {
     slug: "orbytia",
     category: "ecosystem",
-    featured: true,
+    featured: false,
     pageRequired: true,
     title: { en: "Orbytia", es: "Orbytia" },
     strapline: {
-      en: "Separate consulting line.",
-      es: "Línea separada de consultoría."
+      en: "Secondary consulting context.",
+      es: "Contexto secundario de consultoría."
     },
     summary: {
-      en: "Separate line for consulting, software, automation and applied AI for clients.",
-      es: "Línea separada para consultoría, software, automatización e IA aplicada para clientes."
+      en: "Separate consulting context for selected client work in software, automation and applied AI.",
+      es: "Contexto de consultoría separado para parte del trabajo con clientes en software, automatización e IA aplicada."
     },
     role: {
       en: "Founder / Builder",
@@ -412,234 +640,48 @@ export const caseStudies: CaseStudy[] = [
     },
     overview: {
       en: [
-        "A separate line that groups service work and related initiatives without replacing my personal professional profile."
+        "Orbytia groups part of the consulting work around my profile, but it is not meant to replace the main portfolio or become the primary hiring story."
       ],
       es: [
-        "Una línea separada que agrupa servicios e iniciativas relacionadas sin sustituir mi perfil profesional personal."
+        "Orbytia agrupa parte del trabajo de consultoría alrededor de mi perfil, pero no está pensada para sustituir el portfolio principal ni convertirse en la historia principal de contratación."
       ]
     },
     challenge: {
       en: [
-        "It had to explain the service side clearly without diluting the personal portfolio."
+        "The main editorial constraint was keeping consulting context visible without diluting the engineering profile that the portfolio is built around."
       ],
       es: [
-        "Tenía que explicar la parte de servicios con claridad sin diluir el portfolio personal."
+        "La principal restricción editorial era dejar visible el contexto de consultoría sin diluir el perfil de ingeniería sobre el que está construido el portfolio."
       ]
     },
     approach: {
       en: [
-        "I kept Hernán Bonavota as the main profile and positioned Orbytia as complementary context."
+        "I kept Orbytia as a separate route, with its own page and service framing, while keeping the portfolio centered on technical case studies and hiring-oriented contact."
       ],
       es: [
-        "Mantuve a Hernán Bonavota como perfil principal y situé Orbytia como contexto complementario."
+        "Mantuve Orbytia como una vía separada, con su propia página y enfoque de servicios, mientras el portfolio se centraba en casos técnicos y contacto orientado a contratación."
       ]
     },
     highlights: {
       en: [
-        "Software consulting.",
-        "Automation and AI."
+        "Keeping service enquiries separate from recruiting conversations.",
+        "Avoiding overlap with product and portfolio work.",
+        "Leaving enough context without turning it into the protagonist."
       ],
       es: [
-        "Consultoría de software.",
-        "Automatización e IA."
+        "Separar consultas de servicios de conversaciones de recruiting.",
+        "Evitar solapamiento con producto y con el portfolio principal.",
+        "Dejar suficiente contexto sin convertirlo en protagonista."
       ]
     },
     outcome: {
       en: [
-        "Shows the consulting context around part of my work without making it the main story."
+        "Orbytia remains available as complementary context for selected client work while Hernán Bonavota stays as the main professional profile."
       ],
       es: [
-        "Muestra el contexto de consultoría alrededor de parte de mi trabajo sin convertirlo en la historia principal."
+        "Orbytia queda disponible como contexto complementario para parte del trabajo con clientes mientras Hernán Bonavota sigue siendo el perfil profesional principal."
       ]
     },
     publicLinks: [{ label: "Orbytia", href: siteConfig.approvedLinks.orbytia }]
-  },
-  {
-    slug: "proyectar-sl",
-    category: "client-work",
-    featured: true,
-    pageRequired: true,
-    title: { en: "Proyectar SL", es: "Proyectar SL" },
-    strapline: {
-      en: "Business website and quoting flow.",
-      es: "Web corporativa y flujo de presupuestos."
-    },
-    summary: {
-      en: "Company website with a custom online quoting flow for renovation work.",
-      es: "Web corporativa con un flujo de presupuestos online a medida para trabajos de reforma."
-    },
-    role: {
-      en: "Full-stack Developer / Web Platform Engineer",
-      es: "Desarrollador full-stack / Web Platform Engineer"
-    },
-    overview: {
-      en: [
-        "A business website with a quotation flow built into the experience."
-      ],
-      es: [
-        "Una web de negocio con un sistema de presupuestos integrado en la experiencia."
-      ]
-    },
-    challenge: {
-      en: [
-        "The quoting flow had to be clear for users and manageable for the business."
-      ],
-      es: [
-        "El flujo de presupuesto tenía que ser claro para el usuario y fácil de gestionar para el negocio."
-      ]
-    },
-    approach: {
-      en: [
-        "I worked on the website, the quotation flow and the technical implementation behind it."
-      ],
-      es: [
-        "Trabajé la web, el flujo de presupuesto y la implementación técnica que lo sostenía."
-      ]
-    },
-    highlights: {
-      en: [
-        "Online quotes.",
-        "Business website."
-      ],
-      es: [
-        "Presupuesto online.",
-        "Web de negocio."
-      ]
-    },
-    outcome: {
-      en: [
-        "Shows practical execution for a business website tied to a real process."
-      ],
-      es: [
-        "Muestra una ejecución práctica en una web de negocio ligada a un proceso real."
-      ]
-    },
-    publicLinks: [{ label: "Proyectar SL", href: siteConfig.approvedLinks.proyectar }]
-  },
-  {
-    slug: "tu-proximo-seguro",
-    category: "client-work",
-    featured: true,
-    pageRequired: true,
-    title: { en: "Tu Próximo Seguro", es: "Tu Próximo Seguro" },
-    strapline: {
-      en: "Lead generation website.",
-      es: "Web de captación."
-    },
-    summary: {
-      en: "Lead-generation website for an insurance advisor, built to generate trust and make first contact easier.",
-      es: "Web de captación para una asesora de seguros, planteada para generar confianza y facilitar el primer contacto."
-    },
-    role: {
-      en: "Web / Product Engineer",
-      es: "Web / Product Engineer"
-    },
-    overview: {
-      en: [
-        "A business website where trust and clarity directly affect enquiries."
-      ],
-      es: [
-        "Una web de negocio donde la confianza y la claridad afectan directamente al contacto."
-      ]
-    },
-    challenge: {
-      en: [
-        "The offer had to be easy to understand and easy to contact."
-      ],
-      es: [
-        "La propuesta tenía que entenderse rápido y facilitar el contacto."
-      ]
-    },
-    approach: {
-      en: [
-        "I focused on content structure, trust signals and a straightforward frontend."
-      ],
-      es: [
-        "Lo enfoqué en estructura de contenido, señales de confianza y un frontend directo."
-      ]
-    },
-    highlights: {
-      en: [
-        "Lead capture.",
-        "Trust signals."
-      ],
-      es: [
-        "Captación de leads.",
-        "Señales de confianza."
-      ]
-    },
-    outcome: {
-      en: [
-        "Shows web work built to support lead generation and first contact."
-      ],
-      es: [
-        "Muestra un trabajo web pensado para apoyar la captación de leads y el primer contacto."
-      ]
-    },
-    publicLinks: [
-      { label: "Tu Próximo Seguro", href: siteConfig.approvedLinks.tuProximoSeguro }
-    ]
-  },
-  {
-    slug: "lunetia",
-    category: "lab",
-    featured: true,
-    pageRequired: true,
-    title: { en: "Lunetia", es: "Lunetia" },
-    strapline: {
-      en: "Experimental work.",
-      es: "Trabajo experimental."
-    },
-    summary: {
-      en: "Early product exploration kept clearly framed as lab work.",
-      es: "Exploración de producto en fase temprana, presentada claramente como trabajo de laboratorio."
-    },
-    role: {
-      en: "Concept / Experimental Builder",
-      es: "Concept / Experimental Builder"
-    },
-    overview: {
-      en: [
-        "Early exploration, not a finished product."
-      ],
-      es: [
-        "Exploración temprana, no un producto terminado."
-      ]
-    },
-    challenge: {
-      en: [
-        "It needed to stay honest about its stage."
-      ],
-      es: [
-        "Tenía que ser honesto con su etapa."
-      ]
-    },
-    approach: {
-      en: [
-        "I kept the scope small and exploratory."
-      ],
-      es: [
-        "Mantuve un alcance pequeño y exploratorio."
-      ]
-    },
-    highlights: {
-      en: [
-        "Early exploration.",
-        "Honest scope."
-      ],
-      es: [
-        "Exploración temprana.",
-        "Alcance honesto."
-      ]
-    },
-    outcome: {
-      en: [
-        "Shows how I shape ideas at an early stage."
-      ],
-      es: [
-        "Muestra cómo doy forma a ideas en fase temprana."
-      ]
-    },
-    publicLinks: [{ label: "Lunetia", href: siteConfig.approvedLinks.lunetia }]
   }
 ];

@@ -6,7 +6,7 @@ export const metadata = buildMetadata({
   locale: "en",
   pathname: "/about",
   title: "About",
-  description: "Software engineer who turns ambiguous needs into clear technical execution."
+  description: "Software engineer working across client requirements, technical decisions and end-to-end delivery."
 });
 
 export default function Page() {

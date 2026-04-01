@@ -6,7 +6,7 @@ export const metadata = buildMetadata({
   locale: "en",
   pathname: "/contact",
   title: "Contact",
-  description: "Best route for recruiters, hiring managers and technical conversations."
+  description: "Best first contact for recruiters, hiring managers and technical conversations."
 });
 
 export default function Page() {

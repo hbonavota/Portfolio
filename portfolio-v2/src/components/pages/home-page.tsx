@@ -60,21 +60,21 @@ export function HomePage({ locale }: HomePageProps) {
             <h2 className="mt-5 text-[1.9rem] font-semibold text-white">Hernán Bonavota</h2>
             <p className="mt-4 text-[0.96rem] leading-7 text-white/62">
               {locale === "en"
-                ? "Platforms, integrations and backend for real operations."
-                : "Plataformas, integraciones y backend para operaciones reales."}
+                ? "Ticketing, integrations and backend for production portals."
+                : "Ticketing, integraciones y backend para portales en producción."}
             </p>
           </div>
           <div className="surface-panel rounded-[2.2rem] p-7 md:p-8">
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-white/48">
-              {locale === "en" ? "Separate line" : "Línea separada"}
+              {locale === "en" ? "Secondary context" : "Contexto secundario"}
             </p>
             <h2 className="mt-5 text-[1.9rem] font-semibold text-white">
               {locale === "en" ? "Orbytia" : "Orbytia"}
             </h2>
             <p className="mt-4 text-[0.96rem] leading-7 text-white/62">
               {locale === "en"
-                ? "Consulting, software, automation and applied AI."
-                : "Consultoría, software, automatización e IA aplicada."}
+                ? "Separate consulting context for selected client work."
+                : "Contexto de consultoría separado para parte del trabajo con clientes."}
             </p>
           </div>
           <div className="surface-accent rounded-[2.2rem] p-7 md:p-8 sm:col-span-2">
@@ -86,8 +86,8 @@ export function HomePage({ locale }: HomePageProps) {
             </h2>
             <p className="mt-4 max-w-2xl text-[0.98rem] leading-8 text-white/70">
               {locale === "en"
-                ? "Cybersecurity product and a concrete example of product work."
-                : "Producto de ciberseguridad y ejemplo concreto de trabajo de producto."}
+                ? "Own product and a concrete example of product engineering outside client delivery."
+                : "Producto propio y ejemplo concreto de trabajo de producto fuera de la entrega a clientes."}
             </p>
           </div>
         </div>
@@ -164,24 +164,24 @@ export function HomePage({ locale }: HomePageProps) {
               title: "Hernán Bonavota",
               text:
                 locale === "en"
-                  ? "Platforms, integrations and backend for real operations."
-                  : "Plataformas, integraciones y backend para operaciones reales.",
+                  ? "Ticketing, integrations and backend for production portals."
+                  : "Ticketing, integraciones y backend para portales en producción.",
               href: siteConfig.portfolioDomains[0]
             },
             {
               title: "Orbytia",
               text:
                 locale === "en"
-                  ? "Consulting, software, automation and applied AI."
-                  : "Consultoría, software, automatización e IA aplicada.",
+                  ? "Secondary consulting context, separate from the main hiring path."
+                  : "Contexto de consultoría secundario, separado de la vía principal de contratación.",
               href: siteConfig.approvedLinks.orbytia
             },
             {
               title: "Verifiko",
               text:
                 locale === "en"
-                  ? "Cybersecurity product and clear product example."
-                  : "Producto de ciberseguridad y ejemplo claro de trabajo de producto.",
+                  ? "Own product and supporting evidence of product work."
+                  : "Producto propio y evidencia complementaria de trabajo de producto.",
               href: siteConfig.approvedLinks.verifiko
             }
           ].map((item) => (
@@ -209,13 +209,13 @@ export function HomePage({ locale }: HomePageProps) {
         <div className="max-w-4xl space-y-7 text-[1.02rem] leading-8 text-white/68">
           <p>
             {locale === "en"
-              ? "I usually work best where the need is clear but the path still needs structure."
-              : "Suelo trabajar mejor cuando la necesidad está clara pero el camino todavía necesita estructura."}
+              ? "Most of my work sits where the business need is already visible but the implementation still needs definition, ownership and execution."
+              : "Gran parte de mi trabajo aparece cuando la necesidad de negocio ya es visible pero la implementación todavía necesita definición, responsabilidad y ejecución."}
           </p>
           <p>
             {locale === "en"
-              ? "I help turn that into concrete technical work, sensible decisions and clear communication."
-              : "Ayudo a convertir eso en trabajo técnico concreto, decisiones sensatas y comunicación clara."}
+              ? "That usually means moving between client conversations, technical decisions, implementation and release without handing the problem off."
+              : "Eso suele implicar moverme entre conversaciones con cliente, decisiones técnicas, implementación y salida a producción sin ir traspasando el problema a otra persona."}
           </p>
         </div>
       </Section>
