@@ -20,7 +20,10 @@ type HomePageProps = {
 
 export function HomePage({ locale }: HomePageProps) {
   const content = homeContent[locale];
-  const featured = caseStudies.filter((study) => study.featured);
+  const featured =
+    locale === "en"
+      ? caseStudies.filter((study) => study.featured)
+      : caseStudies.filter((study) => study.featured && study.category === "client-work");
 
   return (
     <SiteFrame locale={locale}>
@@ -61,22 +64,24 @@ export function HomePage({ locale }: HomePageProps) {
             <p className="mt-4 text-[0.96rem] leading-7 text-white/62">
               {locale === "en"
                 ? "Ticketing, integrations and backend for production portals."
-                : "Ticketing, integraciones y backend para portales en producción."}
+                : "Integraciones, backend y producto en producción."}
             </p>
           </div>
-          <div className="surface-panel rounded-[2.2rem] p-7 md:p-8">
-            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-white/48">
-              {locale === "en" ? "Secondary context" : "Contexto secundario"}
-            </p>
-            <h2 className="mt-5 text-[1.9rem] font-semibold text-white">
-              {locale === "en" ? "Orbytia" : "Orbytia"}
-            </h2>
-            <p className="mt-4 text-[0.96rem] leading-7 text-white/62">
-              {locale === "en"
-                ? "Separate consulting context for selected client work."
-                : "Contexto de consultoría separado para parte del trabajo con clientes."}
-            </p>
-          </div>
+          {locale === "en" ? (
+            <div className="surface-panel rounded-[2.2rem] p-7 md:p-8">
+              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-white/48">
+                {locale === "en" ? "Secondary context" : "Contexto secundario"}
+              </p>
+              <h2 className="mt-5 text-[1.9rem] font-semibold text-white">
+                {locale === "en" ? "Orbytia" : "Orbytia"}
+              </h2>
+              <p className="mt-4 text-[0.96rem] leading-7 text-white/62">
+                {locale === "en"
+                  ? "Separate consulting context for selected client work."
+                  : "Contexto de consultoría separado para parte del trabajo con clientes."}
+              </p>
+            </div>
+          ) : null}
           <div className="surface-accent rounded-[2.2rem] p-7 md:p-8 sm:col-span-2">
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-cyan-100/72">
               {locale === "en" ? "Own product" : "Producto propio"}
@@ -87,7 +92,7 @@ export function HomePage({ locale }: HomePageProps) {
             <p className="mt-4 max-w-2xl text-[0.98rem] leading-8 text-white/70">
               {locale === "en"
                 ? "Own product and a concrete example of product engineering outside client delivery."
-                : "Producto propio y ejemplo concreto de trabajo de producto fuera de la entrega a clientes."}
+                : "Producto propio y ejemplo complementario de trabajo de producto fuera de la entrega a clientes."}
             </p>
           </div>
         </div>
@@ -152,53 +157,55 @@ export function HomePage({ locale }: HomePageProps) {
         </div>
       </Section>
 
-      <Section
-        id="ecosystem"
-        eyebrow={content.ecosystem.eyebrow}
-        title={content.ecosystem.title}
-        description={content.ecosystem.description}
-      >
-        <div className="grid gap-6 lg:grid-cols-3">
-          {[
-            {
-              title: "Hernán Bonavota",
-              text:
-                locale === "en"
-                  ? "Ticketing, integrations and backend for production portals."
-                  : "Ticketing, integraciones y backend para portales en producción.",
-              href: siteConfig.portfolioDomains[0]
-            },
-            {
-              title: "Orbytia",
-              text:
-                locale === "en"
-                  ? "Secondary consulting context, separate from the main hiring path."
-                  : "Contexto de consultoría secundario, separado de la vía principal de contratación.",
-              href: siteConfig.approvedLinks.orbytia
-            },
-            {
-              title: "Verifiko",
-              text:
-                locale === "en"
-                  ? "Own product and supporting evidence of product work."
-                  : "Producto propio y evidencia complementaria de trabajo de producto.",
-              href: siteConfig.approvedLinks.verifiko
-            }
-          ].map((item) => (
-            <div key={item.title} className="surface-panel rounded-[2.1rem] p-[1.625rem] md:p-8">
-              <h3 className="text-[1.45rem] font-semibold text-white">{item.title}</h3>
-              <p className="mt-4 text-[0.98rem] leading-8 text-white/64">{item.text}</p>
-              <Link
-                href={item.href}
-                className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-cyan-100 hover:text-white"
-              >
-                {locale === "en" ? "Visit" : "Visitar"}
-                <span aria-hidden="true">↗</span>
-              </Link>
-            </div>
-          ))}
-        </div>
-      </Section>
+      {locale === "en" ? (
+        <Section
+          id="ecosystem"
+          eyebrow={content.ecosystem.eyebrow}
+          title={content.ecosystem.title}
+          description={content.ecosystem.description}
+        >
+          <div className="grid gap-6 lg:grid-cols-3">
+            {[
+              {
+                title: "Hernán Bonavota",
+                text:
+                  locale === "en"
+                    ? "Ticketing, integrations and backend for production portals."
+                    : "Ticketing, integraciones y backend para portales en producción.",
+                href: siteConfig.portfolioDomains[0]
+              },
+              {
+                title: "Orbytia",
+                text:
+                  locale === "en"
+                    ? "Secondary consulting context, separate from the main hiring path."
+                    : "Contexto de consultoría secundario, separado de la vía principal de contratación.",
+                href: siteConfig.approvedLinks.orbytia
+              },
+              {
+                title: "Verifiko",
+                text:
+                  locale === "en"
+                    ? "Own product and supporting evidence of product work."
+                    : "Producto propio y evidencia complementaria de trabajo de producto.",
+                href: siteConfig.approvedLinks.verifiko
+              }
+            ].map((item) => (
+              <div key={item.title} className="surface-panel rounded-[2.1rem] p-[1.625rem] md:p-8">
+                <h3 className="text-[1.45rem] font-semibold text-white">{item.title}</h3>
+                <p className="mt-4 text-[0.98rem] leading-8 text-white/64">{item.text}</p>
+                <Link
+                  href={item.href}
+                  className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-cyan-100 hover:text-white"
+                >
+                  {locale === "en" ? "Visit" : "Visitar"}
+                  <span aria-hidden="true">↗</span>
+                </Link>
+              </div>
+            ))}
+          </div>
+        </Section>
+      ) : null}
 
       <Section
         id="about"
@@ -210,12 +217,12 @@ export function HomePage({ locale }: HomePageProps) {
           <p>
             {locale === "en"
               ? "Most of my work sits where the business need is already visible but the implementation still needs definition, ownership and execution."
-              : "Gran parte de mi trabajo aparece cuando la necesidad de negocio ya es visible pero la implementación todavía necesita definición, responsabilidad y ejecución."}
+              : "Suelo aportar más cuando la necesidad de negocio ya está clara pero todavía hace falta definir, decidir e implementar bien."}
           </p>
           <p>
             {locale === "en"
               ? "That usually means moving between client conversations, technical decisions, implementation and release without handing the problem off."
-              : "Eso suele implicar moverme entre conversaciones con cliente, decisiones técnicas, implementación y salida a producción sin ir traspasando el problema a otra persona."}
+              : "Eso suele implicar moverme entre conversación con cliente, decisión técnica, implementación y salida a producción sin ir moviendo el problema a otra persona."}
           </p>
         </div>
       </Section>
@@ -226,11 +233,15 @@ export function HomePage({ locale }: HomePageProps) {
         title={content.contact.title}
         description={content.contact.description}
       >
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className={`grid gap-4 ${locale === "en" ? "md:grid-cols-3" : "md:grid-cols-1"}`}>
           {[
             { label: "LinkedIn", href: siteConfig.approvedLinks.linkedin },
-            { label: "Orbytia", href: siteConfig.approvedLinks.orbytia },
-            { label: locale === "en" ? "Contact" : "Contacto", href: getLocalizedPath(locale, "contact") }
+            ...(locale === "en"
+              ? [{ label: "Orbytia", href: siteConfig.approvedLinks.orbytia }]
+              : []),
+            ...(locale === "en"
+              ? [{ label: locale === "en" ? "Contact" : "Contacto", href: getLocalizedPath(locale, "contact") }]
+              : [])
           ].map((item) => (
             <Link
               key={item.label}

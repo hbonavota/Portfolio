@@ -12,7 +12,7 @@ export function Footer({ locale }: FooterProps) {
   const bottomLine =
     locale === "en"
       ? "Ticketing portals, integrations, backend systems and operational product work."
-      : "Portales de ticketing, integraciones, sistemas backend y trabajo de producto orientado a operación.";
+      : "Integraciones, sistemas backend y trabajo de producto en producción.";
 
   return (
     <footer className="border-t border-white/8 bg-slate-950/92">
@@ -24,12 +24,12 @@ export function Footer({ locale }: FooterProps) {
           <h2 className="max-w-lg text-[1.72rem] font-semibold leading-[1.08] tracking-[-0.04em] text-white sm:text-[1.86rem]">
             {locale === "en"
               ? "Software engineer for ticketing portals, integrations and backend systems."
-              : "Ingeniero de software para portales de ticketing, integraciones y sistemas backend."}
+              : "Ingeniero de software para integraciones, sistemas backend y producto en producción."}
           </h2>
           <p className="max-w-lg text-[0.95rem] leading-8 text-white/58">
             {locale === "en"
               ? "Open to engineering roles and technical conversations."
-              : "Abierto a roles de ingeniería y conversaciones técnicas."}
+              : "Abierto a oportunidades de ingeniería y conversaciones técnicas."}
           </p>
         </div>
         <div className="space-y-5 lg:pl-2">
@@ -54,11 +54,13 @@ export function Footer({ locale }: FooterProps) {
                 LinkedIn
               </Link>
             </li>
-            <li>
-              <Link href={siteConfig.approvedLinks.orbytia} className="inline-flex transition hover:text-white">
-                Orbytia
-              </Link>
-            </li>
+            {locale === "en" ? (
+              <li>
+                <Link href={siteConfig.approvedLinks.orbytia} className="inline-flex transition hover:text-white">
+                  Orbytia
+                </Link>
+              </li>
+            ) : null}
             <li>
               <Link href={siteConfig.approvedLinks.github} className="inline-flex transition hover:text-white">
                 GitHub

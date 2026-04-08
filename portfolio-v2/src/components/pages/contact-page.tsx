@@ -17,11 +17,15 @@ export function ContactPage({ locale }: ContactPageProps) {
       href: siteConfig.approvedLinks.linkedin,
       kicker: locale === "en" ? "Direct message" : "Mensaje directo"
     },
-    {
-      label: "Orbytia",
-      href: siteConfig.approvedLinks.orbytia,
-      kicker: locale === "en" ? "Services only" : "Solo servicios"
-    }
+    ...(locale === "en"
+      ? [
+          {
+            label: "Orbytia",
+            href: siteConfig.approvedLinks.orbytia,
+            kicker: locale === "en" ? "Services only" : "Solo servicios"
+          }
+        ]
+      : [])
   ];
 
   return (
@@ -31,7 +35,7 @@ export function ContactPage({ locale }: ContactPageProps) {
         title={content.title}
         description={content.description}
       >
-        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-2">
+        <div className={`grid gap-5 ${locale === "en" ? "md:grid-cols-2 xl:grid-cols-2" : "md:grid-cols-1 xl:grid-cols-1"}`}>
           {links.map((item) => (
             <Link
               key={item.href}
