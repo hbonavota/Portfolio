@@ -30,7 +30,7 @@ export const siteConfig = {
   name: "Hernán Bonavota",
   description: {
     en: "Software engineer focused on ticketing portals, integrations, backend systems and operational product work.",
-    es: "Ingeniero de software enfocado en integraciones, sistemas backend y trabajo de producto en producción."
+    es: "Ingeniero de software especializado en backend e integraciones."
   },
   domain: "https://hbonavota.com",
   portfolioDomains: ["https://hbonavota.com/", "https://hbonavota.es/"],
@@ -116,29 +116,29 @@ export const homeContent = {
   es: {
     hero: {
       eyebrow: "Hernán Bonavota",
-      title: "Ingeniero de software para integraciones, sistemas backend y producto en producción.",
+      title: "Ingeniero de software especializado en backend e integraciones.",
       description:
-        "Trabajo sobre validación, concurrencia, flujos de datos, infraestructura e implementación de punta a punta cuando el fallo tiene impacto directo en operación.",
+        "Trabajo en validación, concurrencia y flujos críticos donde un fallo impacta la operación.",
       primaryCta: { label: "Ver trabajo", href: "/es/trabajo" },
       secondaryCta: { label: "LinkedIn", href: siteConfig.approvedLinks.linkedin }
     },
     selectedWork: {
       eyebrow: "Trabajo destacado",
-      title: "Casos de trabajo en producción.",
+      title: "Casos principales.",
       description:
-        "Integración, validación, concurrencia y producto, con alcance, restricciones y decisiones concretas."
+        "Concurrencia, validación e integraciones con decisiones técnicas visibles."
     },
     capabilities: {
       eyebrow: "Qué cubro",
-      title: "Lo que suelo cubrir.",
+      title: "Capacidades técnicas.",
       description:
-        "Integraciones, validación de datos, WordPress, AWS e implementación de punta a punta."
+        "Integraciones, validación, WordPress y AWS en contexto operativo."
     },
     experience: {
-      eyebrow: "Trabajo actual",
-      title: "Alcance actual en producción.",
+      eyebrow: "Contexto actual",
+      title: "Experiencia actual.",
       description:
-        "Hoy trabajo con validación de socios, colas, formularios, integraciones e infraestructura."
+        "Ticketing, validación de socios e integraciones sobre AWS."
     },
     ecosystem: {
       eyebrow: "Contexto profesional",
@@ -154,9 +154,9 @@ export const homeContent = {
     },
     contact: {
       eyebrow: "Contacto",
-      title: "Abierto a oportunidades de ingeniería y conversaciones técnicas.",
+      title: "Contacto directo.",
       description:
-        "LinkedIn es la mejor vía de primer contacto para recruiters y hiring managers."
+        "LinkedIn es la vía directa para recruiters, hiring managers y leads técnicos."
     }
   }
 } as const;
@@ -208,7 +208,7 @@ export const professionalExperience = {
   },
   summary: {
     en: "At Rezolve I work on ticketing portals, member validation, queueing, data update flows and AWS-backed operations for clubs in professional football.",
-    es: "En Rezolve trabajo sobre portales, validación de socios, colas, flujos de actualización de datos, integraciones y operación sobre AWS para clubes de fútbol profesional."
+    es: "En Rezolve trabajo en ticketing, validación de socios e integraciones sobre AWS para clubes de fútbol profesional."
   },
   notes: {
     en: [
@@ -321,9 +321,9 @@ export const contactPage = {
       "For roles and technical conversations, LinkedIn is the best first contact. Orbytia is only for service enquiries."
   },
   es: {
-    title: "Abierto a oportunidades de ingeniería y conversaciones técnicas.",
+    title: "LinkedIn para primer contacto.",
     description:
-      "Para oportunidades y conversaciones técnicas, LinkedIn es el mejor primer contacto."
+      "La vía directa para recruiters, hiring managers y leads técnicos."
   }
 } as const;
 

@@ -16,7 +16,7 @@ export function WorkPage({ locale }: WorkPageProps) {
   const description =
     locale === "en"
       ? "Private production work and product work, written with technical context, ownership and observable outcomes."
-      : "Trabajo privado en producción y trabajo de producto, explicado con contexto técnico, responsabilidad técnica y resultados observables.";
+      : "Casos de backend, integraciones, validación y concurrencia explicados con contexto técnico y resultados observables.";
   const categories =
     locale === "en"
       ? Object.entries(categoryLabels)
