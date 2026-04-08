@@ -29,7 +29,7 @@ export type CaseStudy = {
 export const siteConfig = {
   name: "Hernán Bonavota",
   description: {
-    en: "Software engineer focused on ticketing portals, integrations, backend systems and operational product work.",
+    en: "Software engineer specialized in backend and integrations.",
     es: "Ingeniero de software especializado en backend e integraciones."
   },
   domain: "https://hbonavota.com",
@@ -56,7 +56,6 @@ export const navigation = {
   en: [
     { label: "Work", href: "/work" },
     { label: "About", href: "/about" },
-    { label: "Orbytia", href: "/orbytia" },
     { label: "Contact", href: "/contact" }
   ],
   es: [
@@ -70,17 +69,16 @@ export const homeContent = {
   en: {
     hero: {
       eyebrow: "Hernán Bonavota",
-      title: "Software engineer for ticketing portals, integrations and backend systems.",
+      title: "Software engineer specialized in backend and integrations.",
       description:
-        "I work across ticketing, member validation, data flows and infrastructure where failures have direct operational cost.",
+        "I work on validation, concurrency and critical flows where failure impacts real operations.",
       primaryCta: { label: "See work", href: "/work" },
-      secondaryCta: { label: "Contact", href: "/contact" }
+      secondaryCta: { label: "LinkedIn", href: siteConfig.approvedLinks.linkedin }
     },
     selectedWork: {
       eyebrow: "Selected Work",
-      title: "Case studies from production work.",
-      description:
-        "Ticketing, member validation, concurrency control and product work, with concrete scope and decisions."
+      title: "Main case studies.",
+      description: "Concurrency, validation, and integrations with visible technical decisions."
     },
     capabilities: {
       eyebrow: "What I Cover",
@@ -90,9 +88,8 @@ export const homeContent = {
     },
     experience: {
       eyebrow: "Current Work",
-      title: "Current production scope.",
-      description:
-        "Today I work on ticketing, member validation, queueing, forms and infrastructure."
+      title: "Current experience.",
+      description: "Ticketing, member validation, and AWS-backed integrations."
     },
     ecosystem: {
       eyebrow: "Professional Context",
@@ -108,9 +105,8 @@ export const homeContent = {
     },
     contact: {
       eyebrow: "Contact",
-      title: "Open to engineering roles and technical conversations.",
-      description:
-        "LinkedIn is the best first contact for recruiters and hiring managers. Orbytia stays only as the separate route for service enquiries."
+      title: "Direct contact.",
+      description: "LinkedIn is the fastest way to reach me for recruiting or technical conversations."
     }
   },
   es: {
@@ -207,7 +203,7 @@ export const professionalExperience = {
     es: "Software Engineer / Product Engineer"
   },
   summary: {
-    en: "At Rezolve I work on ticketing portals, member validation, queueing, data update flows and AWS-backed operations for clubs in professional football.",
+    en: "At Rezolve I work on ticketing, member validation, and AWS-backed integrations for professional football clubs.",
     es: "En Rezolve trabajo en ticketing, validación de socios e integraciones sobre AWS para clubes de fútbol profesional."
   },
   notes: {
@@ -316,9 +312,8 @@ export const orbytiaPage = {
 
 export const contactPage = {
   en: {
-    title: "Open to engineering roles and technical conversations.",
-    description:
-      "For roles and technical conversations, LinkedIn is the best first contact. Orbytia is only for service enquiries."
+    title: "LinkedIn for first contact.",
+    description: "LinkedIn is the fastest way to reach me for recruiting or technical conversations."
   },
   es: {
     title: "LinkedIn para primer contacto.",

@@ -16,16 +16,7 @@ export function ContactPage({ locale }: ContactPageProps) {
       label: "LinkedIn",
       href: siteConfig.approvedLinks.linkedin,
       kicker: locale === "en" ? "Direct message" : "Mensaje directo"
-    },
-    ...(locale === "en"
-      ? [
-          {
-            label: "Orbytia",
-            href: siteConfig.approvedLinks.orbytia,
-            kicker: locale === "en" ? "Services only" : "Solo servicios"
-          }
-        ]
-      : [])
+    }
   ];
 
   return (
@@ -35,14 +26,12 @@ export function ContactPage({ locale }: ContactPageProps) {
         title={content.title}
         description={content.description}
       >
-        <div className={locale === "en" ? "grid gap-5 md:grid-cols-2 xl:grid-cols-2" : "max-w-lg"}>
+        <div className="max-w-lg">
           {links.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className={`surface-panel flex h-full flex-col justify-between p-[1.625rem] transition hover:border-cyan-200/28 hover:bg-white/[0.06] md:p-8 ${
-                locale === "en" ? "min-h-[12.75rem] md:min-h-[13.5rem]" : "min-h-[9rem]"
-              }`}
+              className="surface-panel flex h-full min-h-[9rem] flex-col justify-between p-[1.625rem] transition hover:border-cyan-200/28 hover:bg-white/[0.06] md:p-8"
             >
               <p className="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-white/42">
                 {item.kicker}
