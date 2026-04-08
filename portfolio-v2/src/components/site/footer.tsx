@@ -11,7 +11,7 @@ export function Footer({ locale }: FooterProps) {
   const externalLabel = locale === "en" ? "External" : "Externo";
   const bottomLine =
     locale === "en"
-      ? "Ticketing portals, integrations, backend systems and operational product work."
+      ? "Backend, integrations, and critical production flows."
       : "Backend, integraciones y flujos críticos en producción.";
 
   return (
@@ -23,7 +23,7 @@ export function Footer({ locale }: FooterProps) {
           </p>
           <h2 className="max-w-lg text-[1.72rem] font-semibold leading-[1.08] tracking-[-0.04em] text-white sm:text-[1.86rem]">
             {locale === "en"
-              ? "Software engineer for ticketing portals, integrations and backend systems."
+              ? "Software engineer specialized in backend and integrations."
               : "Ingeniero de software especializado en backend e integraciones."}
           </h2>
           <p className="max-w-lg text-[0.95rem] leading-8 text-white/58">
@@ -54,13 +54,6 @@ export function Footer({ locale }: FooterProps) {
                 LinkedIn
               </Link>
             </li>
-            {locale === "en" ? (
-              <li>
-                <Link href={siteConfig.approvedLinks.orbytia} className="inline-flex transition hover:text-white">
-                  Orbytia
-                </Link>
-              </li>
-            ) : null}
             <li>
               <Link href={siteConfig.approvedLinks.github} className="inline-flex transition hover:text-white">
                 GitHub

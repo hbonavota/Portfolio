@@ -15,19 +15,15 @@ export function WorkPage({ locale }: WorkPageProps) {
       : "Casos con alcance, restricciones y decisiones.";
   const description =
     locale === "en"
-      ? "Private production work and product work, written with technical context, ownership and observable outcomes."
+      ? "Backend, integrations, validation, and concurrency case studies with technical context and observable outcomes."
       : "Casos de backend, integraciones, validación y concurrencia explicados con contexto técnico y resultados observables.";
   const categories =
-    locale === "en"
-      ? Object.entries(categoryLabels)
-      : Object.entries(categoryLabels).filter(([key]) => key !== "ecosystem");
+    Object.entries(categoryLabels).filter(([key]) => key !== "ecosystem");
   const studies =
-    locale === "en"
-      ? caseStudies
-      : [
-          ...caseStudies.filter((study) => study.category === "client-work"),
-          ...caseStudies.filter((study) => study.slug === "verifiko")
-        ];
+    [
+      ...caseStudies.filter((study) => study.category === "client-work"),
+      ...caseStudies.filter((study) => study.slug === "verifiko")
+    ];
 
   return (
     <SiteFrame locale={locale}>
