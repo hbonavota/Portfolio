@@ -6,7 +6,7 @@ export const metadata = buildMetadata({
   locale: "es",
   pathname: "/es/trabajo",
   title: "Trabajo",
-  description: "Casos sobre validación, concurrencia, integraciones y producto en producción."
+  description: "Casos de backend, integraciones, validación y concurrencia."
 });
 
 export default function Page() {
