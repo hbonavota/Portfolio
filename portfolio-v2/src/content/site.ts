@@ -315,14 +315,14 @@ export const orbytiaPage = {
 
 export const contactPage = {
   en: {
-    title: "LinkedIn for first contact.",
+    title: "Let’s talk.",
     description:
-      "LinkedIn is the fastest way to reach me for recruiting or technical conversations."
+      "Reach out via LinkedIn for technical discussions, opportunities, or collaboration."
   },
   es: {
-    title: "LinkedIn para primer contacto.",
+    title: "Hablemos",
     description:
-      "La vía más directa para recruiters, hiring managers y conversaciones técnicas."
+      "Escríbeme por LinkedIn para hablar sobre proyectos, oportunidades o temas técnicos."
   }
 } as const;
 
