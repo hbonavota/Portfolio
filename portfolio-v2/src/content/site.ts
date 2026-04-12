@@ -252,7 +252,7 @@ export const aboutPage = {
       {
         title: "Responsabilidad de punta a punta",
         body:
-          "Trabajo directamente con cliente para aclarar requerimientos, definir la solución adecuada, implementarla y llevarla a producción sin perder el foco en el objetivo real."
+          "Trabajo directamente con los clientes para aclarar requerimientos, definir la solución adecuada, implementarla y llevarla a producción sin perder el foco en el objetivo real."
       },
       {
         title: "Alcance técnico",
@@ -334,12 +334,12 @@ export const caseStudies: CaseStudy[] = [
     pageRequired: true,
     title: { en: "Verifiko", es: "Verifiko" },
     strapline: {
-      en: "Cybersecurity product.",
-      es: "Producto de ciberseguridad."
+      en: "URL risk analysis with explainable signals.",
+      es: "Análisis de riesgo sobre URLs con señales explicables."
     },
     summary: {
-      en: "Product built to inspect suspicious URLs and expose technical risk signals in a format that can be reviewed quickly.",
-      es: "Producto creado para inspeccionar URLs sospechosas y exponer señales técnicas de riesgo en un formato revisable con rapidez."
+      en: "Product built to inspect suspicious URLs and expose technical risk signals in a format that can be reviewed and understood quickly.",
+      es: "Producto creado para inspeccionar URLs sospechosas y exponer señales técnicas de riesgo en un formato claro y revisable con rapidez."
     },
     role: {
       en: "Founder / Product Engineer",
@@ -347,46 +347,46 @@ export const caseStudies: CaseStudy[] = [
     },
     overview: {
       en: [
-        "Verifiko is a product initiative built outside client work. It sits in the portfolio as a product example rather than as the main source of operational experience."
+        "Verifiko is a product focused on analyzing suspicious URLs and exposing technical risk signals in a way that can be reviewed, understood, and acted on."
       ],
       es: [
-        "Verifiko es una iniciativa de producto construida fuera del trabajo con clientes. Está en el portfolio como ejemplo de producto, no como la principal fuente de experiencia operativa."
+        "Verifiko es un producto centrado en analizar URLs sospechosas y exponer señales técnicas de riesgo de forma que puedan revisarse, entenderse y utilizarse en la toma de decisiones."
       ]
     },
     challenge: {
       en: [
-        "The problem was turning technical URL checks into output that could be reviewed quickly without hiding the underlying signals."
+        "The problem was not just detecting risky URLs, but presenting technical signals without losing accuracy or turning the result into an opaque score."
       ],
       es: [
-        "El problema era convertir comprobaciones técnicas sobre URLs en un resultado revisable con rapidez sin ocultar las señales subyacentes."
+        "El problema no era solo detectar URLs sospechosas, sino presentar señales técnicas sin perder precisión ni convertir el resultado en un valor opaco."
       ]
     },
     approach: {
       en: [
-        "I structured the product around analysis steps, backend logic, and a result model that shows why a URL looks suspicious instead of collapsing everything into a single label."
+        "I designed the system around a layered analysis model, separating signal collection, risk evaluation, and final presentation to make the output both transparent and usable."
       ],
       es: [
-        "Lo estructuré alrededor de pasos de análisis, lógica backend y un modelo de resultado que muestra por qué una URL parece sospechosa en lugar de reducirlo todo a una sola etiqueta."
+        "Diseñé el sistema en capas, separando la recogida de señales, la evaluación de riesgo y la presentación final para conseguir un resultado transparente y usable."
       ]
     },
     highlights: {
       en: [
+        "Clear separation between signal collection, evaluation, and presentation.",
         "Balancing technical depth with readable output.",
-        "Separating signal collection from final risk presentation.",
-        "Keeping the scope product-sized and operationally realistic."
+        "Avoiding black-box scoring in favor of explainable results."
       ],
       es: [
-        "Equilibrar profundidad técnica con lectura rápida del resultado.",
-        "Separar la recogida de señales de la presentación final del riesgo.",
-        "Mantener un alcance de producto acotado y operable."
+        "Separación clara entre recogida de señales, evaluación y presentación.",
+        "Equilibrio entre profundidad técnica y lectura del resultado.",
+        "Evitar modelos opacos en favor de resultados explicables."
       ]
     },
     outcome: {
       en: [
-        "The result is a concrete product example: backend logic, security-focused analysis, and decisions around how technical output is exposed to users."
+        "The result is a product that exposes why a URL is considered risky, allowing faster and more informed decisions instead of relying on a single score."
       ],
       es: [
-        "El resultado es un ejemplo concreto de trabajo de producto: lógica backend, análisis orientado a seguridad y decisiones sobre cómo exponer salida técnica a usuarios."
+        "El resultado es un producto que muestra por qué una URL se considera riesgosa, permitiendo decisiones más rápidas e informadas en lugar de depender de una única puntuación."
       ]
     },
     publicLinks: [
@@ -407,8 +407,8 @@ export const caseStudies: CaseStudy[] = [
       es: "Control de acceso bajo alta concurrencia."
     },
     summary: {
-      en: "Implemented a queue layer to stabilize sales flows under peaks of 10,000+ concurrent users.",
-      es: "Implementación de una capa de cola para estabilizar flujos de venta en picos de más de 10.000 usuarios concurrentes."
+      en: "Designed and implemented a queue layer to stabilize ticket sales under peaks of 10,000+ concurrent users.",
+      es: "Diseño e implementación de una capa de cola para estabilizar la venta en picos de más de 10.000 usuarios concurrentes."
     },
     role: {
       en: "Software Engineer",
@@ -416,17 +416,17 @@ export const caseStudies: CaseStudy[] = [
     },
     overview: {
       en: [
-        "This work sat inside ticketing portals for professional football clubs running high-demand sales windows. Before the change there was no queue system, so users entered the sales flow at the same time and the portal broke under load."
+        "This work ran inside ticketing portals for professional football clubs during high-demand sales windows. Before the change, there was no queue system, so users entered the sales flow at the same time and the portal broke under load."
       ],
       es: [
-        "Este trabajo se hacía sobre portales de ticketing de clubes de fútbol profesional con ventanas de venta de alta demanda. Antes del cambio no existía un sistema de colas, así que los usuarios entraban todos a la vez y la venta se rompía bajo carga."
+        "Este trabajo se ejecutó sobre portales de ticketing de clubes de fútbol profesional durante ventanas de venta de alta demanda. Antes del cambio no existía un sistema de colas, así que los usuarios entraban todos a la vez y la venta se rompía bajo carga."
       ]
     },
     challenge: {
       en: [
-        "The immediate problem was uncontrolled concurrency: timeouts, failed purchases, and lost revenue once traffic reached roughly 10,000 concurrent users.",
-        "A key constraint was the external AVET system from LALIGA. It was a hard dependency in the flow and it did not scale under peak traffic, so the practical solution had to regulate access before users reached that point.",
-        "The issue was already affecting the business side. One account had been lost after the platform failed during this kind of launch."
+        "The system collapsed under uncontrolled concurrency: timeouts, failed purchases, and revenue loss once traffic reached ~10,000 concurrent users.",
+        "A critical constraint was the external AVET system from LALIGA, which did not scale under peak load and could not be modified.",
+        "The failure was already impacting the business, including the loss of at least one commercial account."
       ],
       es: [
         "El problema inmediato era la concurrencia descontrolada: timeouts, compras fallidas y pérdida de ingresos cuando el tráfico rondaba los 10.000 usuarios concurrentes.",
@@ -448,14 +448,14 @@ export const caseStudies: CaseStudy[] = [
     },
     highlights: {
       en: [
-        "The queue had to protect a non-scalable external dependency without blocking sales entirely.",
-        "The choice of a script integration was operational, not cosmetic: WordPress teams could switch and manage it without backend deployments.",
-        "The landing and sales portal were separated to reduce pressure on the main application at peak moments."
+        "Shielding a non-scalable external dependency without blocking sales.",
+        "Operational integration that could be controlled directly from WordPress.",
+        "Reducing pressure on the core system during peak traffic."
       ],
       es: [
-        "La cola tenía que proteger una dependencia externa no escalable sin bloquear por completo la venta.",
-        "La elección de una integración por script fue operativa, no cosmética: el equipo sobre WordPress podía activarla y gestionarla sin despliegues de backend.",
-        "La landing y el portal de venta se separaron para reducir presión sobre la aplicación principal en los momentos pico."
+        "Proteger una dependencia externa no escalable sin bloquear por completo la venta.",
+        "Integración operativa por script que el equipo sobre WordPress podía gestionar sin despliegues de backend.",
+        "Separación entre landing y portal de venta para reducir presión sobre la aplicación principal."
       ]
     },
     outcome: {
@@ -484,26 +484,26 @@ export const caseStudies: CaseStudy[] = [
       es: "Flujos de validación integrados con LALIGA y Data Lake."
     },
     summary: {
-      en: "Normalized legacy data and enforced profile validation before users continued through operational flows.",
-      es: "Normalización de datos legacy y validación de perfil antes de permitir el avance en flujos operativos."
+      en: "Normalized legacy data and enforced validation at entry points to prevent inconsistencies across systems.",
+      es: "Normalización de datos legacy y validación en puntos de entrada para evitar inconsistencias entre sistemas."
     },
     role: {
-      en: "Software Engineer / Technical Owner",
+      en: "Software Engineer / Integration Owner",
       es: "Software Engineer / Responsable de integraciones"
     },
     overview: {
       en: [
-        "This work sat in member portals where users had to validate themselves with idPersona and PIN, then update profile data before accessing services or purchase flows."
+        "This work ran in member portals where users had to validate themselves with idPersona and PIN, then update profile data before accessing services or purchase flows."
       ],
       es: [
-        "Este trabajo se hacía sobre portales de socios donde los usuarios tenían que validarse con idPersona y PIN, y después actualizar datos de perfil antes de acceder a servicios o flujos de compra."
+        "Este trabajo se ejecutó sobre portales de socios donde los usuarios tenían que validarse con idPersona y PIN, y después actualizar datos de perfil antes de acceder a servicios o flujos de compra."
       ]
     },
     challenge: {
       en: [
-        "The data coming from legacy sources was inconsistent: postal codes and municipalities did not match, countries appeared in multiple formats, and form fields contained years of unnormalized values.",
-        "Users were also getting blocked at login and update points because identity fields and profile data were often wrong at source, so the portal had to distinguish between invalid credentials, malformed input, and recoverable data issues.",
-        "The flow had to validate against LALIGA APIs and push corrected data downstream to the Data Lake, so bad input could not simply be accepted and cleaned later."
+        "Legacy data was inconsistent and unreliable: mismatched postal codes, duplicated formats, and years of unvalidated input.",
+        "Users were frequently blocked due to incorrect identity and profile data, requiring the system to distinguish between invalid credentials and recoverable data issues.",
+        "The system had to validate against LALIGA APIs and push clean data downstream, making it impossible to defer corrections."
       ],
       es: [
         "Los datos que llegaban desde sistemas legacy eran inconsistentes: códigos postales y municipios no coincidían, los países aparecían en formatos distintos y los formularios acumulaban años de valores sin normalizar.",
@@ -523,12 +523,12 @@ export const caseStudies: CaseStudy[] = [
     },
     highlights: {
       en: [
-        "Supporting multiple broken legacy formats without turning the login and update flow into a dead end.",
-        "Making data correction mandatory at the portal entry point while keeping the user path recoverable.",
+        "Supporting broken legacy formats without turning the user flow into a dead end.",
+        "Making data correction mandatory at the portal entry point while keeping the path recoverable.",
         "Aligning validation rules, DB constraints, and downstream Data Lake requirements in the same flow."
       ],
       es: [
-        "Soportar varios formatos legacy rotos sin convertir el login y la actualización en un callejón sin salida.",
+        "Soportar formatos legacy rotos sin convertir el flujo del usuario en un callejón sin salida.",
         "Hacer obligatoria la corrección de datos en la entrada del portal sin volver inutilizable el camino del usuario.",
         "Alinear reglas de validación, restricciones de BBDD y requisitos aguas abajo del Data Lake en un mismo flujo."
       ]
@@ -559,8 +559,8 @@ export const caseStudies: CaseStudy[] = [
       es: "Picos de tráfico, prevención de duplicados e integridad de datos."
     },
     summary: {
-      en: "Designed registration flows prepared for high load, duplicate control, and more reliable writes in production.",
-      es: "Diseño de flujos de registro preparados para alta carga, control de duplicados y escrituras más fiables en producción."
+      en: "Designed registration flows capable of handling high concurrency, duplicate prevention, and consistent data writes in production.",
+      es: "Diseño de flujos de registro capaces de soportar alta concurrencia, prevenir duplicados y asegurar escrituras consistentes en producción."
     },
     role: {
       en: "Full-stack Engineer / Implementation Owner",
@@ -586,8 +586,8 @@ export const caseStudies: CaseStudy[] = [
     },
     approach: {
       en: [
-        "I implemented validation on both sides of the request, added database restrictions and indexes, and instrumented the flow to make duplicate attempts and inconsistent writes visible.",
-        "The objective was to reject bad registrations early, keep persistence rules strict, and leave enough observability to debug incidents in production."
+        "I enforced validation across frontend, backend, and database layers, adding constraints and indexes to prevent duplicates and inconsistent writes.",
+        "The system was instrumented to expose anomalies and make production issues observable and debuggable."
       ],
       es: [
         "Implementé validación a ambos lados de la petición, añadí restricciones e índices en base de datos, y metí observabilidad para hacer visibles los intentos duplicados y las escrituras inconsistentes.",
@@ -638,15 +638,15 @@ export const caseStudies: CaseStudy[] = [
     },
     overview: {
       en: [
-        "Orbytia is the consulting side of my work. It brings together selected projects in custom software, automation, and applied AI outside the core engineering focus of this portfolio."
+        "Orbytia is the consulting side of my work, focused on custom software, automation, and applied AI projects with direct client involvement."
       ],
       es: [
-        "Orbytia es la parte de consultoría de mi trabajo. Reúne proyectos puntuales de software a medida, automatización e IA aplicada fuera del foco principal de ingeniería de este portfolio."
+        "Orbytia es la parte de consultoría de mi trabajo, centrada en proyectos de software a medida, automatización e IA aplicada con implicación directa con cliente."
       ]
     },
     challenge: {
       en: [
-        "The goal was to keep this consulting work visible without mixing it with the main engineering narrative of the portfolio."
+        "The challenge was to keep this work visible without diluting the core engineering focus of the portfolio."
       ],
       es: [
         "El objetivo era dar visibilidad a este trabajo de consultoría sin mezclarlo con la narrativa principal de ingeniería del portfolio."
@@ -662,9 +662,9 @@ export const caseStudies: CaseStudy[] = [
     },
     highlights: {
       en: [
-        "Separate space for consulting work.",
+        "Separate consulting context with its own positioning.",
         "Clear distinction between services and engineering profile.",
-        "Useful context without competing with the main portfolio."
+        "Additional context without competing with core work."
       ],
       es: [
         "Espacio separado para trabajo de consultoría.",
@@ -681,5 +681,5 @@ export const caseStudies: CaseStudy[] = [
       ]
     },
     publicLinks: [{ label: "Orbytia", href: siteConfig.approvedLinks.orbytia }]
-}
+  }
 ];
