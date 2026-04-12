@@ -11,24 +11,26 @@ type WorkPageProps = {
 export function WorkPage({ locale }: WorkPageProps) {
   const title =
     locale === "en"
-      ? "Case studies with scope, constraints and decisions."
-      : "Casos con alcance, restricciones y decisiones.";
+      ? "Production systems, integrations, and technical decisions."
+      : "Sistemas en producción, integraciones y decisiones técnicas.";
+
   const description =
     locale === "en"
-      ? "Backend, integrations, validation, and concurrency case studies with technical context and observable outcomes."
-      : "Casos de backend, integraciones, validación y concurrencia explicados con contexto técnico y resultados observables.";
+      ? "Case studies from real work across ticketing, validation, concurrency, and product engineering."
+      : "Casos basados en trabajo real en ticketing, validación, concurrencia e ingeniería de producto.";
+
   const categories =
     Object.entries(categoryLabels).filter(([key]) => key !== "ecosystem");
-  const studies =
-    [
-      ...caseStudies.filter((study) => study.category === "client-work"),
-      ...caseStudies.filter((study) => study.slug === "verifiko")
-    ];
+
+  const studies = [
+    ...caseStudies.filter((study) => study.category === "client-work"),
+    ...caseStudies.filter((study) => study.slug === "verifiko")
+  ];
 
   return (
     <SiteFrame locale={locale}>
       <Section
-        eyebrow={locale === "en" ? "Work" : "Trabajo"}
+        eyebrow={locale === "en" ? "Selected work" : "Experiencia seleccionada"}
         title={title}
         description={description}
       >
