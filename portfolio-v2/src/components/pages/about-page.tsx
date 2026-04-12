@@ -17,7 +17,7 @@ export function AboutPage({ locale }: AboutPageProps) {
         title={
           locale === "en"
             ? "How I work across client needs, technical decisions and delivery."
-            : "Cómo trabajo entre necesidades de cliente, decisiones técnicas y entrega."
+            : "Cómo trabajo entre necesidades de clientes, decisiones técnicas y entregas."
         }
         description={content.intro}
       >
