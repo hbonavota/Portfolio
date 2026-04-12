@@ -202,22 +202,22 @@ export const capabilities = {
 export const professionalExperience = {
   company: "Rezolve",
   role: {
-    en: "Software Engineer / Systems Integration Engineer",
-    es: "Software Engineer / Ingeniero de integraciones"
+    en: "Software Engineer / Systems Integrations",
+    es: "Software Engineer / Integraciones y sistemas"
   },
   summary: {
-    en: "At Rezolve, I work on ticketing systems, membership validation, and production integrations for professional football clubs.",
-    es: "En Rezolve trabajo en sistemas de ticketing, validación de socios e integraciones en producción para clubes de fútbol profesional."
+    en: "At Rezolve, I work on ticketing, membership validation, and production integrations for professional LALIGA football clubs, connecting business flows, external APIs, and operational systems.",
+    es: "En Rezolve trabajo en ticketing, validación de socios e integraciones en producción para clubes de fútbol bajo el ecosistema de LALIGA, conectando flujos de negocio, APIs externas y sistemas operativos."
   },
   notes: {
     en: [
       "Direct client work from discovery and solution definition to estimation, demo, and production rollout.",
-      "LALIGA integrations for validation and ticketing operations.",
+      "LALIGA integrations for validation, member services, and ticketing operations.",
       "AWS, Nginx, SSL, and production operations without relying on internal platform teams."
     ],
     es: [
       "Trabajo directo con cliente desde relevamiento y definición de solución hasta estimación, demo y salida a producción.",
-      "Integraciones con LALIGA para validación y operación de ticketing.",
+      "Integraciones con LALIGA para validación, servicios al socio y operación de ticketing.",
       "AWS, Nginx, SSL y operación en producción sin depender de equipos internos de plataforma."
     ]
   }
