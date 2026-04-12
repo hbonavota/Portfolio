@@ -29,8 +29,8 @@ export type CaseStudy = {
 export const siteConfig = {
   name: "Hernán Bonavota",
   description: {
-    en: "Software engineer for integrations and critical systems.",
-    es: "Ingeniero de software para integraciones y sistemas críticos."
+    en: "Software engineer focused on critical systems and integrations.",
+    es: "Ingeniero de software en sistemas críticos e integraciones."
   },
   domain: "https://hbonavota.com",
   portfolioDomains: ["https://hbonavota.com/", "https://hbonavota.es/"],
@@ -71,25 +71,25 @@ export const homeContent = {
       eyebrow: "Hernán Bonavota",
       title: "Software engineer for integrations and critical systems.",
       description:
-        "I work on platforms where reliability and operations cannot fail.",
+        "I design and run platforms where concurrency, validation, and reliability directly impact business outcomes.",
       primaryCta: { label: "See experience", href: "/work" },
       secondaryCta: { label: "LinkedIn", href: siteConfig.approvedLinks.linkedin }
     },
     selectedWork: {
       eyebrow: "Selected experience",
-      title: "Relevant experience.",
+      title: "Production systems",
       description:
         "Integrations, validation, and operational control in production environments."
     },
     capabilities: {
-      eyebrow: "What I cover",
+      eyebrow: "What I solve",
       title: "Technical scope.",
       description:
         "Integrations, validation, WordPress, AWS, and end-to-end delivery in production."
     },
     experience: {
       eyebrow: "Current experience",
-      title: "Current work.",
+      title: "Real-world experience",
       description:
         "Ticketing, membership validation, and AWS-backed integrations in production."
     },
@@ -117,25 +117,25 @@ export const homeContent = {
       eyebrow: "Hernán Bonavota",
       title: "Ingeniero de software para integraciones y sistemas críticos.",
       description:
-        "Trabajo en plataformas donde la fiabilidad y la operación no admiten errores.",
+        "Diseño y opero plataformas donde la concurrencia, la validación y la fiabilidad impactan directamente en el negocio.",
       primaryCta: { label: "Ver experiencia", href: "/es/trabajo" },
       secondaryCta: { label: "LinkedIn", href: siteConfig.approvedLinks.linkedin }
     },
     selectedWork: {
       eyebrow: "Experiencia destacada",
-      title: "Experiencia relevante.",
+      title: "Sistemas en producción",
       description:
         "Integraciones, validación y control operativo en entornos de producción."
     },
     capabilities: {
-      eyebrow: "Qué cubro",
+      eyebrow: "Qué resuelvo",
       title: "Alcance técnico.",
       description:
         "Integraciones, validación, WordPress, AWS y entrega de punta a punta en producción."
     },
     experience: {
       eyebrow: "Experiencia actual",
-      title: "Trabajo actual.",
+      title: "Experiencia real",
       description:
         "Ticketing, validación de socios e integraciones sobre AWS en producción."
     },
@@ -407,8 +407,8 @@ export const caseStudies: CaseStudy[] = [
       es: "Control de acceso bajo alta concurrencia."
     },
     summary: {
-      en: "Designed and implemented a queue layer to stabilize ticket sales under peaks of 10,000+ concurrent users.",
-      es: "Diseño e implementación de una capa de cola para estabilizar la venta en picos de más de 10.000 usuarios concurrentes."
+      en: "I implemented a queue layer to stabilize ticket sales under peaks of 10,000+ concurrent users.",
+      es: "Implemente una capa para estabilizar la venta en picos de más de 10.000 usuarios concurrentes."
     },
     role: {
       en: "Software Engineer",
