@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description.en,
   applicationName: "Hernán Bonavota Portfolio",
+  icons: {
+    icon: "/favicon.svg"
+  },
   alternates: {
     canonical: "/",
     languages: {
