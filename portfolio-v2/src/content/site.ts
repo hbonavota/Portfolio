@@ -226,43 +226,43 @@ export const professionalExperience = {
 export const aboutPage = {
   en: {
     intro:
-      "I add the most value when a project needs someone who can move between client requirements, technical decisions, and implementation without losing momentum.",
+      "I work on projects where understanding the real problem is as important as building the solution, keeping business needs, technical decisions, and implementation aligned until production.",
     sections: [
       {
-        title: "End-to-end ownership",
+        title: "End-to-end responsibility",
         body:
-          "I work directly with clients to gather use cases, define scope, estimate the work, implement it, demo it, and close delivery."
+          "I work directly with clients to clarify requirements, define the right solution, implement it, and take it to production without losing focus on the original objective."
       },
       {
-        title: "Technical range",
+        title: "Technical coverage",
         body:
-          "Frontend is where I move fastest, but I also cover backend, integrations, WordPress, AWS, and production debugging when the project requires it."
+          "I move across frontend, backend, integrations, WordPress, and AWS, covering what the project needs to work under real operational conditions."
       },
       {
-        title: "Operating style",
+        title: "How I work",
         body:
-          "I prefer clear constraints, explicit trade-offs, and solutions a team can maintain after launch."
+          "I focus on removing ambiguity early, making trade-offs explicit, and delivering solutions that remain stable and maintainable after release."
       }
     ]
   },
   es: {
     intro:
-      "Suelo aportar más valor cuando un proyecto necesita a una persona capaz de moverse entre requisitos de cliente, decisiones técnicas e implementación sin perder velocidad.",
+      "Trabajo en proyectos donde entender bien el problema es tan importante como construir la solución, manteniendo alineados negocio, decisiones técnicas e implementación hasta producción.",
     sections: [
       {
         title: "Responsabilidad de punta a punta",
         body:
-          "Trabajo directamente con clientes para relevar casos de uso, definir alcance, estimar, implementar, hacer la demo y cerrar la entrega."
+          "Trabajo directamente con cliente para aclarar requerimientos, definir la solución adecuada, implementarla y llevarla a producción sin perder el foco en el objetivo real."
       },
       {
-        title: "Rango técnico",
+        title: "Alcance técnico",
         body:
-          "El frontend es donde me muevo con más soltura, pero también cubro backend, integraciones, WordPress, AWS y debugging en producción cuando el proyecto lo exige."
+          "Me muevo entre frontend, backend, integraciones, WordPress y AWS, cubriendo lo necesario para que el sistema funcione en condiciones reales de operación."
       },
       {
         title: "Forma de trabajo",
         body:
-          "Prefiero restricciones claras, trade-offs explícitos y soluciones que un equipo pueda mantener después del lanzamiento."
+          "Me centro en eliminar ambigüedad desde el inicio, hacer explícitos los trade-offs y entregar soluciones que se mantengan estables y mantenibles tras el lanzamiento."
       }
     ]
   }
