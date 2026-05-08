@@ -18,8 +18,8 @@ export function OrbytiaPage({ locale }: OrbytiaPageProps) {
         eyebrow="Orbytia"
         title={
           locale === "en"
-            ? "Secondary consulting context for selected client work."
-            : "Contexto secundario de consultoría para parte del trabajo con clientes."
+            ? "Consulting context for selected client work."
+            : "Contexto de consultoría para parte del trabajo con clientes."
         }
         description={content.intro}
       >
