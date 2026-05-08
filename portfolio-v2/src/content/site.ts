@@ -49,7 +49,7 @@ export const categoryLabels: Record<Category, LocalizedText> = {
   product: { en: "Product", es: "Producto" },
   "client-work": { en: "Production systems", es: "Sistemas en producción" },
   lab: { en: "Lab", es: "Lab" },
-  ecosystem: { en: "Secondary context", es: "Contexto secundario" }
+  ecosystem: { en: "Consulting context", es: "Contexto de consultoría" }
 };
 
 export const navigation = {
@@ -69,9 +69,9 @@ export const homeContent = {
   en: {
     hero: {
       eyebrow: "Hernán Bonavota",
-      title: "Software engineer for integrations and critical systems.",
+      title: "Software engineer specializing in integrations and production-critical systems.",
       description:
-        "I design and run platforms where concurrency, validation, and reliability directly impact business outcomes.",
+        "I design and operate platforms where concurrency, validation, and reliability affect sales, access, and operational flows.",
       primaryCta: { label: "See experience", href: "/work" },
       secondaryCta: { label: "LinkedIn", href: siteConfig.approvedLinks.linkedin }
     },
@@ -115,9 +115,9 @@ export const homeContent = {
   es: {
     hero: {
       eyebrow: "Hernán Bonavota",
-      title: "Ingeniero de software para integraciones y sistemas críticos.",
+      title: "Ingeniero de software especializado en integraciones y sistemas críticos en producción.",
       description:
-        "Diseño y opero plataformas donde la concurrencia, la validación y la fiabilidad impactan directamente en el negocio.",
+        "Diseño y opero plataformas donde la concurrencia, la validación y la fiabilidad impactan directamente en ventas, accesos y flujos operativos.",
       primaryCta: { label: "Ver experiencia", href: "/es/trabajo" },
       secondaryCta: { label: "LinkedIn", href: siteConfig.approvedLinks.linkedin }
     },
@@ -207,7 +207,7 @@ export const professionalExperience = {
   },
   summary: {
     en: "At Rezolve, I work on ticketing, membership validation, and production integrations for professional LALIGA football clubs, connecting business flows, external APIs, and operational systems.",
-    es: "En Rezolve trabajo en ticketing, validación de socios e integraciones en producción para clubes de fútbol bajo el ecosistema de LALIGA, conectando flujos de negocio, APIs externas y sistemas operativos."
+    es: "En Rezolve trabajo en ticketing, validación de socios e integraciones en producción para clubes profesionales vinculados al ecosistema LALIGA, conectando flujos de negocio, APIs externas y sistemas operativos."
   },
   notes: {
     en: [
@@ -216,7 +216,7 @@ export const professionalExperience = {
       "AWS, Nginx, SSL, and production operations without relying on internal platform teams."
     ],
     es: [
-      "Trabajo directo con cliente desde relevamiento y definición de solución hasta estimación, demo y salida a producción.",
+      "Trabajo directo con cliente desde toma de requisitos y definición de solución hasta estimación, demo y salida a producción.",
       "Integraciones con LALIGA para validación, servicios al socio y operación de ticketing.",
       "AWS, Nginx, SSL y operación en producción sin depender de equipos internos de plataforma."
     ]
@@ -241,7 +241,7 @@ export const aboutPage = {
       {
         title: "How I work",
         body:
-          "I focus on removing ambiguity early, making trade-offs explicit, and delivering solutions that remain stable and maintainable after release."
+          "I work with clear specifications, iterative validation, and structured engineering workflows to reduce ambiguity, make trade-offs explicit, and keep releases maintainable."
       }
     ]
   },
@@ -262,7 +262,7 @@ export const aboutPage = {
       {
         title: "Forma de trabajo",
         body:
-          "Me centro en eliminar ambigüedad desde el inicio, hacer explícitos los trade-offs y entregar soluciones que se mantengan estables y mantenibles tras el lanzamiento."
+          "Trabajo con especificaciones claras, validación iterativa y workflows de ingeniería estructurados para reducir ambigüedad, hacer explícitos los trade-offs y mantener soluciones sostenibles una vez en producción."
       }
     ]
   }
@@ -338,8 +338,8 @@ export const caseStudies: CaseStudy[] = [
       es: "Análisis de riesgo sobre URLs con señales explicables."
     },
     summary: {
-      en: "Product built to inspect suspicious URLs and expose technical risk signals in a format that can be reviewed and understood quickly.",
-      es: "Producto creado para inspeccionar URLs sospechosas y exponer señales técnicas de riesgo en un formato claro y revisable con rapidez."
+      en: "Own product for analyzing suspicious URLs and exposing technical risk signals in a clear, reviewable, actionable format.",
+      es: "Producto propio para analizar URLs sospechosas y mostrar señales técnicas de riesgo de forma clara, revisable y accionable."
     },
     role: {
       en: "Founder / Product Engineer",
@@ -408,7 +408,7 @@ export const caseStudies: CaseStudy[] = [
     },
     summary: {
       en: "I implemented a queue layer to stabilize ticket sales under peaks of 10,000+ concurrent users.",
-      es: "Implemente una capa para estabilizar la venta en picos de más de 10.000 usuarios concurrentes."
+      es: "Implementé una capa para estabilizar la venta en picos de más de 10.000 usuarios concurrentes."
     },
     role: {
       en: "Software Engineer",
@@ -560,7 +560,7 @@ export const caseStudies: CaseStudy[] = [
     },
     summary: {
       en: "Designed registration flows capable of handling high concurrency, duplicate prevention, and consistent data writes in production.",
-      es: "Diseño de flujos de registro capaces de soportar alta concurrencia, prevenir duplicados y asegurar escrituras consistentes en producción."
+      es: "Diseñé flujos de registro capaces de soportar alta concurrencia, prevenir duplicados y asegurar escrituras consistentes en producción."
     },
     role: {
       en: "Full-stack Engineer / Implementation Owner",

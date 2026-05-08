@@ -11,8 +11,8 @@ export function Footer({ locale }: FooterProps) {
   const externalLabel = locale === "en" ? "External" : "Externo";
   const bottomLine =
     locale === "en"
-      ? "Backend, integrations, and critical production flows."
-      : "Backend, integraciones y flujos críticos en producción.";
+      ? "Integrations, backend systems, and critical production flows."
+      : "Integraciones, backend y flujos críticos en producción.";
 
   return (
     <footer className="border-t border-white/8 bg-slate-950/92">
