@@ -1,10 +1,18 @@
 import Link from "next/link";
 
-import { caseStudies, homeContent, Locale, professionalExperience, siteConfig } from "@/content/site";
+import {
+  capabilities,
+  caseStudies,
+  homeContent,
+  Locale,
+  professionalExperience,
+  siteConfig
+} from "@/content/site";
 
 import { CaseCard } from "@/components/site/case-card";
 import { Section } from "@/components/site/section";
 import { SiteFrame } from "@/components/site/site-frame";
+import { getLocalizedPath } from "@/lib/i18n";
 
 type HomePageProps = {
   locale: Locale;
@@ -12,7 +20,11 @@ type HomePageProps = {
 
 export function HomePage({ locale }: HomePageProps) {
   const content = homeContent[locale];
-  const featured = caseStudies.filter((study) => study.featured && study.category === "client-work");
+  const featured = caseStudies.filter(
+    (study) => study.featured && study.category === "client-work"
+  );
+  const capabilityItems = capabilities[locale];
+  const aboutHref = getLocalizedPath(locale, "about");
 
   return (
     <SiteFrame locale={locale}>
@@ -49,6 +61,7 @@ export function HomePage({ locale }: HomePageProps) {
           id="selected-work"
           eyebrow={content.selectedWork.eyebrow}
           title={content.selectedWork.title}
+          description={content.selectedWork.description}
         >
           <div className="grid gap-6 xl:grid-cols-2">
             {featured.map((study) => (
@@ -58,9 +71,28 @@ export function HomePage({ locale }: HomePageProps) {
         </Section>
 
         <Section
+          id="capabilities"
+          eyebrow={content.capabilities.eyebrow}
+          title={content.capabilities.title}
+          description={content.capabilities.description}
+        >
+          <div className="grid gap-5 md:grid-cols-2">
+            {capabilityItems.map((item) => (
+              <div key={item.title} className="surface-panel rounded-[2rem] p-6 md:p-7">
+                <h3 className="text-[1.1rem] font-semibold tracking-[-0.02em] text-white md:text-[1.18rem]">
+                  {item.title}
+                </h3>
+                <p className="mt-4 text-[0.98rem] leading-8 text-white/68">{item.text}</p>
+              </div>
+            ))}
+          </div>
+        </Section>
+
+        <Section
           id="experience"
           eyebrow={content.experience.eyebrow}
           title={content.experience.title}
+          description={content.experience.description}
         >
           <div className="grid gap-5 lg:grid-cols-[1.02fr_0.98fr]">
             <div className="surface-panel-strong rounded-[2.2rem] p-7 md:p-8">
@@ -101,6 +133,28 @@ export function HomePage({ locale }: HomePageProps) {
                 </div>
               </Link>
             </div>
+          </div>
+        </Section>
+
+        <Section
+          id="about-teaser"
+          eyebrow={content.about.eyebrow}
+          title={content.about.title}
+          description={content.about.description}
+        >
+          <div>
+            <Link
+              href={aboutHref}
+              className="inline-flex items-center gap-2 text-sm font-semibold text-cyan-100 transition hover:text-cyan-200"
+            >
+              {locale === "en" ? "Read more on About" : "Más en Sobre mí"}
+              <span
+                aria-hidden="true"
+                className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/[0.04]"
+              >
+                →
+              </span>
+            </Link>
           </div>
         </Section>
       </div>

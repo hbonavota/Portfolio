@@ -1,4 +1,4 @@
-import { aboutPage, Locale } from "@/content/site";
+import { aboutPage, Locale, recruiterAnchor, stack } from "@/content/site";
 
 import { Section } from "@/components/site/section";
 import { SiteFrame } from "@/components/site/site-frame";
@@ -9,6 +9,7 @@ type AboutPageProps = {
 
 export function AboutPage({ locale }: AboutPageProps) {
   const content = aboutPage[locale];
+  const anchor = recruiterAnchor[locale];
 
   return (
     <SiteFrame locale={locale}>
@@ -30,6 +31,43 @@ export function AboutPage({ locale }: AboutPageProps) {
               <p className="max-w-[34rem] text-[1.02rem] leading-8 text-white/70">{section.body}</p>
             </div>
           ))}
+        </div>
+
+        <div className="surface-panel rounded-[2rem] p-7 md:p-8">
+          <p className="text-[0.7rem] font-semibold uppercase tracking-[0.28em] text-cyan-200/72">
+            {locale === "en" ? "Stack" : "Stack"}
+          </p>
+          <div className="mt-5 flex flex-wrap gap-2.5">
+            {stack.map((item) => (
+              <span
+                key={item}
+                className="rounded-full border border-white/10 bg-white/[0.03] px-3.5 py-1.5 text-[0.78rem] font-medium text-white/76"
+              >
+                {item}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        <div className="grid gap-4 sm:grid-cols-3">
+          <div className="surface-panel rounded-[1.8rem] p-6 md:p-7">
+            <p className="text-[0.66rem] font-semibold uppercase tracking-[0.26em] text-white/48">
+              {locale === "en" ? "Experience" : "Experiencia"}
+            </p>
+            <p className="mt-4 text-[0.96rem] leading-7 text-white/78">{anchor.years}</p>
+          </div>
+          <div className="surface-panel rounded-[1.8rem] p-6 md:p-7">
+            <p className="text-[0.66rem] font-semibold uppercase tracking-[0.26em] text-white/48">
+              {locale === "en" ? "Location" : "Ubicación"}
+            </p>
+            <p className="mt-4 text-[0.96rem] leading-7 text-white/78">{anchor.location}</p>
+          </div>
+          <div className="surface-panel rounded-[1.8rem] p-6 md:p-7">
+            <p className="text-[0.66rem] font-semibold uppercase tracking-[0.26em] text-white/48">
+              {locale === "en" ? "Availability" : "Disponibilidad"}
+            </p>
+            <p className="mt-4 text-[0.96rem] leading-7 text-white/78">{anchor.availability}</p>
+          </div>
         </div>
       </Section>
     </SiteFrame>

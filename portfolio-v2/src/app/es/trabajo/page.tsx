@@ -6,7 +6,7 @@ export const metadata = buildMetadata({
   locale: "es",
   pathname: "/es/trabajo",
   title: "Trabajo",
-  description: "Casos de backend, integraciones, validación y concurrencia."
+  description: "Tres proyectos en Rezolve — control de colas, validación de socios y registro bajo alta concurrencia."
 });
 
 export default function Page() {
