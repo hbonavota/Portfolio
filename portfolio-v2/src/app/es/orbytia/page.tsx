@@ -6,7 +6,7 @@ export const metadata = buildMetadata({
   locale: "es",
   pathname: "/es/orbytia",
   title: "Orbytia",
-  description: "Contexto de consultoría alrededor de parte del trabajo con clientes."
+  description: "Contexto de consultoría separado. El perfil de ingeniería es la vía principal."
 });
 
 export default function Page() {

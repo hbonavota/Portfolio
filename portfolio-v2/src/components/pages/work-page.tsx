@@ -1,4 +1,4 @@
-import { caseStudies, categoryLabels, Locale } from "@/content/site";
+import { caseStudies, categoryLabels, Locale, recruiterAnchor } from "@/content/site";
 
 import { CaseCard } from "@/components/site/case-card";
 import { Section } from "@/components/site/section";
@@ -8,29 +8,32 @@ type WorkPageProps = {
   locale: Locale;
 };
 
+const orderedSlugs = [
+  "ticketing-queue-control",
+  "member-validation-data-update",
+  "high-concurrency-draw-flows"
+];
+
 export function WorkPage({ locale }: WorkPageProps) {
   const title =
     locale === "en"
-      ? "Production systems, integrations, and technical decisions."
-      : "Sistemas en producción, integraciones y decisiones técnicas.";
+      ? "Three projects at Rezolve. Same domain, different operational pressure."
+      : "Tres proyectos en Rezolve. Mismo dominio, presión operativa distinta.";
 
-  const description =
-    locale === "en"
-      ? "Case studies from real work across ticketing, validation, concurrency, and product engineering."
-      : "Casos basados en trabajo real en ticketing, validación, concurrencia e ingeniería de producto.";
+  const description = recruiterAnchor[locale].ndaLine;
 
-  const categories =
-    Object.entries(categoryLabels).filter(([key]) => key !== "ecosystem");
+  const categories = Object.entries(categoryLabels).filter(
+    ([key]) => key === "client-work"
+  );
 
-  const studies = [
-    ...caseStudies.filter((study) => study.category === "client-work"),
-    ...caseStudies.filter((study) => study.slug === "verifiko")
-  ];
+  const studies = orderedSlugs
+    .map((slug) => caseStudies.find((entry) => entry.slug === slug))
+    .filter((study): study is NonNullable<typeof study> => Boolean(study));
 
   return (
     <SiteFrame locale={locale}>
       <Section
-        eyebrow={locale === "en" ? "Selected work" : "Experiencia seleccionada"}
+        eyebrow={locale === "en" ? "Selected work" : "Trabajo seleccionado"}
         title={title}
         description={description}
       >

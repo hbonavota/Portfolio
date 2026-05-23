@@ -100,14 +100,31 @@ export function CaseStudyPage({ locale, slug }: CaseStudyPageProps) {
         </div>
       </Section>
 
+      {study.architecture ? (
+        <Section
+          eyebrow={locale === "en" ? "Architecture" : "Arquitectura"}
+          title={locale === "en" ? "Architecture" : "Arquitectura"}
+        >
+          <pre className="surface-panel overflow-x-auto whitespace-pre rounded-[1.8rem] p-6 font-mono text-[0.86rem] leading-7 text-white/72 md:p-7">
+            {study.architecture[locale]}
+          </pre>
+        </Section>
+      ) : null}
+
       <Section
-        eyebrow={locale === "en" ? "Challenges" : "Retos"}
-        title={locale === "en" ? "Challenges" : "Retos"}
+        eyebrow={locale === "en" ? "Decisions" : "Decisiones"}
+        title={locale === "en" ? "Key decisions" : "Decisiones clave"}
       >
         <div className="grid gap-4 md:grid-cols-3">
-          {study.highlights[locale].map((item) => (
-            <div key={item} className="surface-panel rounded-[1.8rem] p-6 text-[0.98rem] leading-8 text-white/72 md:p-7">
-              {item}
+          {study.highlights[locale].map((item, idx) => (
+            <div
+              key={item}
+              className="surface-panel rounded-[1.8rem] p-6 text-[0.98rem] leading-8 text-white/72 md:p-7"
+            >
+              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-cyan-200/72">
+                {String(idx + 1).padStart(2, "0")}
+              </p>
+              <p className="mt-4">{item}</p>
             </div>
           ))}
         </div>

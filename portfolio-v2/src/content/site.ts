@@ -22,6 +22,7 @@ export type CaseStudy = {
   approach: Record<Locale, string[]>;
   highlights: Record<Locale, string[]>;
   outcome: Record<Locale, string[]>;
+  architecture?: Record<Locale, string>;
   publicLinks: LinkItem[];
   pageRequired: boolean;
 };
@@ -29,8 +30,8 @@ export type CaseStudy = {
 export const siteConfig = {
   name: "Hernán Bonavota",
   description: {
-    en: "Software engineer focused on critical systems and integrations.",
-    es: "Ingeniero de software en sistemas críticos e integraciones."
+    en: "Software engineer building ticketing, member portals and LALIGA integrations for first-division football clubs.",
+    es: "Ingeniero de software construyendo ticketing, portales de socios e integraciones con LALIGA para clubes de primera división."
   },
   domain: "https://hbonavota.com",
   portfolioDomains: ["https://hbonavota.com/", "https://hbonavota.es/"],
@@ -47,7 +48,7 @@ export const siteConfig = {
 
 export const categoryLabels: Record<Category, LocalizedText> = {
   product: { en: "Product", es: "Producto" },
-  "client-work": { en: "Production systems", es: "Sistemas en producción" },
+  "client-work": { en: "Ticketing & portals", es: "Ticketing y portales" },
   lab: { en: "Lab", es: "Lab" },
   ecosystem: { en: "Consulting context", es: "Contexto de consultoría" }
 };
@@ -65,6 +66,37 @@ export const navigation = {
   ]
 } as const;
 
+export const recruiterAnchor = {
+  en: {
+    years: "~4 years building and operating production systems for first-division football clubs.",
+    location: "Palma de Mallorca, Balearic Islands, Spain · Remote · CET",
+    locationShort: "Palma de Mallorca · CET",
+    availability: "Open to engineering roles, 2026",
+    ndaLine: "Recent work for first-division football clubs (under NDA)."
+  },
+  es: {
+    years: "~4 años construyendo y operando sistemas en producción para clubes de primera división.",
+    location: "Palma de Mallorca, Islas Baleares, España · Remoto · CET",
+    locationShort: "Palma de Mallorca · CET",
+    availability: "Abierto a roles de ingeniería, 2026",
+    ndaLine: "Trabajo reciente para clubes de primera división (bajo NDA)."
+  }
+} as const;
+
+export const stack: readonly string[] = [
+  "PHP",
+  "WordPress / WooCommerce",
+  "JavaScript / TypeScript",
+  "React / Next.js",
+  "Node.js",
+  "MySQL / MariaDB",
+  "REST APIs",
+  "AWS (EC2, RDS, S3, ACM)",
+  "Nginx",
+  "Linux",
+  "Git"
+] as const;
+
 export const homeContent = {
   en: {
     hero: {
@@ -76,40 +108,33 @@ export const homeContent = {
       secondaryCta: { label: "LinkedIn", href: siteConfig.approvedLinks.linkedin }
     },
     selectedWork: {
-      eyebrow: "Selected experience",
-      title: "Production systems",
+      eyebrow: "Selected work",
+      title: "Selected case studies",
       description:
-        "Integrations, validation, and operational control in production environments."
+        "Queue control, member validation, and registration under concurrency."
     },
     capabilities: {
-      eyebrow: "What I solve",
-      title: "Technical scope.",
-      description:
-        "Integrations, validation, WordPress, AWS, and end-to-end delivery in production."
+      eyebrow: "Scope",
+      title: "What I cover",
+      description: "Where the work usually lives."
     },
     experience: {
-      eyebrow: "Current experience",
-      title: "Real-world experience",
+      eyebrow: "Currently",
+      title: "At Rezolve",
       description:
-        "Ticketing, membership validation, and AWS-backed integrations in production."
-    },
-    ecosystem: {
-      eyebrow: "Professional context",
-      title: "Where Orbytia fits.",
-      description:
-        "My engineering profile is the main path here. Orbytia stays as complementary consulting context."
+        "Ticketing, member portals and AWS-backed integrations."
     },
     about: {
       eyebrow: "About",
-      title: "How I work.",
+      title: "How I work",
       description:
-        "Technical judgment, end-to-end delivery, and direct work with clients and teams."
+        "Discovery, written spec, demo, rollout. End-to-end ownership across frontend, backend, integrations and the AWS box it ships on."
     },
     contact: {
       eyebrow: "Contact",
       title: "Direct contact.",
       description:
-        "LinkedIn is the fastest way to reach me for recruiting or technical conversations."
+        "LinkedIn for roles and tech conversations. GitHub for code."
     }
   },
   es: {
@@ -122,40 +147,33 @@ export const homeContent = {
       secondaryCta: { label: "LinkedIn", href: siteConfig.approvedLinks.linkedin }
     },
     selectedWork: {
-      eyebrow: "Experiencia destacada",
-      title: "Sistemas en producción",
+      eyebrow: "Trabajo seleccionado",
+      title: "Casos seleccionados",
       description:
-        "Integraciones, validación y control operativo en entornos de producción."
+        "Control de colas, validación de socios y registro bajo concurrencia."
     },
     capabilities: {
-      eyebrow: "Qué resuelvo",
-      title: "Alcance técnico.",
-      description:
-        "Integraciones, validación, WordPress, AWS y entrega de punta a punta en producción."
+      eyebrow: "Alcance",
+      title: "Lo que cubro",
+      description: "Dónde suele vivir el trabajo."
     },
     experience: {
-      eyebrow: "Experiencia actual",
-      title: "Experiencia real",
+      eyebrow: "Actualmente",
+      title: "En Rezolve",
       description:
-        "Ticketing, validación de socios e integraciones sobre AWS en producción."
-    },
-    ecosystem: {
-      eyebrow: "Contexto profesional",
-      title: "Dónde encaja Orbytia.",
-      description:
-        "Mi perfil de ingeniería es la vía principal. Orbytia queda como contexto complementario de consultoría."
+        "Ticketing, portales de socios e integraciones sobre AWS."
     },
     about: {
       eyebrow: "Sobre mí",
-      title: "Cómo trabajo.",
+      title: "Cómo trabajo",
       description:
-        "Criterio técnico, entrega de punta a punta y trato directo con cliente y equipo."
+        "Descubrimiento, spec escrita, demo y salida a producción. Propiedad de punta a punta entre frontend, backend, integraciones y la máquina AWS donde corre."
     },
     contact: {
       eyebrow: "Contacto",
       title: "Contacto directo.",
       description:
-        "LinkedIn es la vía más directa para recruiters, hiring managers y conversaciones técnicas."
+        "LinkedIn para roles y conversaciones técnicas. GitHub para código."
     }
   }
 } as const;
@@ -164,37 +182,37 @@ export const capabilities = {
   en: [
     {
       title: "Ticketing and member portals",
-      text: "Sales, validation, access, and account flows tied to real club operations."
+      text: "Sale flows, access control and member account journeys anchored to the club's operating reality."
     },
     {
-      title: "Integrations and data validation",
-      text: "LALIGA APIs, legacy normalization, and mandatory profile update flows."
+      title: "LALIGA integrations and data validation",
+      text: "Two LALIGA internal platforms — ticketing and member management — integrated through APIs I built and own, plus legacy normalization and validated forms that feed a CRM Data Lake in real time."
     },
     {
       title: "WordPress under operational load",
-      text: "Custom plugins and frontend integrations where business teams need direct operational control."
+      text: "Custom plugins, WooCommerce flows and frontend integrations where the business team needs to operate the portal without a deploy."
     },
     {
       title: "AWS and end-to-end delivery",
-      text: "Frontend, backend, infrastructure, and production releases without waiting on internal handoffs."
+      text: "EC2 (AMIs, scaling), RDS, S3, ACM and Nginx — from staging to release without waiting on a platform team."
     }
   ],
   es: [
     {
       title: "Portales de ticketing y socios",
-      text: "Venta, validación, acceso y flujos de cuenta ligados a la operativa real del club."
+      text: "Flujos de venta, control de acceso y recorridos de socio anclados a la operativa real del club."
     },
     {
-      title: "Integraciones y validación de datos",
-      text: "APIs de LALIGA, normalización de legacy y flujos obligatorios de actualización de perfil."
+      title: "Integraciones LALIGA y validación de datos",
+      text: "Dos plataformas internas de LALIGA — ticketing y gestión de socios — integradas mediante APIs que construí y mantengo, normalización de legacy y formularios validados que alimentan en tiempo real un Data Lake del CRM."
     },
     {
       title: "WordPress bajo carga operativa",
-      text: "Plugins a medida e integraciones frontend donde negocio necesita control operativo directo."
+      text: "Plugins a medida, flujos WooCommerce e integraciones frontend donde negocio necesita operar el portal sin esperar a un deploy."
     },
     {
       title: "AWS y entrega de punta a punta",
-      text: "Frontend, backend, infraestructura y salidas a producción sin depender de handoffs internos."
+      text: "EC2 (AMIs, escalado), RDS, S3, ACM y Nginx — de staging a producción sin esperar a un equipo de plataforma."
     }
   ]
 } as const;
@@ -206,19 +224,19 @@ export const professionalExperience = {
     es: "Software Engineer / Integraciones y sistemas"
   },
   summary: {
-    en: "At Rezolve, I work on ticketing, membership validation, and production integrations for professional LALIGA football clubs, connecting business flows, external APIs, and operational systems.",
-    es: "En Rezolve trabajo en ticketing, validación de socios e integraciones en producción para clubes profesionales vinculados al ecosistema LALIGA, conectando flujos de negocio, APIs externas y sistemas operativos."
+    en: "At Rezolve I run ticketing, member portals and LALIGA integrations for professional football clubs. Two LALIGA internal platforms — ticketing and member management — are integrated through APIs I built and operate.",
+    es: "En Rezolve llevo ticketing, portales de socios e integraciones con LALIGA para clubes de fútbol profesional. Dos plataformas internas de LALIGA — ticketing y gestión de socios — integradas mediante APIs que construí y opero."
   },
   notes: {
     en: [
-      "Direct client work from discovery and solution definition to estimation, demo, and production rollout.",
-      "LALIGA integrations for validation, member services, and ticketing operations.",
-      "AWS, Nginx, SSL, and production operations without relying on internal platform teams."
+      "Direct client work: discovery, written spec, estimation, demo to stakeholders, and production rollout.",
+      "Owned APIs against the two LALIGA internal platforms for member validation, account services and ticketing operations.",
+      "AWS, Nginx, SSL and production operations without relying on an internal platform team."
     ],
     es: [
-      "Trabajo directo con cliente desde toma de requisitos y definición de solución hasta estimación, demo y salida a producción.",
-      "Integraciones con LALIGA para validación, servicios al socio y operación de ticketing.",
-      "AWS, Nginx, SSL y operación en producción sin depender de equipos internos de plataforma."
+      "Trabajo directo con cliente: descubrimiento, spec escrita, estimación, demo a stakeholders y salida a producción.",
+      "APIs propias contra las dos plataformas internas de LALIGA para validación de socios, servicios de cuenta y operación de ticketing.",
+      "AWS, Nginx, SSL y operación en producción sin depender de un equipo interno de plataforma."
     ]
   }
 } as const;
@@ -226,43 +244,43 @@ export const professionalExperience = {
 export const aboutPage = {
   en: {
     intro:
-      "I work on projects where understanding the real problem is as important as building the solution, keeping business needs, technical decisions, and implementation aligned until production.",
+      "Most of what I do at Rezolve has the same shape: a club brings a portal problem — sale collapses, members get blocked, data drifts — and I'm the person who turns that into a written spec, a demo, and a release that survives match day.",
     sections: [
       {
-        title: "End-to-end responsibility",
+        title: "From the client call to the AWS box",
         body:
-          "I work directly with clients to clarify requirements, define the right solution, implement it, and take it to production without losing focus on the original objective."
+          "I take the requirement directly from the client, push back on the parts that won't survive contact with production, write the spec, build it, and put it on the EC2 instance it runs on. No internal handoff between any of those steps."
       },
       {
-        title: "Technical coverage",
+        title: "Where the work actually lives",
         body:
-          "I move across frontend, backend, integrations, WordPress, and AWS, covering what the project needs to work under real operational conditions."
+          "Frontend in WordPress and Next.js, backend in PHP and Node.js, MySQL behind it, and the integration layer against LALIGA's ticketing and member-management platforms — including the APIs I built for that integration. AWS (EC2, RDS, S3, ACM) and Nginx are the engine room."
       },
       {
-        title: "How I work",
+        title: "Spec first, then code",
         body:
-          "I work with clear specifications, iterative validation, and structured engineering workflows to reduce ambiguity, make trade-offs explicit, and keep releases maintainable."
+          "I write the spec before I write the code, validate against that spec, and use AI tooling inside that loop where it accelerates writing and exploration — not where it would replace engineering judgment. Releases that survive match day are the test."
       }
     ]
   },
   es: {
     intro:
-      "Trabajo en proyectos donde entender bien el problema es tan importante como construir la solución, manteniendo alineados negocio, decisiones técnicas e implementación hasta producción.",
+      "Casi todo lo que hago en Rezolve tiene la misma forma: un club llega con un problema en su portal — la venta cae, los socios se bloquean, los datos derivan — y yo soy quien lo convierte en una spec escrita, una demo y una release que aguanta el día de partido.",
     sections: [
       {
-        title: "Responsabilidad de punta a punta",
+        title: "De la llamada con el cliente a la instancia AWS",
         body:
-          "Trabajo directamente con los clientes para aclarar requerimientos, definir la solución adecuada, implementarla y llevarla a producción sin perder el foco en el objetivo real."
+          "Recojo el requisito directamente del cliente, discuto las partes que no van a aguantar en producción, escribo la spec, lo construyo y lo dejo corriendo en la instancia EC2 donde vive. Sin handoffs internos entre medio."
       },
       {
-        title: "Alcance técnico",
+        title: "Dónde vive el trabajo",
         body:
-          "Me muevo entre frontend, backend, integraciones, WordPress y AWS, cubriendo lo necesario para que el sistema funcione en condiciones reales de operación."
+          "Frontend en WordPress y Next.js, backend en PHP y Node.js, MySQL por detrás y la capa de integración contra las plataformas de ticketing y gestión de socios de LALIGA — incluidas las APIs que construí para integrarlas. AWS (EC2, RDS, S3, ACM) y Nginx son la sala de máquinas."
       },
       {
-        title: "Forma de trabajo",
+        title: "Primero la spec, después el código",
         body:
-          "Trabajo con especificaciones claras, validación iterativa y workflows de ingeniería estructurados para reducir ambigüedad, hacer explícitos los trade-offs y mantener soluciones sostenibles una vez en producción."
+          "Escribo la spec antes que el código, valido contra esa spec y uso herramientas de IA dentro de ese loop donde aceleran la escritura y la exploración — no donde sustituirían el criterio de ingeniería. Las releases que aguantan el día de partido son el examen."
       }
     ]
   }
@@ -271,7 +289,7 @@ export const aboutPage = {
 export const orbytiaPage = {
   en: {
     intro:
-      "Orbytia is a separate consulting context around part of my work. This portfolio remains centered on my engineering profile.",
+      "Orbytia is the consulting brand for some of my client work. The engineering portfolio is the main page; Orbytia covers service enquiries.",
     sections: [
       {
         title: "What it covers",
@@ -285,14 +303,13 @@ export const orbytiaPage = {
       },
       {
         title: "When it matters",
-        body:
-          "It matters for service enquiries. Recruiting conversations should stay on the main portfolio and LinkedIn."
+        body: "For service enquiries."
       }
     ]
   },
   es: {
     intro:
-      "Orbytia es un contexto de consultoría separado alrededor de parte de mi trabajo. Este portfolio sigue centrado en mi perfil de ingeniería.",
+      "Orbytia es la marca de consultoría para parte de mi trabajo con clientes. El portfolio de ingeniería es la página principal; Orbytia cubre consultas de servicios.",
     sections: [
       {
         title: "Qué cubre",
@@ -306,8 +323,7 @@ export const orbytiaPage = {
       },
       {
         title: "Cuándo importa",
-        body:
-          "Importa para consultas de servicios. Las conversaciones de recruiting deberían quedarse en el portfolio principal y LinkedIn."
+        body: "Para consultas de servicios."
       }
     ]
   }
@@ -315,14 +331,14 @@ export const orbytiaPage = {
 
 export const contactPage = {
   en: {
-    title: "Let’s talk.",
+    title: "Let's talk",
     description:
-      "Reach out via LinkedIn for technical discussions, opportunities, or collaboration."
+      "LinkedIn for role conversations and technical chats. GitHub for code. CV on request."
   },
   es: {
     title: "Hablemos",
     description:
-      "Escríbeme por LinkedIn para hablar sobre proyectos, oportunidades o temas técnicos."
+      "LinkedIn para conversaciones sobre roles y temas técnicos. GitHub para código. CV bajo petición."
   }
 } as const;
 
@@ -330,8 +346,8 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "verifiko",
     category: "product",
-    featured: true,
-    pageRequired: true,
+    featured: false,
+    pageRequired: false,
     title: { en: "Verifiko", es: "Verifiko" },
     strapline: {
       en: "URL risk analysis with explainable signals.",
@@ -424,13 +440,13 @@ export const caseStudies: CaseStudy[] = [
     },
     challenge: {
       en: [
-        "The system collapsed under uncontrolled concurrency: timeouts, failed purchases, and revenue loss once traffic reached ~10,000 concurrent users.",
-        "A critical constraint was the external AVET system from LALIGA, which did not scale under peak load and could not be modified.",
-        "The failure was already impacting the business, including the loss of at least one commercial account."
+        "The immediate problem was uncontrolled concurrency: timeouts, failed purchases and lost revenue once traffic hit around 10,000 concurrent users.",
+        "The hard constraint was an external LALIGA platform sitting inside the purchase flow. It didn't scale under peak load and we couldn't modify it, so any viable solution had to throttle access before reaching it.",
+        "The problem was already hitting the business: a commercial account had been lost after exactly this kind of failure during a previous on-sale."
       ],
       es: [
         "El problema inmediato era la concurrencia descontrolada: timeouts, compras fallidas y pérdida de ingresos cuando el tráfico rondaba los 10.000 usuarios concurrentes.",
-        "La restricción clave era el sistema externo AVET de LALIGA. Era una dependencia dura dentro del flujo y no escalaba bajo picos, así que la solución viable tenía que regular el acceso antes de llegar ahí.",
+        "La restricción clave era una plataforma externa de LALIGA dentro del flujo de compra. No escalaba bajo picos y no podíamos modificarla, así que la solución viable tenía que regular el acceso antes de llegar ahí.",
         "El problema ya estaba afectando al negocio. Se había perdido una cuenta después de un fallo de este tipo durante una salida de venta."
       ]
     },
@@ -461,12 +477,18 @@ export const caseStudies: CaseStudy[] = [
     outcome: {
       en: [
         "The sales flow stopped collapsing at around 10,000 concurrent users and moved to an ordered waiting room of roughly 60,000 users.",
-        "That gave the ticketing operation a controlled entry point and supported larger commercial accounts afterwards."
+        "That gave the ticketing operation a controlled entry point and supported larger commercial accounts afterwards.",
+        "The queue protects the external platform but doesn't make it faster — when LALIGA's side slows down, the queue's progress slows with it. We accepted that trade-off explicitly: ordered failure beats uncontrolled collapse."
       ],
       es: [
         "La venta dejó de colapsar alrededor de los 10.000 usuarios concurrentes y pasó a una cola ordenada de unos 60.000 usuarios.",
-        "Eso dio a la operativa de ticketing un punto de entrada controlado y ayudó a sostener cuentas comerciales de mayor exigencia después."
+        "Eso dio a la operativa de ticketing un punto de entrada controlado y ayudó a sostener cuentas comerciales de mayor exigencia después.",
+        "La cola protege a la plataforma externa pero no la hace más rápida — cuando el lado de LALIGA va lento, el avance de la cola va lento también. Aceptamos ese trade-off explícitamente: una caída ordenada es mejor que un colapso descontrolado."
       ]
+    },
+    architecture: {
+      en: "User → WordPress landing → Queue-Fair waiting room → LALIGA ticketing platform → confirmation",
+      es: "Usuario → landing WordPress → sala de espera Queue-Fair → plataforma de ticketing de LALIGA → confirmación"
     },
     publicLinks: []
   },
@@ -493,31 +515,31 @@ export const caseStudies: CaseStudy[] = [
     },
     overview: {
       en: [
-        "This work ran in member portals where users had to validate themselves with idPersona and PIN, then update profile data before accessing services or purchase flows."
+        "This work ran in member portals where users had to validate themselves with their member ID and PIN, then update profile data before accessing services or purchase flows."
       ],
       es: [
-        "Este trabajo se ejecutó sobre portales de socios donde los usuarios tenían que validarse con idPersona y PIN, y después actualizar datos de perfil antes de acceder a servicios o flujos de compra."
+        "Este trabajo se ejecutó sobre portales de socios donde los usuarios tenían que validarse con su identificador de socio y PIN, y después actualizar datos de perfil antes de acceder a servicios o flujos de compra."
       ]
     },
     challenge: {
       en: [
-        "Legacy data was inconsistent and unreliable: mismatched postal codes, duplicated formats, and years of unvalidated input.",
-        "Users were frequently blocked due to incorrect identity and profile data, requiring the system to distinguish between invalid credentials and recoverable data issues.",
-        "The system had to validate against LALIGA APIs and push clean data downstream, making it impossible to defer corrections."
+        "Legacy data was inconsistent and unreliable. Postal codes and municipalities didn't match, country fields came in several different formats, and the forms had accumulated years of un-normalized values.",
+        "Users were getting blocked at login and update because identity and profile fields were often wrong at the source, so the portal had to distinguish between invalid credentials, malformed input and recoverable data issues.",
+        "The flow had to validate against the LALIGA member-management platform's API and push corrected data to the CRM Data Lake, so accepting broken input to clean later wasn't an option."
       ],
       es: [
         "Los datos que llegaban desde sistemas legacy eran inconsistentes: códigos postales y municipios no coincidían, los países aparecían en formatos distintos y los formularios acumulaban años de valores sin normalizar.",
         "Además, los usuarios se bloqueaban en login y actualización porque los campos de identidad y perfil muchas veces estaban mal desde origen, así que el portal tenía que distinguir entre credenciales inválidas, input mal formado y problemas de datos recuperables.",
-        "El flujo tenía que validar contra APIs de LALIGA y empujar los datos corregidos hacia el Data Lake, así que no se podía aceptar entrada defectuosa para limpiarla después."
+        "El flujo tenía que validar contra la API de la plataforma de gestión de socios de LALIGA y empujar los datos corregidos al Data Lake del CRM, así que no se podía aceptar entrada defectuosa para limpiarla después."
       ]
     },
     approach: {
       en: [
-        "I designed login, registration, and mandatory profile update flows with validation on both frontend and backend, including idPersona and PIN checks before the user could move deeper into the portal.",
+        "I designed login, registration, and mandatory profile update flows with validation on both frontend and backend, including member ID and PIN checks before the user could move deeper into the portal.",
         "For normalization, I used explicit rules plus JSON mappings to verify postal code and municipality pairs, and added server-side validation, duplicate controls, indexes, and database restrictions before persisting and forwarding data."
       ],
       es: [
-        "Diseñé flujos de login, registro y actualización obligatoria de perfil con validación tanto en frontend como en backend, incluyendo comprobaciones de idPersona y PIN antes de dejar avanzar al usuario dentro del portal.",
+        "Diseñé flujos de login, registro y actualización obligatoria de perfil con validación tanto en frontend como en backend, incluyendo comprobaciones de identificador de socio y PIN antes de dejar avanzar al usuario dentro del portal.",
         "Para la normalización usé reglas explícitas y mapeos en JSON para comprobar pares de código postal y municipio, y añadí validación server-side, control de duplicados, índices y restricciones en base de datos antes de guardar y enviar la información aguas abajo."
       ]
     },
@@ -536,12 +558,18 @@ export const caseStudies: CaseStudy[] = [
     outcome: {
       en: [
         "The portals stopped accepting inconsistent profile data as-is and started enforcing normalized updates before users continued.",
-        "That reduced blocked users caused by malformed identity and profile input, and lowered the amount of mismatched records reaching the Data Lake and downstream operational flows."
+        "That reduced blocked users caused by malformed identity and profile input, and lowered the amount of mismatched records reaching the Data Lake and downstream operational flows.",
+        "The trade-off is that the portal now blocks users with malformed legacy records until they update — we kept the path recoverable, but it added friction for accounts that hadn't been touched in years."
       ],
       es: [
         "Los portales dejaron de aceptar datos de perfil inconsistentes tal cual y pasaron a exigir actualizaciones normalizadas antes de continuar.",
-        "Eso redujo usuarios bloqueados por input mal formado en identidad y perfil, y bajó la cantidad de registros desajustados que llegaban al Data Lake y a flujos operativos aguas abajo."
+        "Eso redujo usuarios bloqueados por input mal formado en identidad y perfil, y bajó la cantidad de registros desajustados que llegaban al Data Lake y a flujos operativos aguas abajo.",
+        "El trade-off es que el portal ahora bloquea a usuarios con registros legacy mal formados hasta que actualizan — dejamos el camino recuperable, pero añadió fricción para cuentas que llevaban años sin tocarse."
       ]
+    },
+    architecture: {
+      en: "User → WordPress portal → member ID + PIN → LALIGA member-management platform\n                     ↓\n          Local validation (frontend + backend + DB constraints)\n                     ↓\n                CRM Data Lake",
+      es: "Usuario → portal WordPress → identificador de socio + PIN → plataforma de gestión de socios de LALIGA\n                          ↓\n              Validación local (frontend + backend + restricciones de BBDD)\n                          ↓\n                     Data Lake del CRM"
     },
     publicLinks: []
   },
@@ -586,34 +614,34 @@ export const caseStudies: CaseStudy[] = [
     },
     approach: {
       en: [
-        "I enforced validation across frontend, backend, and database layers, adding constraints and indexes to prevent duplicates and inconsistent writes.",
-        "The system was instrumented to expose anomalies and make production issues observable and debuggable."
+        "I enforced validation on both sides of the request, deduplication via DB constraints, idempotency on the write path, and rate limiting at entry — so concurrent and repeated submissions wouldn't create double entries, but legitimate retries by the same user still went through.",
+        "The goal was to reject bad registrations as early as possible, keep persistence rules strict, and leave enough signal in production to debug incidents quickly."
       ],
       es: [
-        "Implementé validación a ambos lados de la petición, añadí restricciones e índices en base de datos, y metí observabilidad para hacer visibles los intentos duplicados y las escrituras inconsistentes.",
-        "El objetivo era rechazar registros malos cuanto antes, mantener estrictas las reglas de persistencia y dejar suficiente observabilidad para depurar incidentes en producción."
+        "Implementé validación a ambos lados de la petición, deduplicación con restricciones de BBDD, idempotencia en el camino de escritura y rate limiting en la entrada — de forma que los envíos concurrentes y repetidos no generaran entradas duplicadas, pero los reintentos legítimos del mismo usuario siguieran funcionando.",
+        "El objetivo era rechazar registros malos cuanto antes, mantener estrictas las reglas de persistencia y dejar suficiente señal en producción para depurar incidentes rápido."
       ]
     },
     highlights: {
       en: [
         "Synchronizing frontend checks with backend validation so the same record could not pass in one layer and fail in another.",
-        "Designing DB constraints and indexes around duplicate prevention without breaking the existing portal.",
+        "DB constraints and indexes for duplicate prevention, combined with idempotent writes so retries stayed safe.",
         "Handling traffic spikes without opening the door to repeated entries, fraud patterns, or partial writes."
       ],
       es: [
         "Sincronizar comprobaciones en frontend con validación en backend para que un mismo registro no pasara en una capa y fallara en otra.",
-        "Diseñar restricciones e índices de BBDD alrededor de la prevención de duplicados sin romper el portal existente.",
+        "Restricciones e índices de BBDD para prevenir duplicados, junto con escrituras idempotentes para que los reintentos siguieran siendo seguros.",
         "Soportar picos de concurrencia sin abrir la puerta a entradas repetidas, patrones de fraude o escrituras parciales."
       ]
     },
     outcome: {
       en: [
-        "The draw flows moved from ad-hoc validation to controlled registration paths with duplicate prevention and clearer operational signals.",
-        "That reduced inconsistent records, repeated entries, and manual cleanup during high-demand windows."
+        "The draw flows moved from ad-hoc validation to controlled registration paths with deduplication, idempotent writes, rate limiting, and clearer operational signals.",
+        "That reduced inconsistent records, repeated entries, and manual cleanup during high-demand windows, while keeping legitimate retries from the same user working."
       ],
       es: [
-        "Los flujos de sorteos pasaron de validación ad hoc a caminos de registro controlados con prevención de duplicados y señales operativas más claras.",
-        "Eso redujo registros inconsistentes, entradas repetidas y limpieza manual durante ventanas de alta demanda."
+        "Los flujos de sorteos pasaron de validación ad hoc a caminos de registro controlados con deduplicación, escrituras idempotentes, rate limiting y señales operativas más claras.",
+        "Eso redujo registros inconsistentes, entradas repetidas y limpieza manual durante ventanas de alta demanda, manteniendo a la vez los reintentos legítimos del mismo usuario funcionando."
       ]
     },
     publicLinks: []
@@ -622,7 +650,7 @@ export const caseStudies: CaseStudy[] = [
     slug: "orbytia",
     category: "ecosystem",
     featured: false,
-    pageRequired: true,
+    pageRequired: false,
     title: { en: "Orbytia", es: "Orbytia" },
     strapline: {
       en: "Consulting, automation, and applied AI.",

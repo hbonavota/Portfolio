@@ -6,7 +6,7 @@ export const metadata = buildMetadata({
   locale: "en",
   pathname: "/contact",
   title: "Contact",
-  description: "Direct contact for recruiters, hiring managers, and tech leads."
+  description: "LinkedIn for roles. GitHub for code. CV on request."
 });
 
 export default function Page() {

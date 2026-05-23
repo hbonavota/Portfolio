@@ -15,7 +15,12 @@ export function ContactPage({ locale }: ContactPageProps) {
     {
       label: "LinkedIn",
       href: siteConfig.approvedLinks.linkedin,
-      kicker: locale === "en" ? "Direct message" : "Mensaje directo"
+      kicker: locale === "en" ? "Roles & technical chats" : "Roles y técnico"
+    },
+    {
+      label: "GitHub",
+      href: siteConfig.approvedLinks.github,
+      kicker: locale === "en" ? "Code" : "Código"
     }
   ];
 
@@ -26,7 +31,7 @@ export function ContactPage({ locale }: ContactPageProps) {
         title={content.title}
         description={content.description}
       >
-        <div className="max-w-lg">
+        <div className="grid gap-4 sm:grid-cols-2 max-w-3xl">
           {links.map((item) => (
             <Link
               key={item.href}
@@ -41,7 +46,7 @@ export function ContactPage({ locale }: ContactPageProps) {
                   {item.label}
                 </h2>
                 <span className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-sm text-white/56">
-                  →
+                  ↗
                 </span>
               </div>
             </Link>
