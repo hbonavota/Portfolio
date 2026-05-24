@@ -69,14 +69,14 @@ export const navigation = {
 
 export const recruiterAnchor = {
   en: {
-    years: "~4 years building and operating production systems for first-division football clubs.",
+    years: "6+ years in IT, building and operating production systems.",
     location: "Palma de Mallorca, Balearic Islands, Spain · Remote · CET",
     locationShort: "Palma de Mallorca · CET",
     availability: "Open to engineering roles, 2026",
     ndaLine: "Recent work for first-division football clubs (under NDA)."
   },
   es: {
-    years: "~4 años construyendo y operando sistemas en producción para clubes de primera división.",
+    years: "+6 años en IT, construyendo y operando sistemas en producción.",
     location: "Palma de Mallorca, Islas Baleares, España · Remoto · CET",
     locationShort: "Palma de Mallorca · CET",
     availability: "Abierto a roles de ingeniería, 2026",
@@ -84,18 +84,41 @@ export const recruiterAnchor = {
   }
 } as const;
 
-export const stack: readonly string[] = [
-  "PHP",
-  "WordPress / WooCommerce",
-  "JavaScript / TypeScript",
-  "React / Next.js",
-  "Node.js",
-  "MySQL / MariaDB",
-  "REST APIs",
-  "AWS (EC2, RDS, S3, ACM)",
-  "Nginx",
-  "Linux",
-  "Git"
+export const stack: readonly {
+  en: string;
+  es: string;
+  items: readonly string[];
+}[] = [
+  {
+    en: "Languages",
+    es: "Lenguajes",
+    items: ["JavaScript / TypeScript", "PHP", "Python"]
+  },
+  {
+    en: "Frameworks",
+    es: "Frameworks",
+    items: ["React / Next.js", "Node.js", "WordPress / WooCommerce"]
+  },
+  {
+    en: "Data",
+    es: "Datos",
+    items: ["MySQL / MariaDB"]
+  },
+  {
+    en: "Infrastructure",
+    es: "Infraestructura",
+    items: ["AWS (EC2, RDS, S3, ACM)", "Nginx", "Linux"]
+  },
+  {
+    en: "Testing",
+    es: "Testing",
+    items: ["Playwright", "Cypress", "Jest"]
+  },
+  {
+    en: "Tools",
+    es: "Herramientas",
+    items: ["Git", "REST APIs"]
+  }
 ] as const;
 
 export const homeContent = {
@@ -262,7 +285,9 @@ export const aboutPage = {
         body:
           "I write the spec before I write the code, validate against that spec, and use AI tooling inside that loop where it accelerates writing and exploration — not where it would replace engineering judgment. Releases that survive match day are the test."
       }
-    ]
+    ],
+    background:
+      "10+ years in tech and product, with a background in commercial operations."
   },
   es: {
     intro:
@@ -283,7 +308,9 @@ export const aboutPage = {
         body:
           "Escribo la spec antes que el código, valido contra esa spec y uso herramientas de IA dentro de ese loop donde aceleran la escritura y la exploración — no donde sustituirían el criterio de ingeniería. Las releases que aguantan el día de partido son el examen."
       }
-    ]
+    ],
+    background:
+      "10+ años en tecnología y producto, con background en operaciones comerciales."
   }
 } as const;
 

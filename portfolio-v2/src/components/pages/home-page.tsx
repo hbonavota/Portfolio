@@ -13,6 +13,7 @@ import { CaseCard } from "@/components/site/case-card";
 import { Reveal } from "@/components/site/reveal";
 import { Section } from "@/components/site/section";
 import { SiteFrame } from "@/components/site/site-frame";
+import { ViewTransitionLink } from "@/components/site/view-transition-link";
 import { getLocalizedPath } from "@/lib/i18n";
 
 type HomePageProps = {
@@ -43,12 +44,12 @@ export function HomePage({ locale }: HomePageProps) {
             </p>
           </div>
           <div className="flex flex-wrap gap-3 pt-0.5">
-            <Link
+            <ViewTransitionLink
               href={content.hero.primaryCta.href}
               className="rounded-full border border-cyan-300/24 bg-cyan-300/10 px-5.5 py-3 text-sm font-semibold text-cyan-100 transition hover:border-cyan-200/40 hover:bg-cyan-300/16 sm:px-6 sm:py-3.5"
             >
               {content.hero.primaryCta.label}
-            </Link>
+            </ViewTransitionLink>
             <Link
               href={content.hero.secondaryCta.href}
               className="rounded-full border border-white/10 px-5.5 py-3 text-sm font-semibold text-white/84 transition hover:border-white/22 hover:text-white sm:px-6 sm:py-3.5"
@@ -151,7 +152,7 @@ export function HomePage({ locale }: HomePageProps) {
             description={content.about.description}
           >
             <div>
-              <Link
+              <ViewTransitionLink
                 href={aboutHref}
                 className="inline-flex items-center gap-2 text-sm font-semibold text-cyan-100 transition hover:text-cyan-200"
               >
@@ -162,7 +163,7 @@ export function HomePage({ locale }: HomePageProps) {
                 >
                   →
                 </span>
-              </Link>
+              </ViewTransitionLink>
             </div>
           </Section>
         </Reveal>

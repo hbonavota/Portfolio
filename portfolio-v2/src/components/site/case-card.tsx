@@ -1,7 +1,7 @@
-import Link from "next/link";
-
 import { CaseStudy, categoryLabels, Locale } from "@/content/site";
 import { getLocalizedPath } from "@/lib/i18n";
+
+import { ViewTransitionLink as Link } from "@/components/site/view-transition-link";
 
 type CaseCardProps = {
   locale: Locale;
@@ -10,7 +10,7 @@ type CaseCardProps = {
 
 export function CaseCard({ locale, study }: CaseCardProps) {
   return (
-    <article className="surface-panel group flex h-full flex-col justify-between rounded-[2.25rem] p-5 transition duration-300 hover:-translate-y-1 hover:border-cyan-200/30 sm:p-[1.625rem] md:p-8">
+    <article className="surface-panel group flex h-full flex-col justify-between rounded-[2.25rem] p-5 transition duration-300 motion-safe:hover:-translate-y-0.5 motion-safe:hover:shadow-[0_18px_40px_-20px_rgba(0,0,0,0.55)] hover:border-white/22 sm:p-[1.625rem] md:p-8">
       <div className="space-y-7">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
           <span className="w-fit rounded-full border border-white/10 bg-white/5 px-3.5 py-1.5 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-white/64">
