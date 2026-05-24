@@ -23,6 +23,7 @@ export type CaseStudy = {
   highlights: Record<Locale, string[]>;
   outcome: Record<Locale, string[]>;
   architecture?: Record<Locale, string>;
+  architectureSteps?: Record<Locale, string[]>;
   publicLinks: LinkItem[];
   pageRequired: boolean;
 };
@@ -490,6 +491,22 @@ export const caseStudies: CaseStudy[] = [
       en: "User → WordPress landing → Queue-Fair waiting room → LALIGA ticketing platform → confirmation",
       es: "Usuario → landing WordPress → sala de espera Queue-Fair → plataforma de ticketing de LALIGA → confirmación"
     },
+    architectureSteps: {
+      en: [
+        "User",
+        "WordPress landing",
+        "Queue-Fair waiting room",
+        "LALIGA ticketing platform",
+        "Confirmation"
+      ],
+      es: [
+        "Usuario",
+        "Landing WordPress",
+        "Sala de espera Queue-Fair",
+        "Plataforma de ticketing de LALIGA",
+        "Confirmación"
+      ]
+    },
     publicLinks: []
   },
   {
@@ -515,10 +532,10 @@ export const caseStudies: CaseStudy[] = [
     },
     overview: {
       en: [
-        "This work ran in member portals where users had to validate themselves with their member ID and PIN, then update profile data before accessing services or purchase flows."
+        "This work ran in member portals where users had to validate themselves with their credentials, then update profile data before accessing services or purchase flows."
       ],
       es: [
-        "Este trabajo se ejecutó sobre portales de socios donde los usuarios tenían que validarse con su identificador de socio y PIN, y después actualizar datos de perfil antes de acceder a servicios o flujos de compra."
+        "Este trabajo se ejecutó sobre portales de socios donde los usuarios tenían que validarse con sus credenciales, y después actualizar datos de perfil antes de acceder a servicios o flujos de compra."
       ]
     },
     challenge: {
@@ -535,11 +552,11 @@ export const caseStudies: CaseStudy[] = [
     },
     approach: {
       en: [
-        "I designed login, registration, and mandatory profile update flows with validation on both frontend and backend, including member ID and PIN checks before the user could move deeper into the portal.",
+        "I designed login, registration, and mandatory profile update flows with validation on both frontend and backend, including credentials checks before the user could move deeper into the portal.",
         "For normalization, I used explicit rules plus JSON mappings to verify postal code and municipality pairs, and added server-side validation, duplicate controls, indexes, and database restrictions before persisting and forwarding data."
       ],
       es: [
-        "Diseñé flujos de login, registro y actualización obligatoria de perfil con validación tanto en frontend como en backend, incluyendo comprobaciones de identificador de socio y PIN antes de dejar avanzar al usuario dentro del portal.",
+        "Diseñé flujos de login, registro y actualización obligatoria de perfil con validación tanto en frontend como en backend, incluyendo comprobaciones de credenciales antes de dejar avanzar al usuario dentro del portal.",
         "Para la normalización usé reglas explícitas y mapeos en JSON para comprobar pares de código postal y municipio, y añadí validación server-side, control de duplicados, índices y restricciones en base de datos antes de guardar y enviar la información aguas abajo."
       ]
     },
@@ -568,8 +585,26 @@ export const caseStudies: CaseStudy[] = [
       ]
     },
     architecture: {
-      en: "User → WordPress portal → member ID + PIN → LALIGA member-management platform\n                     ↓\n          Local validation (frontend + backend + DB constraints)\n                     ↓\n                CRM Data Lake",
-      es: "Usuario → portal WordPress → identificador de socio + PIN → plataforma de gestión de socios de LALIGA\n                          ↓\n              Validación local (frontend + backend + restricciones de BBDD)\n                          ↓\n                     Data Lake del CRM"
+      en: "User → WordPress portal → credentials → LALIGA member-management platform\n                     ↓\n          Local validation (frontend + backend + DB constraints)\n                     ↓\n                CRM Data Lake",
+      es: "Usuario → portal WordPress → credenciales → plataforma de gestión de socios de LALIGA\n                          ↓\n              Validación local (frontend + backend + restricciones de BBDD)\n                          ↓\n                     Data Lake del CRM"
+    },
+    architectureSteps: {
+      en: [
+        "User",
+        "WordPress portal",
+        "Credentials",
+        "LALIGA member-management platform",
+        "Local validation (frontend + backend + DB constraints)",
+        "CRM Data Lake"
+      ],
+      es: [
+        "Usuario",
+        "Portal WordPress",
+        "Credenciales",
+        "Plataforma de gestión de socios de LALIGA",
+        "Validación local (frontend + backend + restricciones de BBDD)",
+        "Data Lake del CRM"
+      ]
     },
     publicLinks: []
   },

@@ -10,6 +10,7 @@ import {
 } from "@/content/site";
 
 import { CaseCard } from "@/components/site/case-card";
+import { Reveal } from "@/components/site/reveal";
 import { Section } from "@/components/site/section";
 import { SiteFrame } from "@/components/site/site-frame";
 import { getLocalizedPath } from "@/lib/i18n";
@@ -28,13 +29,13 @@ export function HomePage({ locale }: HomePageProps) {
 
   return (
     <SiteFrame locale={locale}>
-      <div className="space-y-18 lg:space-y-20">
+      <div className="space-y-14 sm:space-y-18 lg:space-y-20">
         <section className="max-w-4xl space-y-6 lg:space-y-7">
           <p className="text-[0.72rem] font-semibold uppercase tracking-[0.34em] text-cyan-200/72">
             {content.hero.eyebrow}
           </p>
           <div className="space-y-5 lg:space-y-6">
-            <h1 className="max-w-4xl text-[3rem] font-semibold leading-[0.96] tracking-tight text-white sm:text-[3.9rem] lg:text-[4.65rem]">
+            <h1 className="max-w-4xl text-[2.5rem] font-semibold leading-[0.96] tracking-tight text-white sm:text-[3.9rem] lg:text-[4.65rem]">
               {content.hero.title}
             </h1>
             <p className="max-w-[38rem] text-[1rem] leading-7 text-white/68 sm:text-[1.08rem] sm:leading-8">
@@ -57,106 +58,114 @@ export function HomePage({ locale }: HomePageProps) {
           </div>
         </section>
 
-        <Section
-          id="selected-work"
-          eyebrow={content.selectedWork.eyebrow}
-          title={content.selectedWork.title}
-          description={content.selectedWork.description}
-        >
-          <div className="grid gap-6 xl:grid-cols-2">
-            {featured.map((study) => (
-              <CaseCard key={study.slug} locale={locale} study={study} />
-            ))}
-          </div>
-        </Section>
-
-        <Section
-          id="capabilities"
-          eyebrow={content.capabilities.eyebrow}
-          title={content.capabilities.title}
-          description={content.capabilities.description}
-        >
-          <div className="grid gap-5 md:grid-cols-2">
-            {capabilityItems.map((item) => (
-              <div key={item.title} className="surface-panel rounded-[2rem] p-6 md:p-7">
-                <h3 className="text-[1.1rem] font-semibold tracking-[-0.02em] text-white md:text-[1.18rem]">
-                  {item.title}
-                </h3>
-                <p className="mt-4 text-[0.98rem] leading-8 text-white/68">{item.text}</p>
-              </div>
-            ))}
-          </div>
-        </Section>
-
-        <Section
-          id="experience"
-          eyebrow={content.experience.eyebrow}
-          title={content.experience.title}
-          description={content.experience.description}
-        >
-          <div className="grid gap-5 lg:grid-cols-[1.02fr_0.98fr]">
-            <div className="surface-panel-strong rounded-[2.2rem] p-7 md:p-8">
-              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-white/48">Rezolve</p>
-              <h3 className="mt-5 text-[1.8rem] font-semibold text-white md:text-[1.95rem]">
-                {professionalExperience.role[locale]}
-              </h3>
-              <p className="mt-5 text-[0.98rem] leading-8 text-white/66">{professionalExperience.summary[locale]}</p>
+        <Reveal>
+          <Section
+            id="selected-work"
+            eyebrow={content.selectedWork.eyebrow}
+            title={content.selectedWork.title}
+            description={content.selectedWork.description}
+          >
+            <div className="grid gap-6 xl:grid-cols-2">
+              {featured.map((study) => (
+                <CaseCard key={study.slug} locale={locale} study={study} />
+              ))}
             </div>
-            <div className="grid gap-5">
-              <div className="surface-panel rounded-[2.2rem] p-7 md:p-8">
-                <ul className="space-y-4 text-[0.98rem] leading-8 text-white/68">
-                  {professionalExperience.notes[locale].map((item) => (
-                    <li key={item} className="flex gap-3">
-                      <span className="mt-3 h-2 w-2 rounded-full bg-cyan-200" aria-hidden="true" />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <Link
-                href={siteConfig.approvedLinks.linkedin}
-                className="surface-panel flex min-h-[8.5rem] flex-col justify-between rounded-[2rem] p-6 transition hover:border-cyan-200/30 hover:text-cyan-100 md:p-7"
-              >
-                <p className="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-white/42">
-                  {content.contact.eyebrow}
-                </p>
-                <div className="mt-6 flex items-end justify-between gap-4">
-                  <div className="space-y-2">
-                    <h3 className="text-[1.4rem] font-semibold tracking-[-0.04em] text-white md:text-[1.5rem]">
-                      LinkedIn
-                    </h3>
-                    <p className="max-w-md text-sm leading-7 text-white/62">{content.contact.description}</p>
-                  </div>
-                  <span className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-sm text-white/56">
-                    ↗
-                  </span>
+          </Section>
+        </Reveal>
+
+        <Reveal>
+          <Section
+            id="capabilities"
+            eyebrow={content.capabilities.eyebrow}
+            title={content.capabilities.title}
+            description={content.capabilities.description}
+          >
+            <div className="grid gap-5 md:grid-cols-2">
+              {capabilityItems.map((item) => (
+                <div key={item.title} className="surface-panel rounded-[2rem] p-5 sm:p-6 md:p-7">
+                  <h3 className="text-[1.1rem] font-semibold tracking-[-0.02em] text-white md:text-[1.18rem]">
+                    {item.title}
+                  </h3>
+                  <p className="mt-4 text-[0.98rem] leading-7 text-white/68 sm:leading-8">{item.text}</p>
                 </div>
+              ))}
+            </div>
+          </Section>
+        </Reveal>
+
+        <Reveal>
+          <Section
+            id="experience"
+            eyebrow={content.experience.eyebrow}
+            title={content.experience.title}
+            description={content.experience.description}
+          >
+            <div className="grid gap-5 lg:grid-cols-[1.02fr_0.98fr]">
+              <div className="surface-panel-strong rounded-[2.2rem] p-5 sm:p-7 md:p-8">
+                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-white/48">Rezolve</p>
+                <h3 className="mt-5 text-[1.8rem] font-semibold text-white md:text-[1.95rem]">
+                  {professionalExperience.role[locale]}
+                </h3>
+                <p className="mt-5 text-[0.98rem] leading-7 text-white/66 sm:leading-8">{professionalExperience.summary[locale]}</p>
+              </div>
+              <div className="grid gap-5">
+                <div className="surface-panel rounded-[2.2rem] p-5 sm:p-7 md:p-8">
+                  <ul className="space-y-4 text-[0.98rem] leading-7 text-white/68 sm:leading-8">
+                    {professionalExperience.notes[locale].map((item) => (
+                      <li key={item} className="flex gap-3">
+                        <span className="mt-3 h-2 w-2 rounded-full bg-cyan-200" aria-hidden="true" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <Link
+                  href={siteConfig.approvedLinks.linkedin}
+                  className="surface-panel flex min-h-[8.5rem] flex-col justify-between rounded-[2rem] p-5 transition hover:border-cyan-200/30 hover:text-cyan-100 sm:p-6 md:p-7"
+                >
+                  <p className="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-white/42">
+                    {content.contact.eyebrow}
+                  </p>
+                  <div className="mt-6 flex items-end justify-between gap-4">
+                    <div className="space-y-2">
+                      <h3 className="text-[1.4rem] font-semibold tracking-[-0.04em] text-white md:text-[1.5rem]">
+                        LinkedIn
+                      </h3>
+                      <p className="max-w-md text-sm leading-7 text-white/62">{content.contact.description}</p>
+                    </div>
+                    <span className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-sm text-white/56">
+                      ↗
+                    </span>
+                  </div>
+                </Link>
+              </div>
+            </div>
+          </Section>
+        </Reveal>
+
+        <Reveal>
+          <Section
+            id="about-teaser"
+            eyebrow={content.about.eyebrow}
+            title={content.about.title}
+            description={content.about.description}
+          >
+            <div>
+              <Link
+                href={aboutHref}
+                className="inline-flex items-center gap-2 text-sm font-semibold text-cyan-100 transition hover:text-cyan-200"
+              >
+                {locale === "en" ? "Read more on About" : "Más en Sobre mí"}
+                <span
+                  aria-hidden="true"
+                  className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/[0.04]"
+                >
+                  →
+                </span>
               </Link>
             </div>
-          </div>
-        </Section>
-
-        <Section
-          id="about-teaser"
-          eyebrow={content.about.eyebrow}
-          title={content.about.title}
-          description={content.about.description}
-        >
-          <div>
-            <Link
-              href={aboutHref}
-              className="inline-flex items-center gap-2 text-sm font-semibold text-cyan-100 transition hover:text-cyan-200"
-            >
-              {locale === "en" ? "Read more on About" : "Más en Sobre mí"}
-              <span
-                aria-hidden="true"
-                className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/[0.04]"
-              >
-                →
-              </span>
-            </Link>
-          </div>
-        </Section>
+          </Section>
+        </Reveal>
       </div>
     </SiteFrame>
   );
