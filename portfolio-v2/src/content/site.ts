@@ -676,10 +676,12 @@ export const caseStudies: CaseStudy[] = [
     },
     approach: {
       en: [
+        "I built the registration flow spec-first — the deduplication, idempotency and persistence rules were defined before any code — so the concurrency edge cases surfaced in the spec, not in production.",
         "I enforced validation on both sides of the request, deduplication via DB constraints, idempotency on the write path, and rate limiting at entry — so concurrent and repeated submissions wouldn't create double entries, but legitimate retries by the same user still went through.",
         "The goal was to reject bad registrations as early as possible, keep persistence rules strict, and leave enough signal in production to debug incidents quickly."
       ],
       es: [
+        "Construí el flujo de registro spec-first: definí las reglas de deduplicación, idempotencia y persistencia antes de escribir código, así que los casos límite de concurrencia aparecieron en la spec y no en producción.",
         "Implementé validación a ambos lados de la petición, deduplicación con restricciones de BBDD, idempotencia en el camino de escritura y rate limiting en la entrada — de forma que los envíos concurrentes y repetidos no generaran entradas duplicadas, pero los reintentos legítimos del mismo usuario siguieran funcionando.",
         "El objetivo era rechazar registros malos cuanto antes, mantener estrictas las reglas de persistencia y dejar suficiente señal en producción para depurar incidentes rápido."
       ]
