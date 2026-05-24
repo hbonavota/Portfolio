@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { Locale, navigation, siteConfig } from "@/content/site";
+import { ViewTransitionLink } from "@/components/site/view-transition-link";
 
 type FooterProps = {
   locale: Locale;
@@ -39,9 +40,9 @@ export function Footer({ locale }: FooterProps) {
           <ul className="space-y-3.5 text-sm text-white/72">
             {items.map((item) => (
               <li key={item.href}>
-                <Link href={item.href} className="inline-flex transition hover:text-white">
+                <ViewTransitionLink href={item.href} className="inline-flex transition hover:text-white">
                   {item.label}
-                </Link>
+                </ViewTransitionLink>
               </li>
             ))}
           </ul>

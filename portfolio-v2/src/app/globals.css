@@ -138,3 +138,18 @@ main {
     transition: none !important;
   }
 }
+
+/*
+ * View Transitions.
+ * The transition itself is triggered from ViewTransitionLink via
+ * document.startViewTransition (Chromium only — Safari/Firefox navigate
+ * normally). We rely on the browser's default cross-fade on the root
+ * snapshot; no custom keyframes. With prefers-reduced-motion the
+ * animation is suppressed so the navigation feels instant.
+ */
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none !important;
+  }
+}

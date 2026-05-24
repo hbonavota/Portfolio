@@ -1,7 +1,7 @@
-import Link from "next/link";
-
 import { CaseStudy, categoryLabels, Locale } from "@/content/site";
 import { getLocalizedPath } from "@/lib/i18n";
+
+import { ViewTransitionLink as Link } from "@/components/site/view-transition-link";
 
 type CaseCardProps = {
   locale: Locale;

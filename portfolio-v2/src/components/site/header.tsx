@@ -1,12 +1,12 @@
 "use client";
 
-import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 import { Locale, navigation, recruiterAnchor } from "@/content/site";
 import { getLocalizedPath } from "@/lib/i18n";
 
 import { LanguageSwitcher } from "./language-switcher";
+import { ViewTransitionLink as Link } from "./view-transition-link";
 
 type HeaderProps = {
   locale: Locale;
