@@ -10,13 +10,13 @@ type CaseCardProps = {
 
 export function CaseCard({ locale, study }: CaseCardProps) {
   return (
-    <article className="surface-panel group flex h-full flex-col justify-between rounded-[2.25rem] p-[1.625rem] transition duration-300 hover:-translate-y-1 hover:border-cyan-200/30 md:p-8">
+    <article className="surface-panel group flex h-full flex-col justify-between rounded-[2.25rem] p-5 transition duration-300 hover:-translate-y-1 hover:border-cyan-200/30 sm:p-[1.625rem] md:p-8">
       <div className="space-y-7">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
           <span className="w-fit rounded-full border border-white/10 bg-white/5 px-3.5 py-1.5 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-white/64">
             {categoryLabels[study.category][locale]}
           </span>
-          <span className="max-w-[14rem] text-sm leading-6 text-white/44 sm:pt-0.5 sm:text-right">{study.role[locale]}</span>
+          <span className="max-w-[14rem] text-[0.78rem] [text-wrap:balance] leading-6 text-white/44 sm:pt-0.5 sm:text-sm sm:text-right">{study.role[locale]}</span>
         </div>
         <div className="space-y-4">
           <div className="space-y-3">
@@ -27,7 +27,7 @@ export function CaseCard({ locale, study }: CaseCardProps) {
               {study.strapline[locale]}
             </p>
           </div>
-          <p className="max-w-[36rem] text-[1rem] leading-8 text-white/67">{study.summary[locale]}</p>
+          <p className="max-w-[36rem] text-[1rem] leading-7 text-white/67 sm:leading-8">{study.summary[locale]}</p>
         </div>
       </div>
       <div className="mt-10 flex items-center justify-between border-t border-white/8 pt-5 md:mt-11">

@@ -45,6 +45,18 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        {/*
+         * Pre-paint: mark the document as JS-capable so the reveal-on-scroll
+         * hidden state only applies when JS is actually running. Without JS
+         * the .js class is never added and content stays visible.
+         */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: "document.documentElement.classList.add('js');"
+          }}
+        />
+      </head>
       <body>{children}</body>
     </html>
   );

@@ -1,5 +1,6 @@
 import { aboutPage, Locale, recruiterAnchor, stack } from "@/content/site";
 
+import { Reveal } from "@/components/site/reveal";
 import { Section } from "@/components/site/section";
 import { SiteFrame } from "@/components/site/site-frame";
 
@@ -13,6 +14,7 @@ export function AboutPage({ locale }: AboutPageProps) {
 
   return (
     <SiteFrame locale={locale}>
+      <Reveal>
       <Section
         eyebrow={locale === "en" ? "About" : "Sobre mí"}
         title={
@@ -24,16 +26,16 @@ export function AboutPage({ locale }: AboutPageProps) {
       >
         <div className="grid gap-6 xl:grid-cols-3">
           {content.sections.map((section) => (
-            <div key={section.title} className="surface-panel flex h-full flex-col gap-5 p-7 md:p-8">
+            <div key={section.title} className="surface-panel flex h-full flex-col gap-5 p-5 sm:p-7 md:p-8">
               <h2 className="max-w-[18rem] text-xl font-semibold tracking-[-0.03em] text-white md:text-[1.45rem]">
                 {section.title}
               </h2>
-              <p className="max-w-[34rem] text-[1.02rem] leading-8 text-white/70">{section.body}</p>
+              <p className="max-w-[34rem] text-[1.02rem] leading-7 text-white/70 sm:leading-8">{section.body}</p>
             </div>
           ))}
         </div>
 
-        <div className="surface-panel rounded-[2rem] p-7 md:p-8">
+        <div className="surface-panel rounded-[2rem] p-5 sm:p-7 md:p-8">
           <p className="text-[0.7rem] font-semibold uppercase tracking-[0.28em] text-cyan-200/72">
             {locale === "en" ? "Stack" : "Stack"}
           </p>
@@ -50,19 +52,19 @@ export function AboutPage({ locale }: AboutPageProps) {
         </div>
 
         <div className="grid gap-4 sm:grid-cols-3">
-          <div className="surface-panel rounded-[1.8rem] p-6 md:p-7">
+          <div className="surface-panel rounded-[1.8rem] p-5 sm:p-6 md:p-7">
             <p className="text-[0.66rem] font-semibold uppercase tracking-[0.26em] text-white/48">
               {locale === "en" ? "Experience" : "Experiencia"}
             </p>
             <p className="mt-4 text-[0.96rem] leading-7 text-white/78">{anchor.years}</p>
           </div>
-          <div className="surface-panel rounded-[1.8rem] p-6 md:p-7">
+          <div className="surface-panel rounded-[1.8rem] p-5 sm:p-6 md:p-7">
             <p className="text-[0.66rem] font-semibold uppercase tracking-[0.26em] text-white/48">
               {locale === "en" ? "Location" : "Ubicación"}
             </p>
             <p className="mt-4 text-[0.96rem] leading-7 text-white/78">{anchor.location}</p>
           </div>
-          <div className="surface-panel rounded-[1.8rem] p-6 md:p-7">
+          <div className="surface-panel rounded-[1.8rem] p-5 sm:p-6 md:p-7">
             <p className="text-[0.66rem] font-semibold uppercase tracking-[0.26em] text-white/48">
               {locale === "en" ? "Availability" : "Disponibilidad"}
             </p>
@@ -70,6 +72,7 @@ export function AboutPage({ locale }: AboutPageProps) {
           </div>
         </div>
       </Section>
+      </Reveal>
     </SiteFrame>
   );
 }

@@ -2,6 +2,7 @@ import Link from "next/link";
 
 import { Locale, orbytiaPage, siteConfig } from "@/content/site";
 
+import { Reveal } from "@/components/site/reveal";
 import { Section } from "@/components/site/section";
 import { SiteFrame } from "@/components/site/site-frame";
 
@@ -14,6 +15,7 @@ export function OrbytiaPage({ locale }: OrbytiaPageProps) {
 
   return (
     <SiteFrame locale={locale}>
+      <Reveal>
       <Section
         eyebrow="Orbytia"
         title={
@@ -25,15 +27,15 @@ export function OrbytiaPage({ locale }: OrbytiaPageProps) {
       >
         <div className="grid gap-6 xl:grid-cols-3">
           {content.sections.map((section) => (
-            <div key={section.title} className="surface-panel flex h-full flex-col gap-5 p-7 md:p-8">
+            <div key={section.title} className="surface-panel flex h-full flex-col gap-5 p-5 sm:p-7 md:p-8">
               <h2 className="max-w-[18rem] text-xl font-semibold tracking-[-0.03em] text-white md:text-[1.45rem]">
                 {section.title}
               </h2>
-              <p className="max-w-[34rem] text-[1.02rem] leading-8 text-white/70">{section.body}</p>
+              <p className="max-w-[34rem] text-[1.02rem] leading-7 text-white/70 sm:leading-8">{section.body}</p>
             </div>
           ))}
         </div>
-        <div className="surface-accent rounded-[2rem] p-7 md:p-8">
+        <div className="surface-accent rounded-[2rem] p-5 sm:p-7 md:p-8">
           <p className="max-w-[42rem] text-[0.98rem] leading-7 text-white/74">
             {locale === "en"
               ? "Relevant links if you are looking for service context rather than the main portfolio."
@@ -55,6 +57,7 @@ export function OrbytiaPage({ locale }: OrbytiaPageProps) {
           </div>
         </div>
       </Section>
+      </Reveal>
     </SiteFrame>
   );
 }

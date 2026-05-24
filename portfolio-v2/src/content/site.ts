@@ -23,6 +23,7 @@ export type CaseStudy = {
   highlights: Record<Locale, string[]>;
   outcome: Record<Locale, string[]>;
   architecture?: Record<Locale, string>;
+  architectureSteps?: Record<Locale, string[]>;
   publicLinks: LinkItem[];
   pageRequired: boolean;
 };
@@ -490,6 +491,22 @@ export const caseStudies: CaseStudy[] = [
       en: "User → WordPress landing → Queue-Fair waiting room → LALIGA ticketing platform → confirmation",
       es: "Usuario → landing WordPress → sala de espera Queue-Fair → plataforma de ticketing de LALIGA → confirmación"
     },
+    architectureSteps: {
+      en: [
+        "User",
+        "WordPress landing",
+        "Queue-Fair waiting room",
+        "LALIGA ticketing platform",
+        "Confirmation"
+      ],
+      es: [
+        "Usuario",
+        "Landing WordPress",
+        "Sala de espera Queue-Fair",
+        "Plataforma de ticketing de LALIGA",
+        "Confirmación"
+      ]
+    },
     publicLinks: []
   },
   {
@@ -570,6 +587,24 @@ export const caseStudies: CaseStudy[] = [
     architecture: {
       en: "User → WordPress portal → member ID + PIN → LALIGA member-management platform\n                     ↓\n          Local validation (frontend + backend + DB constraints)\n                     ↓\n                CRM Data Lake",
       es: "Usuario → portal WordPress → identificador de socio + PIN → plataforma de gestión de socios de LALIGA\n                          ↓\n              Validación local (frontend + backend + restricciones de BBDD)\n                          ↓\n                     Data Lake del CRM"
+    },
+    architectureSteps: {
+      en: [
+        "User",
+        "WordPress portal",
+        "Member ID + PIN",
+        "LALIGA member-management platform",
+        "Local validation (frontend + backend + DB constraints)",
+        "CRM Data Lake"
+      ],
+      es: [
+        "Usuario",
+        "Portal WordPress",
+        "Identificador de socio + PIN",
+        "Plataforma de gestión de socios de LALIGA",
+        "Validación local (frontend + backend + restricciones de BBDD)",
+        "Data Lake del CRM"
+      ]
     },
     publicLinks: []
   },

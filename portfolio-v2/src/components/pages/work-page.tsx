@@ -1,6 +1,7 @@
 import { caseStudies, categoryLabels, Locale, recruiterAnchor } from "@/content/site";
 
 import { CaseCard } from "@/components/site/case-card";
+import { Reveal } from "@/components/site/reveal";
 import { Section } from "@/components/site/section";
 import { SiteFrame } from "@/components/site/site-frame";
 
@@ -32,6 +33,7 @@ export function WorkPage({ locale }: WorkPageProps) {
 
   return (
     <SiteFrame locale={locale}>
+      <Reveal>
       <Section
         eyebrow={locale === "en" ? "Selected work" : "Trabajo seleccionado"}
         title={title}
@@ -53,6 +55,7 @@ export function WorkPage({ locale }: WorkPageProps) {
           ))}
         </div>
       </Section>
+      </Reveal>
     </SiteFrame>
   );
 }

@@ -2,6 +2,7 @@ import Link from "next/link";
 
 import { contactPage, Locale, siteConfig } from "@/content/site";
 
+import { Reveal } from "@/components/site/reveal";
 import { Section } from "@/components/site/section";
 import { SiteFrame } from "@/components/site/site-frame";
 
@@ -26,6 +27,7 @@ export function ContactPage({ locale }: ContactPageProps) {
 
   return (
     <SiteFrame locale={locale}>
+      <Reveal>
       <Section
         eyebrow={locale === "en" ? "Contact" : "Contacto"}
         title={content.title}
@@ -36,7 +38,7 @@ export function ContactPage({ locale }: ContactPageProps) {
             <Link
               key={item.href}
               href={item.href}
-              className="surface-panel flex h-full min-h-[9rem] flex-col justify-between p-[1.625rem] transition hover:border-cyan-200/28 hover:bg-white/[0.06] md:p-8"
+              className="surface-panel flex h-full min-h-[7rem] flex-col justify-between p-5 transition hover:border-cyan-200/28 hover:bg-white/[0.06] sm:min-h-[9rem] sm:p-[1.625rem] md:p-8"
             >
               <p className="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-white/42">
                 {item.kicker}
@@ -53,6 +55,7 @@ export function ContactPage({ locale }: ContactPageProps) {
           ))}
         </div>
       </Section>
+      </Reveal>
     </SiteFrame>
   );
 }
