@@ -37,16 +37,25 @@ export function AboutPage({ locale }: AboutPageProps) {
 
         <div className="surface-panel rounded-[2rem] p-5 sm:p-7 md:p-8">
           <p className="text-[0.7rem] font-semibold uppercase tracking-[0.28em] text-cyan-200/72">
-            {locale === "en" ? "Stack" : "Stack"}
+            Stack
           </p>
-          <div className="mt-5 flex flex-wrap gap-2.5">
-            {stack.map((item) => (
-              <span
-                key={item}
-                className="rounded-full border border-white/10 bg-white/[0.03] px-3.5 py-1.5 text-[0.78rem] font-medium text-white/76"
-              >
-                {item}
-              </span>
+          <div className="mt-5 space-y-4">
+            {stack.map((group) => (
+              <div key={group.en}>
+                <p className="text-[0.62rem] font-medium uppercase tracking-[0.24em] text-white/40">
+                  {group[locale]}
+                </p>
+                <div className="mt-2 flex flex-wrap gap-2.5">
+                  {group.items.map((item) => (
+                    <span
+                      key={item}
+                      className="rounded-full border border-white/10 bg-white/[0.03] px-3.5 py-1.5 text-[0.78rem] font-medium text-white/76"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
         </div>

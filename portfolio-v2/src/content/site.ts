@@ -84,18 +84,41 @@ export const recruiterAnchor = {
   }
 } as const;
 
-export const stack: readonly string[] = [
-  "PHP",
-  "WordPress / WooCommerce",
-  "JavaScript / TypeScript",
-  "React / Next.js",
-  "Node.js",
-  "MySQL / MariaDB",
-  "REST APIs",
-  "AWS (EC2, RDS, S3, ACM)",
-  "Nginx",
-  "Linux",
-  "Git"
+export const stack: readonly {
+  en: string;
+  es: string;
+  items: readonly string[];
+}[] = [
+  {
+    en: "Languages",
+    es: "Lenguajes",
+    items: ["JavaScript / TypeScript", "PHP", "Python"]
+  },
+  {
+    en: "Frameworks",
+    es: "Frameworks",
+    items: ["React / Next.js", "Node.js", "WordPress / WooCommerce"]
+  },
+  {
+    en: "Data",
+    es: "Datos",
+    items: ["MySQL / MariaDB"]
+  },
+  {
+    en: "Infrastructure",
+    es: "Infraestructura",
+    items: ["AWS (EC2, RDS, S3, ACM)", "Nginx", "Linux"]
+  },
+  {
+    en: "Testing",
+    es: "Testing",
+    items: ["Playwright", "Cypress", "Jest"]
+  },
+  {
+    en: "Tools",
+    es: "Herramientas",
+    items: ["Git", "REST APIs"]
+  }
 ] as const;
 
 export const homeContent = {
