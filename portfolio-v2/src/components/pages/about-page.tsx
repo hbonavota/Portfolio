@@ -71,6 +71,8 @@ export function AboutPage({ locale }: AboutPageProps) {
             <p className="mt-4 text-[0.96rem] leading-7 text-white/78">{anchor.availability}</p>
           </div>
         </div>
+
+        <p className="max-w-[42rem] text-[0.85rem] leading-7 text-white/50">{content.background}</p>
       </Section>
       </Reveal>
     </SiteFrame>
