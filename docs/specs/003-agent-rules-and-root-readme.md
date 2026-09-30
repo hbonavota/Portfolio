@@ -2,7 +2,7 @@
 
 ## Status
 
-Approved.
+Implemented in commit `c86948c`.
 
 ## Context
 
@@ -25,12 +25,12 @@ rewrite `README.md`. Nothing else.
 
 ## Acceptance criteria
 
-- [ ] AGENTS.md, CLAUDE.md and README.md at the root with the exact content of prompt 003
-- [ ] CLAUDE.md contains only the line "@AGENTS.md"
-- [ ] All relative links in README.md and AGENTS.md resolve to existing paths
+- [x] AGENTS.md, CLAUDE.md and README.md at the root with the exact content of prompt 003
+- [x] CLAUDE.md contains only the line "@AGENTS.md"
+- [x] All relative links in README.md and AGENTS.md resolve to existing paths
 - [x] Confidentiality check passed (run by the author with a private term list; terms not recorded)
-- [ ] `git diff --stat` shows only AGENTS.md, CLAUDE.md, README.md and docs/
-- [ ] portfolio-v2/ unchanged
+- [x] `git diff --stat` shows only AGENTS.md, CLAUDE.md, README.md and docs/
+- [x] portfolio-v2/ unchanged
 
 ## Non-goals
 
@@ -40,7 +40,18 @@ rewrite `README.md`. Nothing else.
 
 ## Verification
 
-_Pending — spec approved, not yet implemented._
+Real results from the implementing task (commit `c86948c`):
+
+- Relative links resolve: `README.md` → `portfolio-v2/`, `docs/specs/README.md`,
+  `docs/prompts/`, `AGENTS.md` all ✔; `AGENTS.md` → `docs/specs/README.md`,
+  `portfolio-v2/src/content/site.ts`, `portfolio-v2/src/components/site/footer.tsx`,
+  and pages under `portfolio-v2/src/app/**/page.tsx` all ✔.
+- `git diff --stat main`: only `AGENTS.md`, `CLAUDE.md`, `README.md` and `docs/` — no
+  path outside scope. ✔
+- `portfolio-v2/` unchanged (no modified or untracked files). ✔
+- `CLAUDE.md` contains only the line `@AGENTS.md`. ✔
+- Confidentiality check run by the author: **passed** (0 relevant matches; term list not
+  recorded).
 
 ## References
 
