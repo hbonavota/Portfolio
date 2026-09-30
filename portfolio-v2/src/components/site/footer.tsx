@@ -24,8 +24,8 @@ export function Footer({ locale }: FooterProps) {
           </p>
           <h2 className="max-w-lg text-[1.72rem] font-semibold leading-[1.08] tracking-[-0.04em] text-white sm:text-[1.86rem]">
             {locale === "en"
-              ? "Software engineer building ticketing, member portals and LALIGA integrations."
-              : "Ingeniero de software construyendo ticketing, portales de socios e integraciones con LALIGA."}
+              ? "Software engineer running ticketing, member portals and LALIGA integrations."
+              : "Ingeniero de software a cargo de ticketing, portales de socios e integraciones con LALIGA."}
           </h2>
           <p className="max-w-lg text-[0.95rem] leading-8 text-white/58">
             {locale === "en"

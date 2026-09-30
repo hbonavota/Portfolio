@@ -31,8 +31,8 @@ export type CaseStudy = {
 export const siteConfig = {
   name: "Hernán Bonavota",
   description: {
-    en: "Software engineer building ticketing, member portals and LALIGA integrations for first-division football clubs.",
-    es: "Ingeniero de software construyendo ticketing, portales de socios e integraciones con LALIGA para clubes de primera división."
+    en: "Software engineer running ticketing, member portals and LALIGA integrations for first-division football clubs.",
+    es: "Ingeniero de software a cargo de ticketing, portales de socios e integraciones con LALIGA para clubes de primera división."
   },
   domain: "https://hbonavota.com",
   portfolioDomains: ["https://hbonavota.com/", "https://hbonavota.es/"],
@@ -127,7 +127,7 @@ export const homeContent = {
       eyebrow: "Hernán Bonavota",
       title: "Software engineer specializing in integrations and production-critical systems.",
       description:
-        "I design and operate platforms where concurrency, validation, and reliability affect sales, access, and operational flows.",
+        "I operate and harden platforms where concurrency, validation, and reliability affect sales, access, and operational flows.",
       primaryCta: { label: "See experience", href: "/work" },
       secondaryCta: { label: "LinkedIn", href: siteConfig.approvedLinks.linkedin }
     },
@@ -152,7 +152,7 @@ export const homeContent = {
       eyebrow: "About",
       title: "How I work",
       description:
-        "Discovery, written spec, demo, rollout. End-to-end ownership across frontend, backend, integrations and the AWS box it ships on."
+        "Discovery, written spec, demo, rollout. End-to-end ownership across frontend, backend, integrations and the AWS box it ships on. Implementation is AI-assisted; the spec, the review of every change and the verification are mine."
     },
     contact: {
       eyebrow: "Contact",
@@ -166,7 +166,7 @@ export const homeContent = {
       eyebrow: "Hernán Bonavota",
       title: "Ingeniero de software especializado en integraciones y sistemas críticos en producción.",
       description:
-        "Diseño y opero plataformas donde la concurrencia, la validación y la fiabilidad impactan directamente en ventas, accesos y flujos operativos.",
+        "Opero y endurezco plataformas donde la concurrencia, la validación y la fiabilidad impactan directamente en ventas, accesos y flujos operativos.",
       primaryCta: { label: "Ver experiencia", href: "/es/trabajo" },
       secondaryCta: { label: "LinkedIn", href: siteConfig.approvedLinks.linkedin }
     },
@@ -191,7 +191,7 @@ export const homeContent = {
       eyebrow: "Sobre mí",
       title: "Cómo trabajo",
       description:
-        "Descubrimiento, spec escrita, demo y salida a producción. Propiedad de punta a punta entre frontend, backend, integraciones y la máquina AWS donde corre."
+        "Descubrimiento, spec escrita, demo y salida a producción. Propiedad de punta a punta entre frontend, backend, integraciones y la máquina AWS donde corre. La implementación es asistida por IA; la spec, la revisión de cada cambio y la verificación son mías."
     },
     contact: {
       eyebrow: "Contacto",
@@ -206,15 +206,15 @@ export const capabilities = {
   en: [
     {
       title: "Ticketing and member portals",
-      text: "Sale flows, access control and member account journeys anchored to the club's operating reality."
+      text: "Sale flows, access control and member account journeys on WordPress/WooCommerce and Node, operated by the club's business team without waiting on a deploy."
     },
     {
       title: "LALIGA integrations and data validation",
-      text: "Two LALIGA internal platforms — ticketing and member management — integrated through APIs I built and own, plus legacy normalization and validated forms that feed a CRM Data Lake in real time."
+      text: "Integrated and operated in production against LALIGA's ticketing and member-management APIs, plus legacy normalization and validated forms that feed a CRM Data Lake in real time."
     },
     {
-      title: "WordPress under operational load",
-      text: "Custom plugins, WooCommerce flows and frontend integrations where the business team needs to operate the portal without a deploy."
+      title: "Application security in the delivery loop",
+      text: "Security review of payment and access-control flows before go-live: authorization (IDOR), payment-state integrity and idempotency, session and 2FA handling, secrets, security headers and rate limiting. Each finding fixed and re-verified."
     },
     {
       title: "AWS and end-to-end delivery",
@@ -224,15 +224,15 @@ export const capabilities = {
   es: [
     {
       title: "Portales de ticketing y socios",
-      text: "Flujos de venta, control de acceso y recorridos de socio anclados a la operativa real del club."
+      text: "Flujos de venta, control de acceso y recorridos de socio sobre WordPress/WooCommerce y Node, que el equipo de negocio del club opera sin esperar a un deploy."
     },
     {
       title: "Integraciones LALIGA y validación de datos",
-      text: "Dos plataformas internas de LALIGA — ticketing y gestión de socios — integradas mediante APIs que construí y mantengo, normalización de legacy y formularios validados que alimentan en tiempo real un Data Lake del CRM."
+      text: "Integración y operación en producción contra las APIs de ticketing y gestión de socios de LALIGA, normalización de legacy y formularios validados que alimentan en tiempo real un Data Lake del CRM."
     },
     {
-      title: "WordPress bajo carga operativa",
-      text: "Plugins a medida, flujos WooCommerce e integraciones frontend donde negocio necesita operar el portal sin esperar a un deploy."
+      title: "Seguridad de aplicaciones dentro del ciclo de entrega",
+      text: "Revisión de seguridad de flujos de pago y control de acceso antes de salir a producción: autorización (IDOR), integridad e idempotencia del estado de pago, sesiones y 2FA, secretos, cabeceras de seguridad y rate limiting. Cada hallazgo corregido y verificado de nuevo."
     },
     {
       title: "AWS y entrega de punta a punta",
@@ -248,18 +248,18 @@ export const professionalExperience = {
     es: "Software Engineer / Integraciones y sistemas"
   },
   summary: {
-    en: "At Rezolve I run ticketing, member portals and LALIGA integrations for professional football clubs. Two LALIGA internal platforms — ticketing and member management — are integrated through APIs I built and operate.",
-    es: "En Rezolve llevo ticketing, portales de socios e integraciones con LALIGA para clubes de fútbol profesional. Dos plataformas internas de LALIGA — ticketing y gestión de socios — integradas mediante APIs que construí y opero."
+    en: "At Rezolve I run ticketing, member portals and LALIGA integrations for professional football clubs. Recently led the security audit and hardening of a ticketing and payments platform ahead of go-live.",
+    es: "En Rezolve llevo ticketing, portales de socios e integraciones con LALIGA para clubes de fútbol profesional. Recientemente lideré la auditoría de seguridad y el endurecimiento de una plataforma de ticketing y pagos de cara a su salida a producción."
   },
   notes: {
     en: [
       "Direct client work: discovery, written spec, estimation, demo to stakeholders, and production rollout.",
-      "Owned APIs against the two LALIGA internal platforms for member validation, account services and ticketing operations.",
+      "Own in production the LALIGA integrations: member validation, account services and ticketing operations.",
       "AWS, Nginx, SSL and production operations without relying on an internal platform team."
     ],
     es: [
       "Trabajo directo con cliente: descubrimiento, spec escrita, estimación, demo a stakeholders y salida a producción.",
-      "APIs propias contra las dos plataformas internas de LALIGA para validación de socios, servicios de cuenta y operación de ticketing.",
+      "Responsable en producción de las integraciones con LALIGA: validación de socios, servicios de cuenta y operación de ticketing.",
       "AWS, Nginx, SSL y operación en producción sin depender de un equipo interno de plataforma."
     ]
   }
@@ -278,12 +278,12 @@ export const aboutPage = {
       {
         title: "Where the work actually lives",
         body:
-          "Frontend in WordPress and Next.js, backend in PHP and Node.js, MySQL behind it, and the integration layer against LALIGA's ticketing and member-management platforms — including the APIs I built for that integration. AWS (EC2, RDS, S3, ACM) and Nginx are the engine room."
+          "Frontend in WordPress and Next.js, backend in PHP and Node.js, MySQL behind it, and the integration layer I operate against LALIGA's ticketing and member-management APIs. AWS (EC2, RDS, S3, ACM) and Nginx are the engine room."
       },
       {
-        title: "Spec first, then code",
+        title: "Spec first, AI-assisted delivery",
         body:
-          "I write the spec before I write the code, validate against that spec, and use AI tooling inside that loop where it accelerates writing and exploration — not where it would replace engineering judgment. Releases that survive match day are the test."
+          "Every change starts as a written spec: scope, acceptance criteria, and the security and failure cases up front. Implementation is AI-assisted; my part is the spec, reviewing every diff and verifying against the acceptance criteria before anything ships. On a recent platform hardening that meant 70+ specs and 200+ traceable commits in about a month. Releases that survive match day are the test."
       }
     ],
     background:
@@ -301,12 +301,12 @@ export const aboutPage = {
       {
         title: "Dónde vive el trabajo",
         body:
-          "Frontend en WordPress y Next.js, backend en PHP y Node.js, MySQL por detrás y la capa de integración contra las plataformas de ticketing y gestión de socios de LALIGA — incluidas las APIs que construí para integrarlas. AWS (EC2, RDS, S3, ACM) y Nginx son la sala de máquinas."
+          "Frontend en WordPress y Next.js, backend en PHP y Node.js, MySQL por detrás y la capa de integración que opero contra las APIs de ticketing y gestión de socios de LALIGA. AWS (EC2, RDS, S3, ACM) y Nginx son la sala de máquinas."
       },
       {
-        title: "Primero la spec, después el código",
+        title: "Primero la spec, entrega asistida por IA",
         body:
-          "Escribo la spec antes que el código, valido contra esa spec y uso herramientas de IA dentro de ese loop donde aceleran la escritura y la exploración — no donde sustituirían el criterio de ingeniería. Las releases que aguantan el día de partido son el examen."
+          "Cada cambio empieza como una spec escrita: alcance, criterios de aceptación y los casos de seguridad y de fallo desde el inicio. La implementación es asistida por IA; lo mío es la spec, la revisión de cada diff y la verificación contra los criterios de aceptación antes de publicar nada. En un endurecimiento reciente de plataforma fueron más de 70 specs y 200 commits trazables en un mes. Las releases que aguantan el día de partido son la prueba."
       }
     ],
     background:
@@ -452,7 +452,7 @@ export const caseStudies: CaseStudy[] = [
     },
     summary: {
       en: "I implemented a queue layer to stabilize ticket sales under peaks of 10,000+ concurrent users.",
-      es: "Implementé una capa para estabilizar la venta en picos de más de 10.000 usuarios concurrentes."
+      es: "Implementé una capa de colas para estabilizar la venta en picos de más de 10.000 usuarios concurrentes."
     },
     role: {
       en: "Software Engineer",
