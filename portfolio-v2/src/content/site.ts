@@ -31,8 +31,8 @@ export type CaseStudy = {
 export const siteConfig = {
   name: "Hernán Bonavota",
   description: {
-    en: "Software engineer building ticketing, member portals and LALIGA integrations for first-division football clubs.",
-    es: "Ingeniero de software construyendo ticketing, portales de socios e integraciones con LALIGA para clubes de primera división."
+    en: "Software engineer running ticketing, member portals and LALIGA integrations for first-division football clubs.",
+    es: "Ingeniero de software a cargo de ticketing, portales de socios e integraciones con LALIGA para clubes de primera división."
   },
   domain: "https://hbonavota.com",
   portfolioDomains: ["https://hbonavota.com/", "https://hbonavota.es/"],
@@ -127,7 +127,7 @@ export const homeContent = {
       eyebrow: "Hernán Bonavota",
       title: "Software engineer specializing in integrations and production-critical systems.",
       description:
-        "I design and operate platforms where concurrency, validation, and reliability affect sales, access, and operational flows.",
+        "I operate and harden platforms where concurrency, validation, and reliability affect sales, access, and operational flows.",
       primaryCta: { label: "See experience", href: "/work" },
       secondaryCta: { label: "LinkedIn", href: siteConfig.approvedLinks.linkedin }
     },
@@ -166,7 +166,7 @@ export const homeContent = {
       eyebrow: "Hernán Bonavota",
       title: "Ingeniero de software especializado en integraciones y sistemas críticos en producción.",
       description:
-        "Diseño y opero plataformas donde la concurrencia, la validación y la fiabilidad impactan directamente en ventas, accesos y flujos operativos.",
+        "Opero y endurezco plataformas donde la concurrencia, la validación y la fiabilidad impactan directamente en ventas, accesos y flujos operativos.",
       primaryCta: { label: "Ver experiencia", href: "/es/trabajo" },
       secondaryCta: { label: "LinkedIn", href: siteConfig.approvedLinks.linkedin }
     },
@@ -210,7 +210,7 @@ export const capabilities = {
     },
     {
       title: "LALIGA integrations and data validation",
-      text: "Two LALIGA internal platforms — ticketing and member management — integrated through APIs I built and own, plus legacy normalization and validated forms that feed a CRM Data Lake in real time."
+      text: "Integrated and operated in production against LALIGA's ticketing and member-management APIs, plus legacy normalization and validated forms that feed a CRM Data Lake in real time."
     },
     {
       title: "WordPress under operational load",
@@ -228,7 +228,7 @@ export const capabilities = {
     },
     {
       title: "Integraciones LALIGA y validación de datos",
-      text: "Dos plataformas internas de LALIGA — ticketing y gestión de socios — integradas mediante APIs que construí y mantengo, normalización de legacy y formularios validados que alimentan en tiempo real un Data Lake del CRM."
+      text: "Integración y operación en producción contra las APIs de ticketing y gestión de socios de LALIGA, normalización de legacy y formularios validados que alimentan en tiempo real un Data Lake del CRM."
     },
     {
       title: "WordPress bajo carga operativa",
@@ -248,18 +248,18 @@ export const professionalExperience = {
     es: "Software Engineer / Integraciones y sistemas"
   },
   summary: {
-    en: "At Rezolve I run ticketing, member portals and LALIGA integrations for professional football clubs. Two LALIGA internal platforms — ticketing and member management — are integrated through APIs I built and operate.",
-    es: "En Rezolve llevo ticketing, portales de socios e integraciones con LALIGA para clubes de fútbol profesional. Dos plataformas internas de LALIGA — ticketing y gestión de socios — integradas mediante APIs que construí y opero."
+    en: "At Rezolve I run ticketing, member portals and LALIGA integrations for professional football clubs. I integrate and operate in production the connections to LALIGA's ticketing and member-management systems.",
+    es: "En Rezolve llevo ticketing, portales de socios e integraciones con LALIGA para clubes de fútbol profesional. Integro y opero en producción la conexión con los sistemas de ticketing y gestión de socios de LALIGA."
   },
   notes: {
     en: [
       "Direct client work: discovery, written spec, estimation, demo to stakeholders, and production rollout.",
-      "Owned APIs against the two LALIGA internal platforms for member validation, account services and ticketing operations.",
+      "Own in production the LALIGA integrations: member validation, account services and ticketing operations.",
       "AWS, Nginx, SSL and production operations without relying on an internal platform team."
     ],
     es: [
       "Trabajo directo con cliente: descubrimiento, spec escrita, estimación, demo a stakeholders y salida a producción.",
-      "APIs propias contra las dos plataformas internas de LALIGA para validación de socios, servicios de cuenta y operación de ticketing.",
+      "Responsable en producción de las integraciones con LALIGA: validación de socios, servicios de cuenta y operación de ticketing.",
       "AWS, Nginx, SSL y operación en producción sin depender de un equipo interno de plataforma."
     ]
   }
@@ -278,7 +278,7 @@ export const aboutPage = {
       {
         title: "Where the work actually lives",
         body:
-          "Frontend in WordPress and Next.js, backend in PHP and Node.js, MySQL behind it, and the integration layer against LALIGA's ticketing and member-management platforms — including the APIs I built for that integration. AWS (EC2, RDS, S3, ACM) and Nginx are the engine room."
+          "Frontend in WordPress and Next.js, backend in PHP and Node.js, MySQL behind it, and the integration layer I operate against LALIGA's ticketing and member-management APIs. AWS (EC2, RDS, S3, ACM) and Nginx are the engine room."
       },
       {
         title: "Spec first, then code",
@@ -301,7 +301,7 @@ export const aboutPage = {
       {
         title: "Dónde vive el trabajo",
         body:
-          "Frontend en WordPress y Next.js, backend en PHP y Node.js, MySQL por detrás y la capa de integración contra las plataformas de ticketing y gestión de socios de LALIGA — incluidas las APIs que construí para integrarlas. AWS (EC2, RDS, S3, ACM) y Nginx son la sala de máquinas."
+          "Frontend en WordPress y Next.js, backend en PHP y Node.js, MySQL por detrás y la capa de integración que opero contra las APIs de ticketing y gestión de socios de LALIGA. AWS (EC2, RDS, S3, ACM) y Nginx son la sala de máquinas."
       },
       {
         title: "Primero la spec, después el código",
@@ -452,7 +452,7 @@ export const caseStudies: CaseStudy[] = [
     },
     summary: {
       en: "I implemented a queue layer to stabilize ticket sales under peaks of 10,000+ concurrent users.",
-      es: "Implementé una capa para estabilizar la venta en picos de más de 10.000 usuarios concurrentes."
+      es: "Implementé una capa de colas para estabilizar la venta en picos de más de 10.000 usuarios concurrentes."
     },
     role: {
       en: "Software Engineer",
