@@ -2,7 +2,7 @@
 
 ## Status
 
-Approved.
+Implemented in commit `0986d7b`.
 
 ## Context
 
@@ -39,16 +39,16 @@ Content only (EN and ES); no components, styles or layout changed.
 
 ## Acceptance criteria
 
-- [ ] All copy from prompt 002 present verbatim in EN and ES
-- [ ] Zero matches for `WordPress under operational load`
-- [ ] Zero matches for `WordPress bajo carga operativa`
-- [ ] Zero matches for `anchored to the club`
-- [ ] Zero matches for `anclados a la operativa`
-- [ ] No broken reference to the removed card
-- [ ] capabilities 4/4 EN/ES
-- [ ] `typecheck` passes
-- [ ] `build` passes
-- [ ] `next-env.d.ts` unchanged
+- [x] All copy from prompt 002 present verbatim in EN and ES
+- [x] Zero matches for `WordPress under operational load`
+- [x] Zero matches for `WordPress bajo carga operativa`
+- [x] Zero matches for `anchored to the club`
+- [x] Zero matches for `anclados a la operativa`
+- [x] No broken reference to the removed card
+- [x] capabilities 4/4 EN/ES
+- [x] `typecheck` passes
+- [x] `build` passes
+- [x] `next-env.d.ts` unchanged
 
 ## Non-goals
 
@@ -57,10 +57,26 @@ Content only (EN and ES); no components, styles or layout changed.
 
 ## Verification
 
-_Pending — spec approved, not yet implemented._
+Real results from the implementing task (commit `0986d7b`):
+
+- Zero-match search over `portfolio-v2/src` (`WordPress under operational load`,
+  `WordPress bajo carga operativa`, `anchored to the club`, `anclados a la operativa`)
+  → **0 matches**.
+- Removed-card references: none broken. The removed card title returns 0 matches; the
+  remaining "WordPress" mentions are legitimate content (stack, case studies, the new
+  ticketing card). Cards render in `home-page.tsx` via `capabilityItems.map(...)` keyed
+  by `item.title`, with no fixed indexes or per-position icons.
+- Verbatim check: all 14 new strings from prompt 002 (EN + ES) found exactly in
+  `site.ts` — **14/14**.
+- EN/ES parity: capabilities **4/4**.
+- `npm run typecheck` (`tsc --noEmit`) → **exit 0**.
+- `npm run build` (`next build`) → **exit 0**.
+- `next build` regenerated the auto-generated `portfolio-v2/next-env.d.ts`; it was
+  **reverted** so the change set stays copy-only.
 
 ## References
 
+- Commit: `0986d7b` — `feat(content): add AppSec capability and AI-assisted delivery to copy (EN/ES)`
 - Prompt: [`docs/prompts/002-appsec-capability-ai-delivery.md`](../prompts/002-appsec-capability-ai-delivery.md)
 
 ## AI assistance

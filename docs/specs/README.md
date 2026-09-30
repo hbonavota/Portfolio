@@ -6,7 +6,7 @@ spec here, with its originating prompt kept verbatim under [`docs/prompts/`](../
 | ID  | Title                                               | Status      | Spec                                                                     | Prompt                                                                          |
 | --- | --------------------------------------------------- | ----------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------- |
 | 001 | Align authorship claims on external integrations    | Implemented | [001-align-authorship-claims.md](001-align-authorship-claims.md)         | [../prompts/001-align-authorship-claims.md](../prompts/001-align-authorship-claims.md)       |
-| 002 | AppSec capability and AI-assisted delivery in copy  | Approved    | [002-appsec-capability-ai-delivery.md](002-appsec-capability-ai-delivery.md) | [../prompts/002-appsec-capability-ai-delivery.md](../prompts/002-appsec-capability-ai-delivery.md) |
+| 002 | AppSec capability and AI-assisted delivery in copy  | Implemented | [002-appsec-capability-ai-delivery.md](002-appsec-capability-ai-delivery.md) | [../prompts/002-appsec-capability-ai-delivery.md](../prompts/002-appsec-capability-ai-delivery.md) |
 
 ## Conventions
 
