@@ -6,7 +6,7 @@ export const metadata = buildMetadata({
   locale: "es",
   pathname: "/es",
   title: "Hernán Bonavota",
-  description: "Ingeniero de software a cargo de ticketing, portales de socios e integraciones con LALIGA para clubes de primera división."
+  description: "Software Engineer a cargo de ticketing, portales de socios e integraciones con LALIGA para clubes de primera división."
 });
 
 export default function Page() {

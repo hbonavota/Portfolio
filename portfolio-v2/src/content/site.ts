@@ -32,7 +32,7 @@ export const siteConfig = {
   name: "Hernán Bonavota",
   description: {
     en: "Software engineer running ticketing, member portals and LALIGA integrations for first-division football clubs.",
-    es: "Ingeniero de software a cargo de ticketing, portales de socios e integraciones con LALIGA para clubes de primera división."
+    es: "Software Engineer a cargo de ticketing, portales de socios e integraciones con LALIGA para clubes de primera división."
   },
   domain: "https://hbonavota.com",
   portfolioDomains: ["https://hbonavota.com/", "https://hbonavota.es/"],
@@ -92,7 +92,7 @@ export const stack: readonly {
   {
     en: "Languages",
     es: "Lenguajes",
-    items: ["JavaScript / TypeScript", "PHP", "Python"]
+    items: ["JavaScript / TypeScript", "Python", "C#", "PHP"]
   },
   {
     en: "Frameworks",
@@ -107,7 +107,7 @@ export const stack: readonly {
   {
     en: "Infrastructure",
     es: "Infraestructura",
-    items: ["AWS (EC2, RDS, S3, ACM)", "Nginx", "Linux"]
+    items: ["AWS (EC2, RDS, S3, ACM)", "Nginx", "Linux", "Docker"]
   },
   {
     en: "Testing",
@@ -164,7 +164,7 @@ export const homeContent = {
   es: {
     hero: {
       eyebrow: "Hernán Bonavota",
-      title: "Ingeniero de software especializado en integraciones y sistemas críticos en producción.",
+      title: "Software Engineer especializado en integraciones y sistemas críticos en producción.",
       description:
         "Opero y endurezco plataformas donde la concurrencia, la validación y la fiabilidad impactan directamente en ventas, accesos y flujos operativos.",
       primaryCta: { label: "Ver experiencia", href: "/es/trabajo" },
@@ -654,7 +654,7 @@ export const caseStudies: CaseStudy[] = [
     },
     role: {
       en: "Full-stack Engineer / Implementation Owner",
-      es: "Ingeniero full-stack / Responsable de implementación"
+      es: "Full-stack Engineer / Responsable de implementación"
     },
     overview: {
       en: [
