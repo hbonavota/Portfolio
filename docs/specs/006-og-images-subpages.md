@@ -2,7 +2,7 @@
 
 ## Status
 
-Approved.
+Implemented in commit `333cda5`.
 
 ## Context
 
@@ -40,14 +40,14 @@ image.
 
 ## Acceptance criteria
 
-- [ ] `npm run build` passes with no errors
-- [ ] `/`, `/work`, `/work/verifiko`, `/about`, `/es/trabajo/verifiko`, `/es/sobre-mi` each
+- [x] `npm run build` passes with no errors
+- [x] `/`, `/work`, `/work/verifiko`, `/about`, `/es/trabajo/verifiko`, `/es/sobre-mi` each
       expose `og:image` and `twitter:image`
-- [ ] `/work/verifiko` and `/es/trabajo/verifiko` `og:image`/`twitter:image` point to the
+- [x] `/work/verifiko` and `/es/trabajo/verifiko` `og:image`/`twitter:image` point to the
       `[slug]` segment image, not the root
-- [ ] the `og:image` for `/work/verifiko` downloads as a PNG 1200×630
-- [ ] no copy or other metadata changed in `site.ts`
-- [ ] `typecheck` passes; `next-env.d.ts` reverted
+- [x] the `og:image` for `/work/verifiko` downloads as a PNG 1200×630
+- [x] no copy or other metadata changed in `site.ts`
+- [x] `typecheck` passes; `next-env.d.ts` reverted
 
 ## Non-goals
 
@@ -56,7 +56,27 @@ image.
 
 ## Verification
 
-_Pending — spec approved, not yet implemented._
+Real results from the implementing task (commit `333cda5`):
+
+- `npm run typecheck` → **exit 0**; `npm run build` → **exit 0**. Per-case
+  `opengraph-image` and `twitter-image` routes generated (SSG) for each slug, EN and ES.
+- `next start` + `curl … | grep og:image/twitter:image` for each route — all expose both:
+  - `/` → `/opengraph-image`, `/twitter-image` (root file convention)
+  - `/work` → `/opengraph-image`, `/twitter-image` (EN root fallback)
+  - `/work/verifiko` → `/work/verifiko/opengraph-image`, `/work/verifiko/twitter-image`
+    (the `[slug]` segment image, **not** the root)
+  - `/about` → `/opengraph-image`, `/twitter-image` (EN root fallback)
+  - `/es/trabajo/verifiko` → `/es/trabajo/verifiko/opengraph-image`,
+    `/es/trabajo/verifiko/twitter-image` (the `[slug]` segment image)
+  - `/es/sobre-mi` → `/es/opengraph-image`, `/es/twitter-image` (ES root fallback)
+- `curl -o /tmp/og-verifiko.png http://localhost:3000/work/verifiko/opengraph-image` →
+  `PNG image data, 1200 x 630`; renders the case card (title + summary clamped to two lines
+  with an ellipsis + "hbonavota.com").
+- `site.ts` untouched; no other metadata values changed. `next-env.d.ts` reverted. Diff
+  within `portfolio-v2/` and `docs/`.
+
+Note: Satori did not honor `-webkit-line-clamp` in this setup, so the two-line summary
+clamp is done by trimming the text to a word boundary with an ellipsis in `og-card.tsx`.
 
 ## References
 

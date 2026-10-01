@@ -10,7 +10,7 @@ spec here, with its originating prompt kept verbatim under [`docs/prompts/`](../
 | 003 | Agent rules and root README                         | Implemented | [003-agent-rules-and-root-readme.md](003-agent-rules-and-root-readme.md)  | [../prompts/003-agent-rules-and-root-readme.md](../prompts/003-agent-rules-and-root-readme.md)   |
 | 004 | Portfolio polish: Docker, C#, ES title, OG image    | Implemented | [004-portfolio-polish.md](004-portfolio-polish.md)                        | [../prompts/004-portfolio-polish.md](../prompts/004-portfolio-polish.md)                         |
 | 005 | Verifiko case study                                 | Implemented | [005-verifiko-case-study.md](005-verifiko-case-study.md)                  | [../prompts/005-verifiko-case-study.md](../prompts/005-verifiko-case-study.md)                   |
-| 006 | Open Graph images on subpages                       | Approved    | [006-og-images-subpages.md](006-og-images-subpages.md)                    | [../prompts/006-og-images-subpages.md](../prompts/006-og-images-subpages.md)                     |
+| 006 | Open Graph images on subpages                       | Implemented | [006-og-images-subpages.md](006-og-images-subpages.md)                    | [../prompts/006-og-images-subpages.md](../prompts/006-og-images-subpages.md)                     |
 
 ## Conventions
 
