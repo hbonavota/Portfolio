@@ -9,7 +9,7 @@ spec here, with its originating prompt kept verbatim under [`docs/prompts/`](../
 | 002 | AppSec capability and AI-assisted delivery in copy  | Implemented | [002-appsec-capability-ai-delivery.md](002-appsec-capability-ai-delivery.md) | [../prompts/002-appsec-capability-ai-delivery.md](../prompts/002-appsec-capability-ai-delivery.md) |
 | 003 | Agent rules and root README                         | Implemented | [003-agent-rules-and-root-readme.md](003-agent-rules-and-root-readme.md)  | [../prompts/003-agent-rules-and-root-readme.md](../prompts/003-agent-rules-and-root-readme.md)   |
 | 004 | Portfolio polish: Docker, C#, ES title, OG image    | Implemented | [004-portfolio-polish.md](004-portfolio-polish.md)                        | [../prompts/004-portfolio-polish.md](../prompts/004-portfolio-polish.md)                         |
-| 005 | Verifiko case study                                 | Approved    | [005-verifiko-case-study.md](005-verifiko-case-study.md)                  | [../prompts/005-verifiko-case-study.md](../prompts/005-verifiko-case-study.md)                   |
+| 005 | Verifiko case study                                 | Implemented | [005-verifiko-case-study.md](005-verifiko-case-study.md)                  | [../prompts/005-verifiko-case-study.md](../prompts/005-verifiko-case-study.md)                   |
 
 ## Conventions
 

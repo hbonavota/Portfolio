@@ -2,7 +2,7 @@
 
 ## Status
 
-Approved.
+Implemented in commit `37b168d`.
 
 ## Context
 
@@ -44,16 +44,16 @@ Content and the two list surfaces, under `portfolio-v2/`:
 
 ## Acceptance criteria
 
-- [ ] `/work/verifiko` and `/es/trabajo/verifiko` resolve (no 404) — `pageRequired: true`
-- [ ] Verifiko is listed first in `/work` and `/es/trabajo`
-- [ ] Verifiko appears on the home "Selected work" grid (4 cards, 2×2)
-- [ ] `/work` and `/es/trabajo` titles and SEO descriptions no longer say "Three/Tres projects"
-- [ ] Metrics in the copy carry the 40-URL corpus size; no thresholds or weights published
-- [ ] PageSpeed scores shown with exact values and date
-- [ ] Every case fact is backed by the Verifiko `origin/main` codebase
-- [ ] EN/ES parity preserved
-- [ ] `typecheck` and `build` pass; `next-env.d.ts` reverted
-- [ ] `git diff --stat` stays within `portfolio-v2/` and `docs/`
+- [x] `/work/verifiko` and `/es/trabajo/verifiko` resolve (no 404) — `pageRequired: true`
+- [x] Verifiko is listed first in `/work` and `/es/trabajo`
+- [x] Verifiko appears on the home "Selected work" grid (4 cards, 2×2)
+- [x] `/work` and `/es/trabajo` titles and SEO descriptions no longer say "Three/Tres projects"
+- [x] Metrics in the copy carry the 40-URL corpus size; no thresholds or weights published
+- [x] PageSpeed scores shown with exact values and date
+- [x] Every case fact is backed by the Verifiko `origin/main` codebase
+- [x] EN/ES parity preserved
+- [x] `typecheck` and `build` pass; `next-env.d.ts` reverted
+- [x] `git diff --stat` stays within `portfolio-v2/` and `docs/`
 
 ## Non-goals
 
@@ -67,7 +67,30 @@ Content and the two list surfaces, under `portfolio-v2/`:
 
 ## Verification
 
-_Pending — spec approved, not yet implemented._
+Real results from the implementing task (commit `37b168d`):
+
+- `/work/verifiko` and `/es/trabajo/verifiko` prerender the case study (`<h1>Verifiko</h1>`
+  plus all sections); the `404` string found in the HTML is the embedded not-found RSC
+  template, not the rendered page. `pageRequired: true`.
+- Verifiko is the first case card in `/work` and `/es/trabajo`.
+- Verifiko appears on the home "Selected work" grid — 4 cards, 2×2 (the home filter now
+  includes a featured `product`).
+- `/work` and `/es/trabajo` titles and SEO descriptions updated; no "Three/Tres projects".
+- Metrics carry the corpus size ("a small, 40-URL labeled offline corpus"); the internal
+  decision threshold and scoring weights are not published.
+- PageSpeed shown with exact values and date (author-verified, 1 Oct 2026): Performance 99,
+  Accessibility 100, Best Practices 96, SEO 100, mobile and desktop.
+- Facts verified against Verifiko `origin/main` in a temporary worktree: precision 1.00,
+  recall 0.82, FPR 0.00, accuracy 0.90 over a 40-URL corpus (22 malicious / 18 benign)
+  from `python -m evaluation.run_evaluation`; 457 tests across 61 files; typosquatting,
+  SSRF guard, HMAC + QStash signature verification, circuit-breaker reputation (≥2 feeds),
+  headless detonation (toggle, off by default), durable async worker + job store, and
+  CSP/security headers all present.
+- EN/ES parity preserved.
+- `npm run typecheck` → **exit 0**; `npm run build` → **exit 0**; `next-env.d.ts` reverted.
+- `git diff --stat` stays within `portfolio-v2/` and `docs/`.
+- Screenshots (desktop + 390px mobile) of `/work/verifiko`, `/es/trabajo/verifiko` and the
+  home grid were captured for review.
 
 ## References
 
