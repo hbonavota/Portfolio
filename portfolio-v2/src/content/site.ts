@@ -135,7 +135,7 @@ export const homeContent = {
       eyebrow: "Selected work",
       title: "Selected case studies",
       description:
-        "Queue control, member validation, and registration under concurrency."
+        "A product of my own, plus queue control, member validation, and registration under concurrency at Rezolve."
     },
     capabilities: {
       eyebrow: "Scope",
@@ -174,7 +174,7 @@ export const homeContent = {
       eyebrow: "Trabajo seleccionado",
       title: "Casos seleccionados",
       description:
-        "Control de colas, validación de socios y registro bajo concurrencia."
+        "Un producto propio, más control de colas, validación de socios y registro bajo concurrencia en Rezolve."
     },
     capabilities: {
       eyebrow: "Alcance",
@@ -374,67 +374,93 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "verifiko",
     category: "product",
-    featured: false,
-    pageRequired: false,
+    featured: true,
+    pageRequired: true,
     title: { en: "Verifiko", es: "Verifiko" },
     strapline: {
-      en: "URL risk analysis with explainable signals.",
-      es: "Análisis de riesgo sobre URLs con señales explicables."
+      en: "Explainable URL risk detection, built as a layered analysis pipeline.",
+      es: "Detección explicable de riesgo en URLs, construida como un pipeline de análisis por capas."
     },
     summary: {
-      en: "Own product for analyzing suspicious URLs and exposing technical risk signals in a clear, reviewable, actionable format.",
-      es: "Producto propio para analizar URLs sospechosas y mostrar señales técnicas de riesgo de forma clara, revisable y accionable."
+      en: "A solo product that scores suspicious URLs for phishing and malware risk — and shows why. A layered pipeline behind a FastAPI service returns an explainable score with a per-signal decision trace instead of one opaque number. Live at verifiko.es.",
+      es: "Un producto propio que puntúa URLs sospechosas por riesgo de phishing y malware — y muestra por qué. Un pipeline por capas tras un servicio FastAPI devuelve un score explicable con traza de decisión por señal, en lugar de un valor opaco. En producción en verifiko.es."
     },
     role: {
-      en: "Founder / Product Engineer",
-      es: "Founder / Product Engineer"
+      en: "Solo project — product engineer. AI-assisted implementation; the spec, the review and the verification are mine.",
+      es: "Proyecto en solitario — product engineer. Implementación asistida por IA; la spec, la revisión y la verificación son mías."
     },
     overview: {
       en: [
-        "Verifiko is a product focused on analyzing suspicious URLs and exposing technical risk signals in a way that can be reviewed, understood, and acted on."
+        "Verifiko analyzes a suspicious URL and returns a risk verdict an analyst can actually review — not just \"malicious\", but which signals contributed and why.",
+        "It runs as a real product: a FastAPI service with a React and Vite workspace, built so the reasoning behind a score is visible and a verdict can be trusted or challenged."
       ],
       es: [
-        "Verifiko es un producto centrado en analizar URLs sospechosas y exponer señales técnicas de riesgo de forma que puedan revisarse, entenderse y utilizarse en la toma de decisiones."
+        "Verifiko analiza una URL sospechosa y devuelve un veredicto de riesgo que un analista puede revisar de verdad: no solo «maliciosa», sino qué señales contribuyeron y por qué.",
+        "Funciona como producto real: un servicio FastAPI con un workspace en React y Vite, construido para que el razonamiento detrás de un score sea visible y un veredicto pueda confiarse o cuestionarse."
       ]
     },
     challenge: {
       en: [
-        "The problem was not just detecting risky URLs, but presenting technical signals without losing accuracy or turning the result into an opaque score."
+        "The hard part is not flagging a bad URL; it is doing it without an opaque score, and fetching untrusted targets safely so the analyzer cannot be turned into an SSRF vector.",
+        "External lookups — registration data, TLS, reputation feeds, HTML fetches — fail or rate-limit, so the verdict has to stay sensible when some signals are missing."
       ],
       es: [
-        "El problema no era solo detectar URLs sospechosas, sino presentar señales técnicas sin perder precisión ni convertir el resultado en un valor opaco."
+        "Lo difícil no es marcar una URL mala; es hacerlo sin un score opaco y traer objetivos no confiables de forma segura, para que el analizador no pueda convertirse en un vector SSRF.",
+        "Las consultas externas —datos de registro, TLS, feeds de reputación, descargas de HTML— fallan o limitan, así que el veredicto tiene que seguir siendo razonable cuando faltan señales."
       ]
     },
     approach: {
       en: [
-        "I designed the system around a layered analysis model, separating signal collection, risk evaluation, and final presentation to make the output both transparent and usable."
+        "A layered pipeline: static URL heuristics including typosquatting, domain recency from registration data, TLS and transport validation, and HTML credential-harvest inspection.",
+        "Reputation is aggregated across independent feeds and only counts when at least two agree, with a circuit breaker so an unavailable feed cannot skew the verdict.",
+        "Optional headless detonation sits behind a toggle, off by default, for deeper inspection of evasive pages.",
+        "Every verdict carries a per-signal decision trace, so the score is explainable instead of a single opaque number."
       ],
       es: [
-        "Diseñé el sistema en capas, separando la recogida de señales, la evaluación de riesgo y la presentación final para conseguir un resultado transparente y usable."
+        "Un pipeline por capas: heurísticas estáticas de URL incluido typosquatting, recencia del dominio a partir de los datos de registro, validación de TLS y transporte, e inspección de superficie de credential-harvest en HTML.",
+        "La reputación se agrega entre feeds independientes y solo cuenta cuando al menos dos coinciden, con un circuit breaker para que un feed caído no distorsione el veredicto.",
+        "Una detonación headless opcional queda tras un toggle, apagada por defecto, para inspeccionar en profundidad páginas evasivas.",
+        "Cada veredicto lleva una traza de decisión por señal, de modo que el score es explicable en lugar de un único valor opaco."
+      ]
+    },
+    architectureSteps: {
+      en: [
+        "Clean Architecture: explicit domain, application, infrastructure and entrypoint layers with ports and adapters.",
+        "A durable async worker runs enrichment off the request path: jobs are persisted in PostgreSQL and dispatched through a signed QStash queue.",
+        "FastAPI, SQLAlchemy and PostgreSQL with Alembic migrations; a React, TypeScript and Vite analyst workspace."
+      ],
+      es: [
+        "Clean Architecture: capas explícitas de dominio, aplicación, infraestructura y entrypoints con ports y adapters.",
+        "Un worker asíncrono durable ejecuta el enriquecimiento fuera de la ruta de request: los trabajos se persisten en PostgreSQL y se despachan mediante una cola QStash firmada.",
+        "FastAPI, SQLAlchemy y PostgreSQL con migraciones Alembic; un workspace de analista en React, TypeScript y Vite."
       ]
     },
     highlights: {
       en: [
-        "Clear separation between signal collection, evaluation, and presentation.",
-        "Balancing technical depth with readable output.",
-        "Avoiding black-box scoring in favor of explainable results."
+        "Security by construction: an egress guard on every outbound fetch to prevent SSRF, plus signed webhooks (HMAC) and QStash signature verification on the async path.",
+        "Resilience: per-day quotas and rate limiting that fail open on outage, with heavier functions like detonation and reputation behind feature toggles, off by default.",
+        "Hardening and auditability: CSP and security headers on the API, and an explainable decision trace kept central so every verdict stays reviewable."
       ],
       es: [
-        "Separación clara entre recogida de señales, evaluación y presentación.",
-        "Equilibrio entre profundidad técnica y lectura del resultado.",
-        "Evitar modelos opacos en favor de resultados explicables."
+        "Seguridad por construcción: un guard de egress en cada descarga saliente para prevenir SSRF, más webhooks firmados (HMAC) y verificación de firma QStash en la ruta async.",
+        "Resiliencia: cuotas por día y rate limiting que hacen fail-open ante caídas, con funciones pesadas como detonación y reputación tras feature toggles, apagadas por defecto.",
+        "Hardening y auditabilidad: CSP y cabeceras de seguridad en la API, y una traza de decisión explicable como eje para que cada veredicto siga siendo revisable."
       ]
     },
     outcome: {
       en: [
-        "The result is a product that exposes why a URL is considered risky, allowing faster and more informed decisions instead of relying on a single score."
+        "The result is a verdict you can defend: on a small, 40-URL labeled offline corpus the detection scores precision 1.00, recall 0.82 and a 0.00 false-positive rate, with 0.90 accuracy, measured by a deterministic evaluation harness.",
+        "The behavior is reproducible — 457 automated tests across 61 files — and the explainable trace lets a reviewer see exactly why a URL was flagged.",
+        "On PageSpeed Insights (1 Oct 2026) the site scored Performance 99, Accessibility 100, Best Practices 96 and SEO 100 on both mobile and desktop. The repository is private; source is available on request."
       ],
       es: [
-        "El resultado es un producto que muestra por qué una URL se considera riesgosa, permitiendo decisiones más rápidas e informadas en lugar de depender de una única puntuación."
+        "El resultado es un veredicto defendible: sobre un corpus offline etiquetado y acotado, de 40 URLs, la detección obtiene precisión 1.00, recall 0.82 y una tasa de falsos positivos de 0.00, con accuracy 0.90, medido por un harness de evaluación determinista.",
+        "El comportamiento es reproducible —457 tests automatizados en 61 archivos— y la traza explicable permite ver exactamente por qué se marcó una URL.",
+        "En PageSpeed Insights (1 oct 2026) el sitio obtuvo Performance 99, Accessibility 100, Best Practices 96 y SEO 100, en móvil y escritorio. El repositorio es privado; el código está disponible bajo petición."
       ]
     },
     publicLinks: [
-      { label: "Verifiko", href: siteConfig.approvedLinks.verifiko }
+      { label: "verifiko.es", href: siteConfig.approvedLinks.verifiko }
     ]
   },
   {

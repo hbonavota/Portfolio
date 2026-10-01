@@ -10,6 +10,7 @@ type WorkPageProps = {
 };
 
 const orderedSlugs = [
+  "verifiko",
   "ticketing-queue-control",
   "member-validation-data-update",
   "high-concurrency-draw-flows"
@@ -18,13 +19,13 @@ const orderedSlugs = [
 export function WorkPage({ locale }: WorkPageProps) {
   const title =
     locale === "en"
-      ? "Three projects at Rezolve. Same domain, different operational pressure."
-      : "Tres proyectos en Rezolve. Mismo dominio, presión operativa distinta.";
+      ? "Selected work: one product of my own and three projects at Rezolve."
+      : "Trabajo seleccionado: un producto propio y tres proyectos en Rezolve.";
 
   const description = recruiterAnchor[locale].ndaLine;
 
   const categories = Object.entries(categoryLabels).filter(
-    ([key]) => key === "client-work"
+    ([key]) => key === "product" || key === "client-work"
   );
 
   const studies = orderedSlugs
