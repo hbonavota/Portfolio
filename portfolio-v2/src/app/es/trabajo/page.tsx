@@ -6,7 +6,7 @@ export const metadata = buildMetadata({
   locale: "es",
   pathname: "/es/trabajo",
   title: "Trabajo",
-  description: "Tres proyectos en Rezolve — control de colas, validación de socios y registro bajo alta concurrencia."
+  description: "Un producto propio y tres proyectos en Rezolve — detección explicable de riesgo en URLs, control de colas, validación de socios y registro bajo alta concurrencia."
 });
 
 export default function Page() {

@@ -23,7 +23,9 @@ type HomePageProps = {
 export function HomePage({ locale }: HomePageProps) {
   const content = homeContent[locale];
   const featured = caseStudies.filter(
-    (study) => study.featured && study.category === "client-work"
+    (study) =>
+      study.featured &&
+      (study.category === "client-work" || study.category === "product")
   );
   const capabilityItems = capabilities[locale];
   const aboutHref = getLocalizedPath(locale, "about");
